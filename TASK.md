@@ -29,10 +29,10 @@ Write **one Python module** with a driver class (think: a small
 1. **Bring-up** — connect, ensure the node boots (send NMT Reset Node if you attached late), send NMT Start when the heartbeat shows PRE-OPERATIONAL,
    and confirm the heartbeat reports OPERATIONAL.
 2. **Identify** — read the software version (0x2201) and rated current
-   (0x6075) once via SDO.
+   (0x6075) once via SDO. 
 3. **Bind PDOs** — `tpdo.read()` / `rpdo.read()` so your bindings come from
    the device, then expose named attributes for: target velocities (RPDO1),
-   alarm/status/input-voltage/currents (TPDO1), velocity demand+actual both
+   alarm/status/input-voltage/currents (TPDO1),velocity demand+actual both
    axes (TPDO2), board temp + overloads (TPDO3).
 4. **Drive** — stream RPDO1 velocity commands at ≥10 Hz (faster than the
    200 ms timeout), log the ramped feedback from TPDO2, and decode TPDO1
