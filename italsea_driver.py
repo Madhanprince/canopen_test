@@ -67,17 +67,17 @@ class ItalseaDriver:
         print(self.tpdo3_Value)
         print(self.tpdo3_Value_1)
 
-    # def drive(self):
-    #     while True:
-    #         try:
-    #             self.target_velocity.raw = 1000
-    #             self.target_velocity_1.raw = 1000
-    #             self.rpdo1.transmit()
-    #             time.sleep(0.05)
+    def drive(self):
+        while True:
+            try:
+                self.target_velocity.raw = 1000
+                self.target_velocity_1.raw = 1000
+                self.rpdo1.transmit()
+                time.sleep(0.5)
 
-    #         except Exception as e:
-    #             print("ERROR:", e)
-    #             break
+            except Exception as e:
+                print("ERROR:", e)
+                break
         
     # def velocity_feedback(self):
     #     while True:
@@ -105,7 +105,7 @@ def main():
     driver.initialize()
     # driver.read_sw_and_rated_current()
     driver.rpdo_tpdo()
-    # driver.drive()
+    driver.drive()
     # driver.velocity_feedback()
     driver.decode_tpdo_1()
 
