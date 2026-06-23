@@ -1,0 +1,30 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from iris_interfaces/srv/StateManager.srv
+// generated code does not contain a copyright notice
+
+
+module iris_interfaces {
+  module srv {
+    module StateManager_Request_Constants {
+      const string CREATE = "create";
+      const string ACTIVATE = "activate";
+      const string DEACTIVATE = "deactivate";
+      const string CLEANUP = "cleanup";
+      const string DESTROY = "destroy";
+    };
+    struct StateManager_Request {
+      string component_name;
+
+      string state;
+    };
+    module StateManager_Response_Constants {
+      const string SUCCESS = "success";
+      const string FAILED = "failed";
+    };
+    struct StateManager_Response {
+      string result;
+
+      string result_description;
+    };
+  };
+};

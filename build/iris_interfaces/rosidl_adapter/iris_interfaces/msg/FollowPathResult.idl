@@ -1,0 +1,18 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from iris_interfaces/msg/FollowPathResult.msg
+// generated code does not contain a copyright notice
+
+
+module iris_interfaces {
+  module msg {
+    module FollowPathResult_Constants {
+      const string SUCCEEDED = "SUCCEEDED";
+      const string ABORTED = "ABORTED";
+      const string CANCELLED = "CANCELLED";
+      const string NONE = "NONE";
+    };
+    struct FollowPathResult {
+      string result;
+    };
+  };
+};

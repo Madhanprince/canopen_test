@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../build/a5_control/a5_control.egg-info/PKG-INFO
+../build/a5_control/a5_control.egg-info/SOURCES.txt
+../build/a5_control/a5_control.egg-info/dependency_links.txt
+../build/a5_control/a5_control.egg-info/entry_points.txt
+../build/a5_control/a5_control.egg-info/requires.txt
+../build/a5_control/a5_control.egg-info/top_level.txt
+../build/a5_control/a5_control.egg-info/zip-safe
+a5control/__init__.py
+a5control/a5_control.py
+resource/a5_control
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

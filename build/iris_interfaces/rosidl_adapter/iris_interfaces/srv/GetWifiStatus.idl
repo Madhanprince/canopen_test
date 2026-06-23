@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from iris_interfaces/srv/GetWifiStatus.srv
+// generated code does not contain a copyright notice
+
+
+module iris_interfaces {
+  module srv {
+    struct GetWifiStatus_Request {
+      string service;
+    };
+    struct GetWifiStatus_Response {
+      string status;
+    };
+  };
+};

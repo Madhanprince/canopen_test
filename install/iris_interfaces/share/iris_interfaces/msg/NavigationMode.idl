@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from iris_interfaces/msg/NavigationMode.msg
+// generated code does not contain a copyright notice
+
+
+module iris_interfaces {
+  module msg {
+    module NavigationMode_Constants {
+      const string CLEAN = "CLEAN";
+      const string P2P = "P2P";
+      const string P2PANDCLEAN = "P2PANDCLEAN";
+    };
+    struct NavigationMode {
+      string mode;
+    };
+  };
+};

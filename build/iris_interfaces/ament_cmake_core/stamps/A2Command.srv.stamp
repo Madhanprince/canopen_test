@@ -1,0 +1,5 @@
+uint8 brush_command
+uint8 vacuum_command
+---
+uint8 brush_status
+uint8 vacuum_status

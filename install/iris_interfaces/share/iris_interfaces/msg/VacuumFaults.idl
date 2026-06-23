@@ -1,0 +1,18 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from iris_interfaces/msg/VacuumFaults.msg
+// generated code does not contain a copyright notice
+
+
+module iris_interfaces {
+  module msg {
+    struct VacuumFaults {
+      uint8 squeeze_actuator_digital_fault;
+
+      uint8 drive_brush_current_digital_fault;
+
+      uint8 overcurrent_analog_fault;
+
+      uint8 undercurrent_analog_fault;
+    };
+  };
+};

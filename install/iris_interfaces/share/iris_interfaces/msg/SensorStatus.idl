@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from iris_interfaces/msg/SensorStatus.msg
+// generated code does not contain a copyright notice
+
+
+module iris_interfaces {
+  module msg {
+    module SensorStatus_Constants {
+      const string CONNECTED = "CONNECTED";
+      const string DISCONNECTED = "DISCONNECTED";
+    };
+    struct SensorStatus {
+      string sensor_name;
+
+      string sensor_robot_position;
+
+      string sensor_status;
+
+      float sensor_temperature;
+    };
+  };
+};

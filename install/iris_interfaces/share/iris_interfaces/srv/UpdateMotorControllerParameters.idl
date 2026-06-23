@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from iris_interfaces/srv/UpdateMotorControllerParameters.srv
+// generated code does not contain a copyright notice
+
+
+module iris_interfaces {
+  module srv {
+    struct UpdateMotorControllerParameters_Request {
+      uint8 save_existing_params;
+    };
+    struct UpdateMotorControllerParameters_Response {
+      string result;
+    };
+  };
+};

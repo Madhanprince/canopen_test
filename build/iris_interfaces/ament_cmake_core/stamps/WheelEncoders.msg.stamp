@@ -1,0 +1,2 @@
+int32 left_wheel_ticks
+int32 right_wheel_ticks

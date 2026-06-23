@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from iris_interfaces/msg/A5Status.msg
+// generated code does not contain a copyright notice
+
+
+module iris_interfaces {
+  module msg {
+    @verbatim (language="comment", text=
+      "This message is not used in A5 itself. Dummy as of now")
+    struct A5Status {
+      string mode_and_status;
+    };
+  };
+};

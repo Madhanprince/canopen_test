@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from iris_interfaces/srv/ResetA2Faults.srv
+// generated code does not contain a copyright notice
+
+
+module iris_interfaces {
+  module srv {
+    struct ResetA2Faults_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct ResetA2Faults_Response {
+      string result;
+    };
+  };
+};

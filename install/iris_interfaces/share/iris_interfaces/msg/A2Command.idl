@@ -1,0 +1,12 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from iris_interfaces/msg/A2Command.msg
+// generated code does not contain a copyright notice
+
+
+module iris_interfaces {
+  module msg {
+    struct A2Command {
+      uint8 pump_flow_rate;
+    };
+  };
+};

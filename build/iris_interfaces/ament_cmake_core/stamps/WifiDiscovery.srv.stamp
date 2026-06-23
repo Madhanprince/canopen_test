@@ -1,0 +1,4 @@
+string wifidiscovery
+---
+int32 timestamp
+string discoverystatus

@@ -1,0 +1,28 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from iris_interfaces/msg/MenderClientStatus.msg
+// generated code does not contain a copyright notice
+
+
+module iris_interfaces {
+  module msg {
+    struct MenderClientStatus {
+      @default (value="NA")
+      string ota_client_state;
+
+      @default (value="NA")
+      string last_sync_with_server;
+
+      @default (value=FALSE)
+      boolean download_available;
+
+      @default (value=FALSE)
+      boolean install_available;
+
+      @default (value=FALSE)
+      boolean reboot_required;
+
+      @default (value="NA")
+      string update_status;
+    };
+  };
+};

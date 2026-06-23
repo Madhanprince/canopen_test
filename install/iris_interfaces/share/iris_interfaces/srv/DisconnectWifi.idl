@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from iris_interfaces/srv/DisconnectWifi.srv
+// generated code does not contain a copyright notice
+
+
+module iris_interfaces {
+  module srv {
+    struct DisconnectWifi_Request {
+      string ssid;
+    };
+    struct DisconnectWifi_Response {
+      string status;
+    };
+  };
+};
