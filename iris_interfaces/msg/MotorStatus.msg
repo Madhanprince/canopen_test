@@ -1,0 +1,6 @@
+string brake_state
+float32 motor_voltage
+float32 motor_current
+float32 demand_rpm
+float32 actual_rpm
+uint8 overload_percentage

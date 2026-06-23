@@ -1,0 +1,29 @@
+# goal
+
+bool generate_headband
+string frame_id
+geometry_msgs/Polygon polygon
+geometry_msgs/PoseStamped goal_pose
+bool reached_start
+
+iris_interfaces/NavigationMode mode
+iris_interfaces/HeadbandMode headband_mode
+---
+# result
+
+uint16 NONE=0
+uint16 INVALID_POLYGON_POINTS=1000
+uint16 SWATH_GENERATION_FAILED=1001
+uint16 ROUTE_GENERATION_FAILED=1002
+uint16 PATH_GENERATION_FAILED=1003
+
+iris_interfaces/NavigationMode mode
+geometry_msgs/PoseStamped start_pose
+nav_msgs/Path cleaning_path
+nav_msgs/Path edge_cleaning_path
+builtin_interfaces/Duration planning_time
+uint16 result
+float32 resolution
+float32[] velocities
+---
+# feedback

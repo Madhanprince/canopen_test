@@ -29,8 +29,37 @@ class A5Control(Node):
         self.node_logger.Warn("---CONFIGURING---")
         self.network = canopen.Network()
         self.network.connect(bustype="scoketcan",channel= self.__interface, bitrate=self.__bitrate)
+        self.remote.nmt.state = "PRE-OPERATIONAL"
         
-        return super().on_configure(state)
+        self.__encoder_publisher = self.create_publisher(
+                WheelEncoders, "wheel_encoders", 10
+            )
+        self.__ultrasonic_publisher = self.create_publisher(
+                UltrasonicRanges, "ultrasonic_ranges", 10
+            )
+        self.__water_levels_publisher = self.create_publisher(
+                WaterTankLevels, "water_tank_levels", 10
+            )
+        self.__status_publisher = self.create_publisher(
+                A5Status, "a5_control_status", 10
+            )
+        self.__led_command_subscriber = self.create_subscription(
+                LedControl, "a5_control/led_control", self.__led_control_callback, 10
+            )
+        
+    def on_active( self,state)->TransitionCallbackReturn :
+
+        self.__node_logger.warn("---ACTIVATING---")
+        self.
+        self.__encoders.add_callback(self.__a5_encoders_callback)
+        self.__ultrasonic_sensors.add_callback(
+            self.__a5_ultrasonic_sensors_callback
+        )
+        self.water_level_and_status.add_callback(
+            self.__a5_water_level_and_status_callback
+        )
+        self.__led_command.raw = LedCommand.STANDBY.value
+        
 
 def main():
     rclpy.init()

@@ -1,0 +1,23 @@
+# goal
+
+float32 resolution
+float32[] velocities
+nav_msgs/Path cleaning_point
+nav_msgs/Path edge_cleaning_point
+---
+# result
+
+uint16 NONE=0
+uint16 PATH_GENERATION_FAILED=1
+uint16 CONTROL_GENERATION_FAILED=2
+uint16 NO_CLEANING_POINT=3
+uint16 CANCELLATION_REQUESTED=4
+
+uint16 result
+---
+# feedback
+
+geometry_msgs/PoseStamped current_target_pose
+builtin_interfaces/Duration navigation_time
+builtin_interfaces/Duration estimated_time_remaining
+float32 distance_remaining

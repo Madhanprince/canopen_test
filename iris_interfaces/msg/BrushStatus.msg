@@ -1,0 +1,3 @@
+uint8 brush_motor_command
+uint8 brush_motor_status
+ActuatorStatus brush_actuator
