@@ -8,8 +8,8 @@ setup.py
 ../build/a5_control/a5_control.egg-info/requires.txt
 ../build/a5_control/a5_control.egg-info/top_level.txt
 ../build/a5_control/a5_control.egg-info/zip-safe
-a5control/__init__.py
-a5control/a5_control.py
+a5_control/__init__.py
+a5_control/a5_control.py
 resource/a5_control
 test/test_copyright.py
 test/test_flake8.py

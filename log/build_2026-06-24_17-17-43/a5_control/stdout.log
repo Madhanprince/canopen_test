@@ -1,0 +1,21 @@
+running egg_info
+writing ../build/a5_control/a5_control.egg-info/PKG-INFO
+writing dependency_links to ../build/a5_control/a5_control.egg-info/dependency_links.txt
+writing entry points to ../build/a5_control/a5_control.egg-info/entry_points.txt
+writing requirements to ../build/a5_control/a5_control.egg-info/requires.txt
+writing top-level names to ../build/a5_control/a5_control.egg-info/top_level.txt
+reading manifest file '../build/a5_control/a5_control.egg-info/SOURCES.txt'
+writing manifest file '../build/a5_control/a5_control.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/maddy/canopen_test/build/a5_control/build/lib/a5_control
+copying a5_control/__init__.py -> /home/maddy/canopen_test/build/a5_control/build/lib/a5_control
+copying a5_control/a5_control.py -> /home/maddy/canopen_test/build/a5_control/build/lib/a5_control
+running install
+running install_lib
+creating /home/maddy/canopen_test/install/a5_control/lib/python3.10/site-packages/a5_control
+copying /home/maddy/canopen_test/build/a5_control/build/lib/a5_control/__init__.py -> /home/maddy/canopen_test/install/a5_control/lib/python3.10/site-packages/a5_control
+copying /home/maddy/canopen_test/build/a5_control/build/lib/a5_control/a5_control.py -> /home/maddy/canopen_test/install/a5_control/lib/python3.10/site-packages/a5_control
+byte-compiling /home/maddy/canopen_test/install/a5_control/lib/python3.10/site-packages/a5_control/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/maddy/canopen_test/install/a5_control/lib/python3.10/site-packages/a5_control/a5_control.py to a5_control.cpython-310.pyc
+running install_data

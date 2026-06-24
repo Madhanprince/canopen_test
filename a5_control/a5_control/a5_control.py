@@ -6,6 +6,15 @@ from rclpy.lifecycle import Node
 from rclpy.lifecycle import State
 from rclpy.lifecycle import TransitionCallbackReturn
 
+from iris_interfaces.msg import WheelEncoders
+from iris_interfaces.msg import UltrasonicRanges
+from iris_interfaces.msg import WaterTankLevels
+from iris_interfaces.msg import A5Status
+from iris_interfaces.msg import LedControl
+from iris_interfaces.srv import ResetWheelEncoders
+from sensor_msgs.msg import Range
+from geometry_msgs.msg import Twist
+
 from ament_index_python.packages import get_package_share_path
 
 INTERFACE = "can0"
@@ -22,14 +31,16 @@ class A5Control(Node):
         self.network = canopen.Network()
         self.remote = canopen.RemoteNode(self.node_id,IRIS_A5_EDS_PATH)
         self.network.add_node(self.remote)
+        self.current_state :State | None = State("unconfigured",0)
         print(f"Connected to Node{self.node_id}")
     
-    def on_configure(self, state) -> TransitionCallbackReturn :
+    def on_configure(self, State) -> TransitionCallbackReturn :
         self.node_logger.Warn("---CONFIGURING---")
         self.network = canopen.Network()
         self.network.connect(bustype="scoketcan",channel= self.__interface, bitrate=self.__bitrate)
         self.remote.nmt.state = "PRE-OPERATIONAL"
         self.remote.load_configuration()
+
         # TPDO 1
         self.encoders = self.remote.tpdo[1]
         # TPDO 2
@@ -55,10 +66,10 @@ class A5Control(Node):
                 LedControl, "a5_control/led_control", self.__led_control_callback, 10
             )
         
-        self.__current_state = State("inactive",2)
+        self.current_state = State("inactive",2)
         return TransitionCallbackReturn.SUCCESS
 
-    def on_activate( self,state)->TransitionCallbackReturn :
+    def on_activate( self,State)->TransitionCallbackReturn :
 
         self.__node_logger.warn("---ACTIVATING---")
         self.remote.nmt.state="OPERATIONAL"
@@ -69,10 +80,10 @@ class A5Control(Node):
         self.water_level_and_status.add_callback(
             self.__a5_water_level_and_status_callback
         )
-        self.__current_state = State("activate",3)
+        self.current_state = State("activate",3)
         return TransitionCallbackReturn.SUCCESS
 
-    def on_deactivate(self,state)->TransitionCallbackReturn :
+    def on_deactivate(self,State)->TransitionCallbackReturn :
             
         self.__node_logger.warn("---DE-ACTIVATING---")
         self.destroy_publisher(self.__encoder_publisher)
@@ -85,10 +96,10 @@ class A5Control(Node):
         self.__a5_node.water_level_and_status.callbacks.clear()
         self.__a5_node_nmt.state = "PRE-OPERATIONAL"
 
-        self.__current_state = State("inactivate",2)
+        self.current_state = State("inactivate",2)
         return TransitionCallbackReturn.SUCCESS
 
-    def on_cleanup(self, state: State) -> TransitionCallbackReturn:
+    def on_cleanup(self, State) -> TransitionCallbackReturn:
 
         if self.network is not None :
             self.__node_logger.warn("---CLEANING UP---")
@@ -98,14 +109,12 @@ class A5Control(Node):
             self.__current_state = State("unconfigured", 0)
             return TransitionCallbackReturn.SUCCESS
         
-    def on_shutdown(self,state:State) ->TransitionCallbackReturn :
+    def on_shutdown(self,State) ->TransitionCallbackReturn :
 
         self.__node_logger.fatal("---SHUTTING DOWN---")
         self.__node_logger.fatal("Shutdown successful.")
-        self.__current_state = State("finalized", 4)
+        self.current_state = State("finalized", 4)
         return TransitionCallbackReturn.SUCCESS
-
-    # def on_error(self,)
         
     def a5_encoders_callback(self,tpdo_encoder):
 
@@ -115,9 +124,9 @@ class A5Control(Node):
 
         self.__encoder_publisher.publish(self.encoders_msg)
     
-    def a5_ultrasonic_sensors_callback(self,tpdo_ultrasonic):
+    # def a5_ultrasonic_sensors_callback(self,tpdo_ultrasonic):
 
-        self.ultrasonic_sensors_msg = 
+    #     self.ultrasonic_sensors_msg = 
 
     def a5_water_level_and_status_callback(self,tpdo_water_level_and_status):
 
@@ -131,13 +140,20 @@ class A5Control(Node):
             tpdo_water_level_and_status["ModeAndStatus"].raw
         )
         self.status_msg.publish(status_msg)
-        self.__water_levels_publisher.publish(a5_water_level_and_status_msg_msg)
     
-   
-
 def main():
     rclpy.init()
-    a5_node=A5Control(node_id = 5,INTERFACE,BITRATE)
+    a5_node = A5Control(node_id=5, interface=INTERFACE, bitrate=BITRATE)
+    try:
+        rclpy.spin(a5_node)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        try:
+            a5_node.destroy_node()
+        except Exception:
+            pass
+        rclpy.shutdown()
 
 
 if __name__ == '__main__':
