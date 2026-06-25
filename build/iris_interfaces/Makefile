@@ -405,19 +405,6 @@ iris_interfaces__py/fast:
 	$(MAKE) $(MAKESILENT) -f iris_interfaces__py/CMakeFiles/iris_interfaces__py.dir/build.make iris_interfaces__py/CMakeFiles/iris_interfaces__py.dir/build
 .PHONY : iris_interfaces__py/fast
 
-#=============================================================================
-# Target rules for targets named iris_interfaces__rs
-
-# Build rule for target.
-iris_interfaces__rs: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 iris_interfaces__rs
-.PHONY : iris_interfaces__rs
-
-# fast build rule for target.
-iris_interfaces__rs/fast:
-	$(MAKE) $(MAKESILENT) -f iris_interfaces__rs/CMakeFiles/iris_interfaces__rs.dir/build.make iris_interfaces__rs/CMakeFiles/iris_interfaces__rs.dir/build
-.PHONY : iris_interfaces__rs/fast
-
 rosidl_generator_c/iris_interfaces/action/detail/compute_path_coverage__functions.o: rosidl_generator_c/iris_interfaces/action/detail/compute_path_coverage__functions.c.o
 .PHONY : rosidl_generator_c/iris_interfaces/action/detail/compute_path_coverage__functions.o
 
@@ -7804,7 +7791,6 @@ help:
 	@echo "... iris_interfaces"
 	@echo "... iris_interfaces__cpp"
 	@echo "... iris_interfaces__py"
-	@echo "... iris_interfaces__rs"
 	@echo "... iris_interfaces_uninstall"
 	@echo "... uninstall"
 	@echo "... iris_interfaces__rosidl_generator_c"

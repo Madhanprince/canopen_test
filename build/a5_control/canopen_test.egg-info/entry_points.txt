@@ -1,3 +1,0 @@
-[console_scripts]
-a5_control = a5control.a5_control:main
-

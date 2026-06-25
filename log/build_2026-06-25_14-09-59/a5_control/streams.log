@@ -1,0 +1,40 @@
+[1.083s] Invoking command in '/home/maddy/canopen_test/a5_control': PYTHONPATH=/home/maddy/canopen_test/build/a5_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/maddy/canopen_test/install/a5_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/a5_control build --build-base /home/maddy/canopen_test/build/a5_control/build install --record /home/maddy/canopen_test/build/a5_control/install.log --single-version-externally-managed install_data
+[1.412s] running egg_info
+[1.412s] creating ../build/a5_control/a5_control.egg-info
+[1.413s] writing ../build/a5_control/a5_control.egg-info/PKG-INFO
+[1.413s] writing dependency_links to ../build/a5_control/a5_control.egg-info/dependency_links.txt
+[1.414s] writing entry points to ../build/a5_control/a5_control.egg-info/entry_points.txt
+[1.414s] writing requirements to ../build/a5_control/a5_control.egg-info/requires.txt
+[1.414s] writing top-level names to ../build/a5_control/a5_control.egg-info/top_level.txt
+[1.414s] writing manifest file '../build/a5_control/a5_control.egg-info/SOURCES.txt'
+[1.416s] reading manifest file '../build/a5_control/a5_control.egg-info/SOURCES.txt'
+[1.417s] writing manifest file '../build/a5_control/a5_control.egg-info/SOURCES.txt'
+[1.417s] running build
+[1.417s] running build_py
+[1.417s] creating /home/maddy/canopen_test/build/a5_control/build
+[1.418s] creating /home/maddy/canopen_test/build/a5_control/build/lib
+[1.418s] creating /home/maddy/canopen_test/build/a5_control/build/lib/a5_control
+[1.418s] copying a5_control/__init__.py -> /home/maddy/canopen_test/build/a5_control/build/lib/a5_control
+[1.419s] copying a5_control/a5_control.py -> /home/maddy/canopen_test/build/a5_control/build/lib/a5_control
+[1.419s] running install
+[1.419s] running install_lib
+[1.420s] creating /home/maddy/canopen_test/install/a5_control/lib/python3.10/site-packages/a5_control
+[1.420s] copying /home/maddy/canopen_test/build/a5_control/build/lib/a5_control/__init__.py -> /home/maddy/canopen_test/install/a5_control/lib/python3.10/site-packages/a5_control
+[1.420s] copying /home/maddy/canopen_test/build/a5_control/build/lib/a5_control/a5_control.py -> /home/maddy/canopen_test/install/a5_control/lib/python3.10/site-packages/a5_control
+[1.421s] byte-compiling /home/maddy/canopen_test/install/a5_control/lib/python3.10/site-packages/a5_control/__init__.py to __init__.cpython-310.pyc
+[1.421s] byte-compiling /home/maddy/canopen_test/install/a5_control/lib/python3.10/site-packages/a5_control/a5_control.py to a5_control.cpython-310.pyc
+[1.423s] running install_data
+[1.424s] creating /home/maddy/canopen_test/install/a5_control/share/ament_index
+[1.424s] creating /home/maddy/canopen_test/install/a5_control/share/ament_index/resource_index
+[1.424s] creating /home/maddy/canopen_test/install/a5_control/share/ament_index/resource_index/packages
+[1.424s] copying resource/a5_control -> /home/maddy/canopen_test/install/a5_control/share/ament_index/resource_index/packages
+[1.425s] copying package.xml -> /home/maddy/canopen_test/install/a5_control/share/a5_control
+[1.425s] creating /home/maddy/canopen_test/install/a5_control/share/a5_control/scripts
+[1.425s] copying scripts/can_init.sh -> /home/maddy/canopen_test/install/a5_control/share/a5_control/scripts
+[1.425s] creating /home/maddy/canopen_test/install/a5_control/share/a5_control/config
+[1.426s] running install_egg_info
+[1.428s] Copying ../build/a5_control/a5_control.egg-info to /home/maddy/canopen_test/install/a5_control/lib/python3.10/site-packages/a5_control-0.0.0-py3.10.egg-info
+[1.429s] running install_scripts
+[1.452s] Installing a5_control_exe script to /home/maddy/canopen_test/install/a5_control/lib/a5_control
+[1.453s] writing list of installed files to '/home/maddy/canopen_test/build/a5_control/install.log'
+[1.479s] Invoked command in '/home/maddy/canopen_test/a5_control' returned '0': PYTHONPATH=/home/maddy/canopen_test/build/a5_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/maddy/canopen_test/install/a5_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/a5_control build --build-base /home/maddy/canopen_test/build/a5_control/build install --record /home/maddy/canopen_test/build/a5_control/install.log --single-version-externally-managed install_data

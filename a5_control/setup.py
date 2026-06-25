@@ -14,7 +14,8 @@ setup(
             ['resource/' + package_name]),
         # Includes the package manifest
         ('share/' + package_name, ['package.xml']),
-        # Automatically includes your IRIS_A5.eds file from the config directory
+        (("share/" + package_name + "/scripts", ["scripts/can_init.sh"])),
+         # Automatically includes your IRIS_A5.eds file from the config directory
         (os.path.join('share', package_name, 'config'), glob(os.path.join('config', '*.eds'))),
     ],
     install_requires=['setuptools'],
