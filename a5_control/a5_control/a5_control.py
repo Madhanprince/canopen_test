@@ -66,7 +66,8 @@ class A5Control(Node):
             self.__led_command_subscriber = self.create_subscription(
                 LedControl, "a5_control/led_control", self.__led_control_callback, 10
             )
-        
+            self.ultrasonic_msg = UltrasonicRanges()
+            self.ultrasonic_setup()
             self.current_state = State("inactive",2)
             return TransitionCallbackReturn.SUCCESS
         
@@ -124,13 +125,21 @@ class A5Control(Node):
 
         self.__encoder_publisher.publish(self.encoders_msg)
     
-    def ultrasonic_setup(self,tpdo_ultrasonic):
-        self.ultrasonic_sensors_1 = tpdo_ultrasonic["Ultrasonic1"].raw 
+    def ultrasonic_setup(self):
+        for i in range(1,5):
+            self.ultrasonic = getattr(self.ultrasonic_msg ,f"ultrasonic_{i}")
+
+            self.ultrasonic.header.frame_id = f"ultrasonic_{i}"
+            self.ultrasonic.radiation_type = Range.ULTRASOUND
+            self.ultrasonic.field_of_view = 1.57
+            self.ultrasonic.min_range = 0.2 
+            self.ultrasonic.max_range = 1.5
     
     def a5_ultrasonic_sensors_callback(self):
 
-        self.ultrasonic_sensors_msg = 
-
+        for i in range(1,5):
+            self.ultrasonic = getattr(self.ultrasonic_msg ,f"ultrasonic")
+            self.ultrasonic.header.stamp 
     def a5_water_level_and_status_callback(self, tpdo_water_level_and_status):
 
         self.a5_water_level_and_status_msg = WaterTankLevels()
