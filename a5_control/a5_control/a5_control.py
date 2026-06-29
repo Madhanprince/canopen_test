@@ -76,13 +76,16 @@ class A5Control(Node):
 
     def on_activate(self, State) -> TransitionCallbackReturn :
 
-        self.__node_logger.warn("---ACTIVATING---")
-        self.remote.nmt.state = "OPERATIONAL"
-        self.encoders.add_callback(self.a5_encoders_callback)
-        self.ultrasonic_sensors.add_callback(self.a5_ultrasonic_sensors_callback)
-        self.water_level_and_status.add_callback(self.a5_water_level_and_status_callback)
-        self.current_state = State("activate",3)
-        return TransitionCallbackReturn.SUCCESS
+        try:
+            self.__node_logger.warn("---ACTIVATING---")
+            self.remote.nmt.state = "OPERATIONAL"
+            self.encoders.add_callback(self.a5_encoders_callback)
+            self.ultrasonic_sensors.add_callback(self.a5_ultrasonic_sensors_callback)
+            self.water_level_and_status.add_callback(self.a5_water_level_and_status_callback)
+            self.current_state = State("activate",3)
+            return TransitionCallbackReturn.SUCCESS
+        except Exception as e :
+            traceback.print_exception(e)
 
     def on_deactivate(self, State) -> TransitionCallbackReturn :
             
@@ -115,8 +118,11 @@ class A5Control(Node):
         self.__node_logger.fatal("---SHUTTING DOWN---")
         self.__node_logger.fatal("Shutdown successful.")
         self.current_state = State("finalized", 4)
-        return TransitionCallbackReturn.SUCCESS
+        return TransitionCallbackReturn.SUCCESS 
         
+    def on_error(self, state):
+        return super().on_error(state)
+    
     def a5_encoders_callback(self,tpdo_encoder):
 
         self.encoders_msg = WheelEncoders()
@@ -135,11 +141,13 @@ class A5Control(Node):
             self.ultrasonic.min_range = 0.2 
             self.ultrasonic.max_range = 1.5
     
-    def a5_ultrasonic_sensors_callback(self):
+    def a5_ultrasonic_sensors_callback(self,ultrasonic_rpdo):
 
         for i in range(1,5):
-            self.ultrasonic = getattr(self.ultrasonic_msg ,f"ultrasonic")
-            self.ultrasonic.header.stamp 
+            self.ultrasonic = getattr(self.ultrasonic_msg ,f"ultrasonic{i}")
+            self.ultrasonic.header.stamp = self.get_clock().now().to_msg()
+            self.ultrasonic.range = ultrasonic_rpdo[f"Ultrasonic{i}"].raw / 100.0
+
     def a5_water_level_and_status_callback(self, tpdo_water_level_and_status):
 
         self.a5_water_level_and_status_msg = WaterTankLevels()
@@ -152,6 +160,13 @@ class A5Control(Node):
             tpdo_water_level_and_status["ModeAndStatus"].raw
         )
         self.__status_publisher.publish(status_msg)
+
+    
+    def led_control_callback(self,msg):
+
+        self.led_command.raw = msg.led_command 
+        self.led_command.bits[6]= msg.left_indicator
+        self.led_command.bits[7]= msg.right_indicator
 
     def initialize_can_network(self):
         subprocess.run([CAN_UP_SCRIPT_PATH])

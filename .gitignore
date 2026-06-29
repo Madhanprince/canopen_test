@@ -1,0 +1,68 @@
+# ==============================================================================
+# ROS2 Colcon Build Directories
+# ==============================================================================
+build/
+install/
+log/
+
+# Ignore compiled artifacts inside individual package directories
+**/build/
+**/install/
+**/log/
+
+# ==============================================================================
+# Python Artifacts & Caches
+# ==============================================================================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.toast
+.buildpath
+
+# Distribution / packaging
+.egg-info/
+.eggs/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg
+
+# ==============================================================================
+# IDEs and Editors
+# ==============================================================================
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/
+*.code-workspace
+
+# JetBrains (PyCharm / CLion)
+.idea/
+
+# Editors
+*~
+*.swp
+*.swo
+.DS_Store
+
+# ==============================================================================
+# System & Logs
+# ==============================================================================
+*.log
+.pytest_cache/
+.coverage
+htmlcov/
