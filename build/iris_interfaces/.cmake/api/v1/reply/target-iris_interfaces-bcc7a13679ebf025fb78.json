@@ -22,7 +22,8 @@
 			"/opt/ros/humble/share/rosidl_generator_cpp/cmake/rosidl_generator_cpp_generate_interfaces.cmake",
 			"/opt/ros/humble/share/rosidl_typesupport_fastrtps_cpp/cmake/rosidl_typesupport_fastrtps_cpp_generate_interfaces.cmake",
 			"/opt/ros/humble/share/rosidl_typesupport_introspection_cpp/cmake/rosidl_typesupport_introspection_cpp_generate_interfaces.cmake",
-			"/opt/ros/humble/share/rosidl_typesupport_cpp/cmake/rosidl_typesupport_cpp_generate_interfaces.cmake"
+			"/opt/ros/humble/share/rosidl_typesupport_cpp/cmake/rosidl_typesupport_cpp_generate_interfaces.cmake",
+			"/opt/ros/humble/share/rosidl_generator_rs/cmake/rosidl_generator_rs_generate_interfaces.cmake"
 		],
 		"nodes" : 
 		[
@@ -174,6 +175,22 @@
 				"file" : 10,
 				"line" : 134,
 				"parent" : 26
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 48,
+				"parent" : 3
+			},
+			{
+				"file" : 11,
+				"parent" : 28
+			},
+			{
+				"command" : 2,
+				"file" : 11,
+				"line" : 135,
+				"parent" : 29
 			}
 		]
 	},
@@ -210,6 +227,10 @@
 		{
 			"backtrace" : 27,
 			"id" : "iris_interfaces__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 30,
+			"id" : "iris_interfaces__rs::@94fcabb4ff1136b5e4b3"
 		}
 	],
 	"id" : "iris_interfaces::@6890427a1f51a3e7e1df",

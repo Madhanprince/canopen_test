@@ -356,6 +356,14 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/rust_packages" TYPE FILE FILES "/home/maddy/canopen_test/build/iris_interfaces/ament_cmake_index/share/ament_index/resource_index/rust_packages/iris_interfaces")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/iris_interfaces" TYPE DIRECTORY FILES "/home/maddy/canopen_test/build/iris_interfaces/rosidl_generator_rs/iris_interfaces/rust")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/iris_interfaces/msg" TYPE FILE FILES "/home/maddy/canopen_test/build/iris_interfaces/rosidl_adapter/iris_interfaces/msg/WheelCommandSpeed.idl")
 endif()
 
@@ -1013,6 +1021,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/maddy/canopen_test/build/iris_interfaces/iris_interfaces__py/cmake_install.cmake")
+  include("/home/maddy/canopen_test/build/iris_interfaces/iris_interfaces__rs/cmake_install.cmake")
 
 endif()
 
