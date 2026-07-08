@@ -1,0 +1,5 @@
+[0.000000] (-) TimerEvent: {}
+[0.001108] (-) JobUnselected: {'identifier': 'a5_control'}
+[0.001177] (-) JobUnselected: {'identifier': 'a5_simulator'}
+[0.001210] (-) JobUnselected: {'identifier': 'iris_interfaces'}
+[0.001240] (-) EventReactorShutdown: {}

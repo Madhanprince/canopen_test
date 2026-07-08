@@ -1,0 +1,126 @@
+[0.282s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'a5_control']
+[0.282s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['a5_control'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x71c4a0924e50>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x71c4a0a528c0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x71c4a0a528c0>>)
+[0.606s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.607s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.607s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.607s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.607s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.607s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.607s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/maddy/canopen_test'
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(a5_control) by extensions ['ignore', 'ignore_ament_install']
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(a5_control) by extension 'ignore'
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(a5_control) by extension 'ignore_ament_install'
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(a5_control) by extensions ['colcon_pkg']
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(a5_control) by extension 'colcon_pkg'
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(a5_control) by extensions ['colcon_meta']
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(a5_control) by extension 'colcon_meta'
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(a5_control) by extensions ['ros']
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(a5_control) by extension 'ros'
+[21.050s] DEBUG:colcon.colcon_core.package_identification:Package 'a5_control' with type 'ros.ament_python' and name 'a5_control'
+[21.050s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[21.051s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[21.051s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[21.051s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[21.051s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[21.051s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[21.051s] Level 1:colcon.colcon_core.package_identification:_identify(iris_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[21.051s] Level 1:colcon.colcon_core.package_identification:_identify(iris_interfaces) by extension 'ignore'
+[21.052s] Level 1:colcon.colcon_core.package_identification:_identify(iris_interfaces) by extension 'ignore_ament_install'
+[21.052s] Level 1:colcon.colcon_core.package_identification:_identify(iris_interfaces) by extensions ['colcon_pkg']
+[21.052s] Level 1:colcon.colcon_core.package_identification:_identify(iris_interfaces) by extension 'colcon_pkg'
+[21.052s] Level 1:colcon.colcon_core.package_identification:_identify(iris_interfaces) by extensions ['colcon_meta']
+[21.052s] Level 1:colcon.colcon_core.package_identification:_identify(iris_interfaces) by extension 'colcon_meta'
+[21.052s] Level 1:colcon.colcon_core.package_identification:_identify(iris_interfaces) by extensions ['ros']
+[21.052s] Level 1:colcon.colcon_core.package_identification:_identify(iris_interfaces) by extension 'ros'
+[21.053s] DEBUG:colcon.colcon_core.package_identification:Package 'iris_interfaces' with type 'ros.ament_cmake' and name 'iris_interfaces'
+[21.054s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[21.054s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[21.054s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[21.054s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[21.054s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[21.054s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[21.054s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[21.054s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[21.099s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'iris_interfaces' in 'iris_interfaces'
+[21.100s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[21.100s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[21.103s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/maddy/canopen_test/install
+[21.106s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 344 installed packages in /opt/ros/humble
+[21.109s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[21.211s] Level 5:colcon.colcon_core.verb:set package 'a5_control' build argument 'cmake_args' from command line to 'None'
+[21.211s] Level 5:colcon.colcon_core.verb:set package 'a5_control' build argument 'cmake_target' from command line to 'None'
+[21.212s] Level 5:colcon.colcon_core.verb:set package 'a5_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[21.212s] Level 5:colcon.colcon_core.verb:set package 'a5_control' build argument 'cmake_clean_cache' from command line to 'False'
+[21.212s] Level 5:colcon.colcon_core.verb:set package 'a5_control' build argument 'cmake_clean_first' from command line to 'False'
+[21.212s] Level 5:colcon.colcon_core.verb:set package 'a5_control' build argument 'cmake_force_configure' from command line to 'False'
+[21.212s] Level 5:colcon.colcon_core.verb:set package 'a5_control' build argument 'ament_cmake_args' from command line to 'None'
+[21.212s] Level 5:colcon.colcon_core.verb:set package 'a5_control' build argument 'catkin_cmake_args' from command line to 'None'
+[21.212s] Level 5:colcon.colcon_core.verb:set package 'a5_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[21.212s] DEBUG:colcon.colcon_core.verb:Building package 'a5_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/maddy/canopen_test/build/a5_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/maddy/canopen_test/install/a5_control', 'merge_install': False, 'path': '/home/maddy/canopen_test/a5_control', 'symlink_install': False, 'test_result_base': None}
+[21.213s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[21.215s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[21.216s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/maddy/canopen_test/a5_control' with build type 'ament_python'
+[21.217s] Level 1:colcon.colcon_core.shell:create_environment_hook('a5_control', 'ament_prefix_path')
+[21.221s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[21.222s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maddy/canopen_test/install/a5_control/share/a5_control/hook/ament_prefix_path.ps1'
+[21.223s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maddy/canopen_test/install/a5_control/share/a5_control/hook/ament_prefix_path.dsv'
+[21.224s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maddy/canopen_test/install/a5_control/share/a5_control/hook/ament_prefix_path.sh'
+[21.226s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[21.226s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.392s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/maddy/canopen_test/a5_control'
+[1.393s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.393s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.128s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maddy/canopen_test/a5_control': PYTHONPATH=/home/maddy/canopen_test/build/a5_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/maddy/canopen_test/install/a5_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/a5_control build --build-base /home/maddy/canopen_test/build/a5_control/build install --record /home/maddy/canopen_test/build/a5_control/install.log --single-version-externally-managed install_data
+[2.577s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maddy/canopen_test/a5_control' returned '0': PYTHONPATH=/home/maddy/canopen_test/build/a5_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/maddy/canopen_test/install/a5_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/a5_control build --build-base /home/maddy/canopen_test/build/a5_control/build install --record /home/maddy/canopen_test/build/a5_control/install.log --single-version-externally-managed install_data
+[2.580s] Level 1:colcon.colcon_core.environment:checking '/home/maddy/canopen_test/install/a5_control' for CMake module files
+[2.580s] Level 1:colcon.colcon_core.environment:checking '/home/maddy/canopen_test/install/a5_control' for CMake config files
+[2.581s] Level 1:colcon.colcon_core.environment:checking '/home/maddy/canopen_test/install/a5_control/lib'
+[2.581s] Level 1:colcon.colcon_core.environment:checking '/home/maddy/canopen_test/install/a5_control/bin'
+[2.582s] Level 1:colcon.colcon_core.environment:checking '/home/maddy/canopen_test/install/a5_control/lib/pkgconfig/a5_control.pc'
+[2.582s] Level 1:colcon.colcon_core.environment:checking '/home/maddy/canopen_test/install/a5_control/lib/python3.10/site-packages'
+[2.582s] Level 1:colcon.colcon_core.shell:create_environment_hook('a5_control', 'pythonpath')
+[2.582s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maddy/canopen_test/install/a5_control/share/a5_control/hook/pythonpath.ps1'
+[2.583s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maddy/canopen_test/install/a5_control/share/a5_control/hook/pythonpath.dsv'
+[2.584s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maddy/canopen_test/install/a5_control/share/a5_control/hook/pythonpath.sh'
+[2.585s] Level 1:colcon.colcon_core.environment:checking '/home/maddy/canopen_test/install/a5_control/bin'
+[2.585s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(a5_control)
+[2.585s] INFO:colcon.colcon_core.shell:Creating package script '/home/maddy/canopen_test/install/a5_control/share/a5_control/package.ps1'
+[2.586s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/maddy/canopen_test/install/a5_control/share/a5_control/package.dsv'
+[2.587s] INFO:colcon.colcon_core.shell:Creating package script '/home/maddy/canopen_test/install/a5_control/share/a5_control/package.sh'
+[2.588s] INFO:colcon.colcon_core.shell:Creating package script '/home/maddy/canopen_test/install/a5_control/share/a5_control/package.bash'
+[2.589s] INFO:colcon.colcon_core.shell:Creating package script '/home/maddy/canopen_test/install/a5_control/share/a5_control/package.zsh'
+[2.590s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/maddy/canopen_test/install/a5_control/share/colcon-core/packages/a5_control)
+[2.590s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.591s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.591s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.591s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.660s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[2.661s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.661s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.661s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.661s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.FileNotFound: Failed to connect to socket /run/user/1000/bus: No such file or directory
+[2.661s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.662s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/maddy/canopen_test/install/local_setup.ps1'
+[2.663s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/maddy/canopen_test/install/_local_setup_util_ps1.py'
+[2.665s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/maddy/canopen_test/install/setup.ps1'
+[2.666s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/maddy/canopen_test/install/local_setup.sh'
+[2.667s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/maddy/canopen_test/install/_local_setup_util_sh.py'
+[2.668s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/maddy/canopen_test/install/setup.sh'
+[2.670s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/maddy/canopen_test/install/local_setup.bash'
+[2.670s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/maddy/canopen_test/install/setup.bash'
+[2.672s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/maddy/canopen_test/install/local_setup.zsh'
+[2.673s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/maddy/canopen_test/install/setup.zsh'

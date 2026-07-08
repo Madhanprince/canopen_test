@@ -1,0 +1,3 @@
+[console_scripts]
+a5_simulator_node = a5_simulator.a5_simulator_node:main
+
