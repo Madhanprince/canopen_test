@@ -24,6 +24,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
+            "motor_control_node = motor_control.iris_motor_control:main"
         ],
     },
 )

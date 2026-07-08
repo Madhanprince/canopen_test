@@ -5,16 +5,16 @@ CAN_UP_SCRIPT_PATH = (
     "motor_control/scripts/can_up.sh"
 )
 #: Constant used to define the network interface to be used by the network module.
-INTERFACE = "can0"
+
+ITALSEA_DUAL_DRIVE_EDS_PATH = "/home/maddy/canopen_test/motor_control/eds/ItalseaDualBLDCMotorController.eds"
 
 #: Constant used to define the bitrate in which the motor control lifecycle node should
 #: initiate communication to the CAN network.
 BITRATE = 500000
 
 class ItalseaDualDrive:
-    def __init__(self, node_id):
-        self.node_id = node_id
-        self.dual_drive=canopen.BaseNode402(node_id, 'motor_control/italsea_dual_drive.eds')
+    def __init__(self, node_id, path_to_eds=ITALSEA_DUAL_DRIVE_EDS_PATH):
+        self.dual_drive=canopen.BaseNode402(node_id, path_to_eds)
         self.__logger = get_logger('italsea_dual_drive')
         self.alarm_list = {
             "A0": "No alarm",
@@ -60,11 +60,19 @@ class ItalseaDualDrive:
         self.left_motor_current = self.dual_drive.tpdo[1]["CurrentActualValue-Axis0"]
         self.right_motor_current = self.dual_drive.tpdo[1]["CurrentActualValue-Axis1"]
 
-        self.velocity_demand_axis_0=self.dual_drive.tpdo[2]["Velocity mode velocity demand Axis 0"]
-        self.velocity_actual_axis_0=self.dual_drive.tpdo[2]["Velocity mode velocity actual value Axis 0"]
-        self.velocity_demand_axis_1=self.dual_drive.tpdo[2]["Velocity mode velocity demand-Axis1"]
-        self.velocity_actual_axis_1=self.dual_drive.tpdo[2]["Velocity mode velocity actual value-Axis 1"]
-
+        self.left_wheel_rpm_demand = self.dual_drive.tpdo[2][
+            "VelocityModeVelocityDemand-Axis0"
+        ]
+        self.left_wheel_rpm_actual = self.dual_drive.tpdo[2][
+            "VelocityModeVelocityActualValue-Axis0"
+        ]
+        self.right_wheel_rpm_demand = self.dual_drive.tpdo[2][
+            "VelocityModeVelocityDemand-Axis1"
+        ]
+        self.right_wheel_rpm_actual = self.dual_drive.tpdo[2][
+            "VelocityModeVelocityActualValue-Axis1"
+        ]
+        
          # TPDO-3
         self.software_version = self.dual_drive.tpdo[3]["SoftwareVersion"]
         self.board_temperature = self.dual_drive.tpdo[3][

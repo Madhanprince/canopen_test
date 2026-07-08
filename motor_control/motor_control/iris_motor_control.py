@@ -3,7 +3,6 @@ from urllib import response
 import canopen
 import traceback
 import subprocess
-import Exception
 
 import rclpy
 from typing import Optional
@@ -11,9 +10,9 @@ from can.exceptions import CanOperationError
 from canopen.sdo.exceptions import SdoCommunicationError
 from canopen.nmt import NmtError
 
-from ament_index_python.packages import get_package_share_path
+from ament_index_python.packages import get_package_share_path 
 
-from rclpy.executors import MultiThreadedExecutor
+from rclpy.executors import MultiThreadedExecutor 
 from rclpy.timer import Timer
 from rclpy.lifecycle import Node
 from rclpy.lifecycle import State
@@ -29,14 +28,18 @@ from iris_interfaces.srv import UpdateMotorControllerReferenceSource
 from motor_control.italsea_dual_drive import ItalseaDualDrive
 
 
+
+
 #: Constant used to define the network interface to be used by the network module.
-INTERFACE = "can0"
+INTERFACE = "vcan0"
 
 #: Constant used to define the bitrate in which the motor control lifecycle node should
 #: initiate communication to the CAN network.
 BITRATE = 500000
 
 NODE_ID = 1
+
+CAN_UP_SCRIPT_PATH = "/home/maddy/canopen_test/motor_control/scripts/can_init.sh"
 
 
 class MotorControl(Node):
@@ -45,23 +48,23 @@ class MotorControl(Node):
         self.interface = interface
         self.bitrate = bitrate
         self.node_id = node_id
+        self.__node_logger = self.get_logger()
         self.routine_callback_group = ReentrantCallbackGroup()
         self.motor_control_callback_group = MutuallyExclusiveCallbackGroup()
         self.network: Optional[canopen.Network] = None
         self.current_state: State | None = State("unconfigured",0)
-        self.update_parameters_srv= self.create_service(UpdateMotorControllerParameters, 
-                'update_motor_controller_parameters', 
-                self.update_motor_controller_parameters_callback, 
-                callback_group=self.motor_control_callback_group)
+        # self.update_parameters_srv= self.create_service(UpdateMotorControllerParameters, 
+        #         'update_motor_controller_parameters', 
+        #         self.update_motor_controller_parameters_callback, 
+        #         callback_group=self.motor_control_callback_group)
         self.reset_controller_srv= self.create_service(RestartMotorController, 
                 'restart_motor_controller', 
-                self.restart_motor_controller_callback, 
-                callback_group=self.motor_control_callback_group)
+                self.restart_motor_controller_callback)
         self.update_reference_source_srv= self.create_service(UpdateMotorControllerReferenceSource, 
                 'update_motor_controller_reference_source', 
-                self.update_motor_controller_reference_source_callback, 
-                callback_group=self.motor_control_callback_group)   
-        
+                self.update_motor_controller_reference_source_callback)   
+        rclpy.logging.get_logger("motor_control")
+
 
     def on_configure(self, state: State) -> TransitionCallbackReturn:
         try:
@@ -70,11 +73,10 @@ class MotorControl(Node):
             self.network.connect(bustype='socketcan', channel=self.interface, bitrate=self.bitrate)
             self.__motor_node= ItalseaDualDrive(self.node_id)
             self.network.add_node(self.__motor_node.dual_drive)
-            self.__motor_node_nmt = self.__motor_node.dual_drive.nmt
             self.__motor_node_emcy = self.__motor_node.dual_drive.emcy
-            self.__motor_node.add_callback(self.__emcy_callback)
+            self.__motor_node_emcy.add_callback(self.__emcy_callback)
             self.__motor_node.dual_drive.nmt.state = 'PRE-OPERATIONAL'
-
+            self.__motor_node.dual_drive.sdo.RESPONSE_TIMEOUT = 1.0
             self.__motor_node.init_pdos()
             self.__motor_node.init_sdos()
 
@@ -123,7 +125,7 @@ class MotorControl(Node):
             self.current_state = State("inactive", 1)
             return TransitionCallbackReturn.SUCCESS
         except Exception as e:
-            traceback.print_exc(e)
+            traceback.print_exception(e)
             return self.on_error(e)
 
     def on_activate(self, state: State) -> TransitionCallbackReturn:
@@ -376,6 +378,17 @@ class MotorControl(Node):
             )
             self.__node_logger.warn(response.response)
             return response
+        
+    def __initialize_can_network(self):
+        subprocess.run([CAN_UP_SCRIPT_PATH])
+        if INTERFACE in os.listdir("/sys/class/net/"):
+            self.__node_logger.info("Network UP - {}.".format(INTERFACE))
+            # The below code is inconsistent with the Lifecycle design and C++ API
+            # return TransitionCallbackReturn.SUCCESS -> Unconfigured but sets to Inactive state
+            return TransitionCallbackReturn.FAILURE
+        else:
+            self.__node_logger.fatal("Could not setup network - {}.".format(INTERFACE))
+            return TransitionCallbackReturn.ERROR
     
 def main():
     rclpy.init()
