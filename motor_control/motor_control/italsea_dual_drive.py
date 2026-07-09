@@ -1,16 +1,7 @@
 import canopen
 from rclpy.logging import get_logger
 
-CAN_UP_SCRIPT_PATH = (
-    "motor_control/scripts/can_up.sh"
-)
-#: Constant used to define the network interface to be used by the network module.
-
 ITALSEA_DUAL_DRIVE_EDS_PATH = "/home/maddy/canopen_test/motor_control/eds/ItalseaDualBLDCMotorController.eds"
-
-#: Constant used to define the bitrate in which the motor control lifecycle node should
-#: initiate communication to the CAN network.
-BITRATE = 500000
 
 class ItalseaDualDrive:
     def __init__(self, node_id, path_to_eds=ITALSEA_DUAL_DRIVE_EDS_PATH):
@@ -155,10 +146,17 @@ class ItalseaDualDrive:
 
         self.dual_drive.store(1)
         self.__logger.info("Reference source updated successfully.")
-        self.restart_node("Restarting to set new reference source.")
+        self.reset_dual_drive("Restarting to set new reference source.")
 
-    def reset_dual_drive(self,reset_reason):
-
+    def reset_dual_drive(self,restart_reason):
+        self.__logger.info("Restart reason: {}".format(restart_reason))
         self.dual_drive.nmt.state = "RESET"
         self.dual_drive.wait_for_bootup(10)
         self.__logger.info("Software reboot completed.")
+
+    def reset_alarm_warning(self):
+        cmd = self.dual_drive.sdo["Commands 1...8"]["ActualValue"]
+
+        cmd.bits[0].raw = 0
+        cmd.bits[0].raw = 1   
+        cmd.bits[0].raw = 0   

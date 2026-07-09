@@ -25,10 +25,8 @@ from iris_interfaces.msg import MotorControllerStatus
 from iris_interfaces.srv import UpdateMotorControllerParameters
 from iris_interfaces.srv import RestartMotorController
 from iris_interfaces.srv import UpdateMotorControllerReferenceSource
+from iris_interfaces.srv import AlarmReset
 from motor_control.italsea_dual_drive import ItalseaDualDrive
-
-
-
 
 #: Constant used to define the network interface to be used by the network module.
 INTERFACE = "vcan0"
@@ -62,8 +60,11 @@ class MotorControl(Node):
                 self.restart_motor_controller_callback)
         self.update_reference_source_srv= self.create_service(UpdateMotorControllerReferenceSource, 
                 'update_motor_controller_reference_source', 
-                self.update_motor_controller_reference_source_callback)   
+                self.update_motor_controller_reference_source_callback) 
+        self.alarm_reset_srv_self.create_service(AlarmReset,
+                "reset_alarm",self.reset_alarm)  
         rclpy.logging.get_logger("motor_control")
+
 
 
     def on_configure(self, state: State) -> TransitionCallbackReturn:
@@ -75,6 +76,7 @@ class MotorControl(Node):
             self.network.add_node(self.__motor_node.dual_drive)
             self.__motor_node_emcy = self.__motor_node.dual_drive.emcy
             self.__motor_node_emcy.add_callback(self.__emcy_callback)
+            self.__motor_node_nmt = self.__motor_node.dual_drive.nmt
             self.__motor_node.dual_drive.nmt.state = 'PRE-OPERATIONAL'
             self.__motor_node.dual_drive.sdo.RESPONSE_TIMEOUT = 1.0
             self.__motor_node.init_pdos()
@@ -147,7 +149,7 @@ class MotorControl(Node):
                 )
             )
             self.__motor_node.dual_drive.rpdo[1].start(0.04)
-            self.current_state = State("active", 2)
+            self.current_state = State("active", 3)
             return TransitionCallbackReturn.SUCCESS
         
         except Exception as e:
@@ -169,7 +171,7 @@ class MotorControl(Node):
                 )
             )
             self.__motor_node.dual_drive.rpdo[1].stop()
-            self.current_state = State("inactive", 1)
+            self.current_state = State("inactive", 2)
             return TransitionCallbackReturn.SUCCESS
         except Exception as e:  
             traceback.print_exc(e)
@@ -193,7 +195,7 @@ class MotorControl(Node):
         try:
             self.__node_logger.warn("---SHUTTING DOWN---")
             self.__node_logger.warn("Shutdown successful")
-            self.__current_state = State("finalized", 3)
+            self.__current_state = State("finalized", 4)
             return TransitionCallbackReturn.SUCCESS
         except Exception as e:
             traceback.print_exception(e)
@@ -373,7 +375,20 @@ class MotorControl(Node):
                 response.response = "Failed to update reference source."
                 return response
         else:
-            response.response = "Current state is not inactive, cannot update reference source.{}".format(
+            response.response = "Current state is not inactive, cannot update reference source in this state.{}".format(
+                self.current_state.label
+            )
+            self.__node_logger.warn(response.response)
+            return response
+        
+    def reset_alarm(self,request,response):
+
+        if self.current_state.label == "inactive":
+            self.__motor_node.reset_alarm_warning(request.reset_alarm)
+            response.respones ='Alarm reseted successfully'
+            return response
+        else:
+            response.response = "Current state is not inactive, cannot update reference source in this state.{}".format(
                 self.current_state.label
             )
             self.__node_logger.warn(response.response)
