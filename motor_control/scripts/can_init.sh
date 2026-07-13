@@ -26,10 +26,10 @@ sudo modprobe -r mttcan
 sudo modprobe can
 sudo modprobe can_raw
 sudo modprobe mttcan 
-interface=can0
+interface=can0 
 if [ $# -gt 0 ]; then
     interface=$1
 fi
 
-sudo ip link set $interface type can bitrate 500000 sjw 4
+sudo ip link set $interface type can bitrate 500000 sjw 4 
 sudo ifconfig $interface up
