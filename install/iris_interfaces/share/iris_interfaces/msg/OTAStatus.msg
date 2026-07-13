@@ -1,2 +1,1 @@
-SystemSoftwareStatus system_software_info
-MenderClientStatus mender_client_status
+/home/maddy/canopen_test/iris_interfaces/msg/OTAStatus.msg

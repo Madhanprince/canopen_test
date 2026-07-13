@@ -110,6 +110,7 @@ rosidl_typesupport_cpp/iris_interfaces/msg/wheel_command_speed__type_support.cpp
 rosidl_typesupport_cpp/iris_interfaces/msg/wheel_command_speed__type_support.cpp: rosidl_adapter/iris_interfaces/srv/UpdateMotorControllerReferenceSource.idl
 rosidl_typesupport_cpp/iris_interfaces/msg/wheel_command_speed__type_support.cpp: rosidl_adapter/iris_interfaces/srv/A2Command.idl
 rosidl_typesupport_cpp/iris_interfaces/msg/wheel_command_speed__type_support.cpp: rosidl_adapter/iris_interfaces/srv/ResetA2Faults.idl
+rosidl_typesupport_cpp/iris_interfaces/msg/wheel_command_speed__type_support.cpp: rosidl_adapter/iris_interfaces/srv/AlarmReset.idl
 rosidl_typesupport_cpp/iris_interfaces/msg/wheel_command_speed__type_support.cpp: rosidl_adapter/iris_interfaces/action/ComputePathCoverage.idl
 rosidl_typesupport_cpp/iris_interfaces/msg/wheel_command_speed__type_support.cpp: rosidl_adapter/iris_interfaces/action/NavigatePathCoverage.idl
 rosidl_typesupport_cpp/iris_interfaces/msg/wheel_command_speed__type_support.cpp: rosidl_adapter/iris_interfaces/action/PathCoverageController.idl
@@ -324,6 +325,9 @@ rosidl_typesupport_cpp/iris_interfaces/srv/a2_command__type_support.cpp: rosidl_
 
 rosidl_typesupport_cpp/iris_interfaces/srv/reset_a2_faults__type_support.cpp: rosidl_typesupport_cpp/iris_interfaces/msg/wheel_command_speed__type_support.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_cpp/iris_interfaces/srv/reset_a2_faults__type_support.cpp
+
+rosidl_typesupport_cpp/iris_interfaces/srv/alarm_reset__type_support.cpp: rosidl_typesupport_cpp/iris_interfaces/msg/wheel_command_speed__type_support.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_cpp/iris_interfaces/srv/alarm_reset__type_support.cpp
 
 rosidl_typesupport_cpp/iris_interfaces/action/compute_path_coverage__type_support.cpp: rosidl_typesupport_cpp/iris_interfaces/msg/wheel_command_speed__type_support.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_cpp/iris_interfaces/action/compute_path_coverage__type_support.cpp
@@ -824,10 +828,24 @@ CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ir
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/srv/reset_a2_faults__type_support.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maddy/canopen_test/build/iris_interfaces/rosidl_typesupport_cpp/iris_interfaces/srv/reset_a2_faults__type_support.cpp -o CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/srv/reset_a2_faults__type_support.cpp.s
 
+CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/srv/alarm_reset__type_support.cpp.o: CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/flags.make
+CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/srv/alarm_reset__type_support.cpp.o: rosidl_typesupport_cpp/iris_interfaces/srv/alarm_reset__type_support.cpp
+CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/srv/alarm_reset__type_support.cpp.o: CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maddy/canopen_test/build/iris_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/srv/alarm_reset__type_support.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/srv/alarm_reset__type_support.cpp.o -MF CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/srv/alarm_reset__type_support.cpp.o.d -o CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/srv/alarm_reset__type_support.cpp.o -c /home/maddy/canopen_test/build/iris_interfaces/rosidl_typesupport_cpp/iris_interfaces/srv/alarm_reset__type_support.cpp
+
+CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/srv/alarm_reset__type_support.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/srv/alarm_reset__type_support.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maddy/canopen_test/build/iris_interfaces/rosidl_typesupport_cpp/iris_interfaces/srv/alarm_reset__type_support.cpp > CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/srv/alarm_reset__type_support.cpp.i
+
+CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/srv/alarm_reset__type_support.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/srv/alarm_reset__type_support.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maddy/canopen_test/build/iris_interfaces/rosidl_typesupport_cpp/iris_interfaces/srv/alarm_reset__type_support.cpp -o CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/srv/alarm_reset__type_support.cpp.s
+
 CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/action/compute_path_coverage__type_support.cpp.o: CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/flags.make
 CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/action/compute_path_coverage__type_support.cpp.o: rosidl_typesupport_cpp/iris_interfaces/action/compute_path_coverage__type_support.cpp
 CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/action/compute_path_coverage__type_support.cpp.o: CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maddy/canopen_test/build/iris_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/action/compute_path_coverage__type_support.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maddy/canopen_test/build/iris_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/action/compute_path_coverage__type_support.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/action/compute_path_coverage__type_support.cpp.o -MF CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/action/compute_path_coverage__type_support.cpp.o.d -o CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/action/compute_path_coverage__type_support.cpp.o -c /home/maddy/canopen_test/build/iris_interfaces/rosidl_typesupport_cpp/iris_interfaces/action/compute_path_coverage__type_support.cpp
 
 CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/action/compute_path_coverage__type_support.cpp.i: cmake_force
@@ -841,7 +859,7 @@ CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ir
 CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/action/navigate_path_coverage__type_support.cpp.o: CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/flags.make
 CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/action/navigate_path_coverage__type_support.cpp.o: rosidl_typesupport_cpp/iris_interfaces/action/navigate_path_coverage__type_support.cpp
 CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/action/navigate_path_coverage__type_support.cpp.o: CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maddy/canopen_test/build/iris_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/action/navigate_path_coverage__type_support.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maddy/canopen_test/build/iris_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/action/navigate_path_coverage__type_support.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/action/navigate_path_coverage__type_support.cpp.o -MF CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/action/navigate_path_coverage__type_support.cpp.o.d -o CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/action/navigate_path_coverage__type_support.cpp.o -c /home/maddy/canopen_test/build/iris_interfaces/rosidl_typesupport_cpp/iris_interfaces/action/navigate_path_coverage__type_support.cpp
 
 CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/action/navigate_path_coverage__type_support.cpp.i: cmake_force
@@ -855,7 +873,7 @@ CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ir
 CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/action/path_coverage_controller__type_support.cpp.o: CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/flags.make
 CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/action/path_coverage_controller__type_support.cpp.o: rosidl_typesupport_cpp/iris_interfaces/action/path_coverage_controller__type_support.cpp
 CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/action/path_coverage_controller__type_support.cpp.o: CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maddy/canopen_test/build/iris_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/action/path_coverage_controller__type_support.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maddy/canopen_test/build/iris_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/action/path_coverage_controller__type_support.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/action/path_coverage_controller__type_support.cpp.o -MF CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/action/path_coverage_controller__type_support.cpp.o.d -o CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/action/path_coverage_controller__type_support.cpp.o -c /home/maddy/canopen_test/build/iris_interfaces/rosidl_typesupport_cpp/iris_interfaces/action/path_coverage_controller__type_support.cpp
 
 CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/action/path_coverage_controller__type_support.cpp.i: cmake_force
@@ -903,6 +921,7 @@ iris_interfaces__rosidl_typesupport_cpp_OBJECTS = \
 "CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/srv/update_motor_controller_reference_source__type_support.cpp.o" \
 "CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/srv/a2_command__type_support.cpp.o" \
 "CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/srv/reset_a2_faults__type_support.cpp.o" \
+"CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/srv/alarm_reset__type_support.cpp.o" \
 "CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/action/compute_path_coverage__type_support.cpp.o" \
 "CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/action/navigate_path_coverage__type_support.cpp.o" \
 "CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/action/path_coverage_controller__type_support.cpp.o"
@@ -945,6 +964,7 @@ libiris_interfaces__rosidl_typesupport_cpp.so: CMakeFiles/iris_interfaces__rosid
 libiris_interfaces__rosidl_typesupport_cpp.so: CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/srv/update_motor_controller_reference_source__type_support.cpp.o
 libiris_interfaces__rosidl_typesupport_cpp.so: CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/srv/a2_command__type_support.cpp.o
 libiris_interfaces__rosidl_typesupport_cpp.so: CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/srv/reset_a2_faults__type_support.cpp.o
+libiris_interfaces__rosidl_typesupport_cpp.so: CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/srv/alarm_reset__type_support.cpp.o
 libiris_interfaces__rosidl_typesupport_cpp.so: CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/action/compute_path_coverage__type_support.cpp.o
 libiris_interfaces__rosidl_typesupport_cpp.so: CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/action/navigate_path_coverage__type_support.cpp.o
 libiris_interfaces__rosidl_typesupport_cpp.so: CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iris_interfaces/action/path_coverage_controller__type_support.cpp.o
@@ -961,7 +981,7 @@ libiris_interfaces__rosidl_typesupport_cpp.so: /opt/ros/humble/lib/librosidl_typ
 libiris_interfaces__rosidl_typesupport_cpp.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libiris_interfaces__rosidl_typesupport_cpp.so: /opt/ros/humble/lib/librcutils.so
 libiris_interfaces__rosidl_typesupport_cpp.so: CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/maddy/canopen_test/build/iris_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Linking CXX shared library libiris_interfaces__rosidl_typesupport_cpp.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/maddy/canopen_test/build/iris_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Linking CXX shared library libiris_interfaces__rosidl_typesupport_cpp.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -999,6 +1019,7 @@ CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/depend: rosidl_typesuppor
 CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/depend: rosidl_typesupport_cpp/iris_interfaces/msg/wheel_command_speed__type_support.cpp
 CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/depend: rosidl_typesupport_cpp/iris_interfaces/msg/wheel_encoders__type_support.cpp
 CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/depend: rosidl_typesupport_cpp/iris_interfaces/srv/a2_command__type_support.cpp
+CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/depend: rosidl_typesupport_cpp/iris_interfaces/srv/alarm_reset__type_support.cpp
 CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/depend: rosidl_typesupport_cpp/iris_interfaces/srv/connect_wifi__type_support.cpp
 CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/depend: rosidl_typesupport_cpp/iris_interfaces/srv/disconnect_wifi__type_support.cpp
 CMakeFiles/iris_interfaces__rosidl_typesupport_cpp.dir/depend: rosidl_typesupport_cpp/iris_interfaces/srv/get_wifi_status__type_support.cpp

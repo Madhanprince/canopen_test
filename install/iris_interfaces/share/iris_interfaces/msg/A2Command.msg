@@ -1,1 +1,1 @@
-uint8 pump_flow_rate
+/home/maddy/canopen_test/iris_interfaces/msg/A2Command.msg

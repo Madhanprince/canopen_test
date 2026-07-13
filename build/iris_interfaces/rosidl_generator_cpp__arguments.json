@@ -38,6 +38,7 @@
     "/home/maddy/canopen_test/build/iris_interfaces/rosidl_adapter/iris_interfaces:srv/UpdateMotorControllerReferenceSource.idl",
     "/home/maddy/canopen_test/build/iris_interfaces/rosidl_adapter/iris_interfaces:srv/A2Command.idl",
     "/home/maddy/canopen_test/build/iris_interfaces/rosidl_adapter/iris_interfaces:srv/ResetA2Faults.idl",
+    "/home/maddy/canopen_test/build/iris_interfaces/rosidl_adapter/iris_interfaces:srv/AlarmReset.idl",
     "/home/maddy/canopen_test/build/iris_interfaces/rosidl_adapter/iris_interfaces:action/ComputePathCoverage.idl",
     "/home/maddy/canopen_test/build/iris_interfaces/rosidl_adapter/iris_interfaces:action/NavigatePathCoverage.idl",
     "/home/maddy/canopen_test/build/iris_interfaces/rosidl_adapter/iris_interfaces:action/PathCoverageController.idl"
@@ -202,6 +203,7 @@
     "/home/maddy/canopen_test/build/iris_interfaces/rosidl_adapter/iris_interfaces/srv/UpdateMotorControllerReferenceSource.idl",
     "/home/maddy/canopen_test/build/iris_interfaces/rosidl_adapter/iris_interfaces/srv/A2Command.idl",
     "/home/maddy/canopen_test/build/iris_interfaces/rosidl_adapter/iris_interfaces/srv/ResetA2Faults.idl",
+    "/home/maddy/canopen_test/build/iris_interfaces/rosidl_adapter/iris_interfaces/srv/AlarmReset.idl",
     "/home/maddy/canopen_test/build/iris_interfaces/rosidl_adapter/iris_interfaces/action/ComputePathCoverage.idl",
     "/home/maddy/canopen_test/build/iris_interfaces/rosidl_adapter/iris_interfaces/action/NavigatePathCoverage.idl",
     "/home/maddy/canopen_test/build/iris_interfaces/rosidl_adapter/iris_interfaces/action/PathCoverageController.idl",

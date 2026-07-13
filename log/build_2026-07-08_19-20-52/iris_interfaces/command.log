@@ -1,4 +1,0 @@
-Invoking command in '/home/maddy/canopen_test/build/iris_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/maddy/canopen_test/build/iris_interfaces -- -j16 -l16
-Invoked command in '/home/maddy/canopen_test/build/iris_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/maddy/canopen_test/build/iris_interfaces -- -j16 -l16
-Invoking command in '/home/maddy/canopen_test/build/iris_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/maddy/canopen_test/build/iris_interfaces
-Invoked command in '/home/maddy/canopen_test/build/iris_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/maddy/canopen_test/build/iris_interfaces

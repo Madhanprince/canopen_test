@@ -1,0 +1,5 @@
+[0.000000] (-) TimerEvent: {}
+[0.000213] (-) JobUnselected: {'identifier': 'a5_control'}
+[0.000242] (-) JobUnselected: {'identifier': 'iris_interfaces'}
+[0.000263] (-) JobUnselected: {'identifier': 'motor_control'}
+[0.000282] (-) EventReactorShutdown: {}

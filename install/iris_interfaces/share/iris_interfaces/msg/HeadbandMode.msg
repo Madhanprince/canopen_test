@@ -1,1 +1,1 @@
-float32 width
+/home/maddy/canopen_test/iris_interfaces/msg/HeadbandMode.msg

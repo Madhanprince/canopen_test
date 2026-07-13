@@ -1,3 +1,1 @@
-
-int32 timestamp
-string discoverystatus
+/home/maddy/canopen_test/build/iris_interfaces/rosidl_cmake/srv/WifiDiscovery_Response.msg

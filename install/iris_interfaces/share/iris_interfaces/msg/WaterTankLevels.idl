@@ -1,14 +1,1 @@
-// generated from rosidl_adapter/resource/msg.idl.em
-// with input from iris_interfaces/msg/WaterTankLevels.msg
-// generated code does not contain a copyright notice
-
-
-module iris_interfaces {
-  module msg {
-    struct WaterTankLevels {
-      uint8 fresh_water_tank_level;
-
-      uint8 dirty_water_tank_level;
-    };
-  };
-};
+/home/maddy/canopen_test/build/iris_interfaces/rosidl_adapter/iris_interfaces/msg/WaterTankLevels.idl

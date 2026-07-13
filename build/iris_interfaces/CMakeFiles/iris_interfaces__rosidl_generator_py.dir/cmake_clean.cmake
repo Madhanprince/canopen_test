@@ -53,6 +53,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/msg/_wheel_encoders_s.c.o.d"
   "CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/srv/_a2_command_s.c.o"
   "CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/srv/_a2_command_s.c.o.d"
+  "CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/srv/_alarm_reset_s.c.o"
+  "CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/srv/_alarm_reset_s.c.o.d"
   "CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/srv/_connect_wifi_s.c.o"
   "CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/srv/_connect_wifi_s.c.o.d"
   "CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/srv/_disconnect_wifi_s.c.o"

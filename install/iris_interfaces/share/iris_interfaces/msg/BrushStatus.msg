@@ -1,3 +1,1 @@
-uint8 brush_motor_command
-uint8 brush_motor_status
-ActuatorStatus brush_actuator
+/home/maddy/canopen_test/iris_interfaces/msg/BrushStatus.msg

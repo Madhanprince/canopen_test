@@ -1,6 +1,1 @@
-string SUCCEEDED="SUCCEEDED"
-string ABORTED="ABORTED"
-string CANCELLED="CANCELLED"
-string NONE="NONE"
-
-string result
+/home/maddy/canopen_test/iris_interfaces/msg/FollowPathResult.msg

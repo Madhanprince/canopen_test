@@ -125,6 +125,9 @@ CMakeFiles/iris_interfaces: rosidl_cmake/srv/A2Command_Response.msg
 CMakeFiles/iris_interfaces: /home/maddy/canopen_test/iris_interfaces/srv/ResetA2Faults.srv
 CMakeFiles/iris_interfaces: rosidl_cmake/srv/ResetA2Faults_Request.msg
 CMakeFiles/iris_interfaces: rosidl_cmake/srv/ResetA2Faults_Response.msg
+CMakeFiles/iris_interfaces: /home/maddy/canopen_test/iris_interfaces/srv/AlarmReset.srv
+CMakeFiles/iris_interfaces: rosidl_cmake/srv/AlarmReset_Request.msg
+CMakeFiles/iris_interfaces: rosidl_cmake/srv/AlarmReset_Response.msg
 CMakeFiles/iris_interfaces: /home/maddy/canopen_test/iris_interfaces/action/ComputePathCoverage.action
 CMakeFiles/iris_interfaces: /home/maddy/canopen_test/iris_interfaces/action/NavigatePathCoverage.action
 CMakeFiles/iris_interfaces: /home/maddy/canopen_test/iris_interfaces/action/PathCoverageController.action

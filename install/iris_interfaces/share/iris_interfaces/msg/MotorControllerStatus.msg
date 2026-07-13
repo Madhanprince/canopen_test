@@ -1,8 +1,1 @@
-string software_version
-float32 input_voltage
-uint8 board_temperature
-string sto_status
-string controller_alarm
-string controller_nmt_state
-MotorStatus left_motor
-MotorStatus right_motor
+/home/maddy/canopen_test/iris_interfaces/msg/MotorControllerStatus.msg

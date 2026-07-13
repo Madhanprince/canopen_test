@@ -1,2 +1,1 @@
-uint8 fresh_water_tank_level
-uint8 dirty_water_tank_level
+/home/maddy/canopen_test/iris_interfaces/msg/WaterTankLevels.msg

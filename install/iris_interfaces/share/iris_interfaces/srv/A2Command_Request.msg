@@ -1,2 +1,1 @@
-uint8 brush_command
-uint8 vacuum_command
+/home/maddy/canopen_test/build/iris_interfaces/rosidl_cmake/srv/A2Command_Request.msg

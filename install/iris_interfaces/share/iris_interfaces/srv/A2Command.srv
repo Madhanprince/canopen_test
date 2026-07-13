@@ -1,5 +1,1 @@
-uint8 brush_command
-uint8 vacuum_command
----
-uint8 brush_status
-uint8 vacuum_status
+/home/maddy/canopen_test/iris_interfaces/srv/A2Command.srv

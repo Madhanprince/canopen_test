@@ -1279,6 +1279,98 @@ impl rosidl_runtime_rs::Message for ResetA2Faults_Response {
 }
 
 
+// Corresponds to iris_interfaces__srv__AlarmReset_Request
+
+// This struct is not documented.
+#[allow(missing_docs)]
+
+#[allow(non_camel_case_types)]
+#[cfg_attr(feature = "serde", derive(Deserialize, Serialize))]
+#[derive(Clone, Debug, PartialEq, PartialOrd)]
+pub struct AlarmReset_Request {
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub reset_alarm: u8,
+
+}
+
+
+
+impl Default for AlarmReset_Request {
+  fn default() -> Self {
+    <Self as rosidl_runtime_rs::Message>::from_rmw_message(super::srv::rmw::AlarmReset_Request::default())
+  }
+}
+
+impl rosidl_runtime_rs::Message for AlarmReset_Request {
+  type RmwMsg = super::srv::rmw::AlarmReset_Request;
+
+  fn into_rmw_message(msg_cow: std::borrow::Cow<'_, Self>) -> std::borrow::Cow<'_, Self::RmwMsg> {
+    match msg_cow {
+      std::borrow::Cow::Owned(msg) => std::borrow::Cow::Owned(Self::RmwMsg {
+        reset_alarm: msg.reset_alarm,
+      }),
+      std::borrow::Cow::Borrowed(msg) => std::borrow::Cow::Owned(Self::RmwMsg {
+      reset_alarm: msg.reset_alarm,
+      })
+    }
+  }
+
+  fn from_rmw_message(msg: Self::RmwMsg) -> Self {
+    Self {
+      reset_alarm: msg.reset_alarm,
+    }
+  }
+}
+
+
+// Corresponds to iris_interfaces__srv__AlarmReset_Response
+
+// This struct is not documented.
+#[allow(missing_docs)]
+
+#[allow(non_camel_case_types)]
+#[cfg_attr(feature = "serde", derive(Deserialize, Serialize))]
+#[derive(Clone, Debug, PartialEq, PartialOrd)]
+pub struct AlarmReset_Response {
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub respones: std::string::String,
+
+}
+
+
+
+impl Default for AlarmReset_Response {
+  fn default() -> Self {
+    <Self as rosidl_runtime_rs::Message>::from_rmw_message(super::srv::rmw::AlarmReset_Response::default())
+  }
+}
+
+impl rosidl_runtime_rs::Message for AlarmReset_Response {
+  type RmwMsg = super::srv::rmw::AlarmReset_Response;
+
+  fn into_rmw_message(msg_cow: std::borrow::Cow<'_, Self>) -> std::borrow::Cow<'_, Self::RmwMsg> {
+    match msg_cow {
+      std::borrow::Cow::Owned(msg) => std::borrow::Cow::Owned(Self::RmwMsg {
+        respones: msg.respones.as_str().into(),
+      }),
+      std::borrow::Cow::Borrowed(msg) => std::borrow::Cow::Owned(Self::RmwMsg {
+        respones: msg.respones.as_str().into(),
+      })
+    }
+  }
+
+  fn from_rmw_message(msg: Self::RmwMsg) -> Self {
+    Self {
+      respones: msg.respones.to_string(),
+    }
+  }
+}
+
+
 
 
 
@@ -1541,6 +1633,28 @@ impl rosidl_runtime_rs::Service for ResetA2Faults {
     fn get_type_support() -> *const std::ffi::c_void {
         // SAFETY: No preconditions for this function.
         unsafe { rosidl_typesupport_c__get_service_type_support_handle__iris_interfaces__srv__ResetA2Faults() }
+    }
+}
+
+
+
+
+#[link(name = "iris_interfaces__rosidl_typesupport_c")]
+extern "C" {
+    fn rosidl_typesupport_c__get_service_type_support_handle__iris_interfaces__srv__AlarmReset() -> *const std::ffi::c_void;
+}
+
+// Corresponds to iris_interfaces__srv__AlarmReset
+#[allow(missing_docs, non_camel_case_types)]
+pub struct AlarmReset;
+
+impl rosidl_runtime_rs::Service for AlarmReset {
+    type Request = AlarmReset_Request;
+    type Response = AlarmReset_Response;
+
+    fn get_type_support() -> *const std::ffi::c_void {
+        // SAFETY: No preconditions for this function.
+        unsafe { rosidl_typesupport_c__get_service_type_support_handle__iris_interfaces__srv__AlarmReset() }
     }
 }
 

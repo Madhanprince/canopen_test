@@ -1,9 +1,1 @@
-string CREATE="create"
-string ACTIVATE="activate"
-string DEACTIVATE="deactivate"
-string CLEANUP="cleanup"
-string DESTROY="destroy"
-
-string component_name
-string state
-
+/home/maddy/canopen_test/build/iris_interfaces/rosidl_cmake/srv/StateManager_Request.msg

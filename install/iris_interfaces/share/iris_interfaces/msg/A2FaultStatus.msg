@@ -1,7 +1,1 @@
-uint8 a2_fault_status
-BrushFaults brush
-VacuumFaults vacuum
-uint8 water_pump_digital_fault
-uint8 detergent_pump_digital_fault
-uint8 brush_vacuum_motor_driver_digital_fault
-uint8 water_and_detergent_pump_flow_fault
+/home/maddy/canopen_test/iris_interfaces/msg/A2FaultStatus.msg

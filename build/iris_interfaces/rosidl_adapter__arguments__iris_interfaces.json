@@ -36,6 +36,7 @@
     "/home/maddy/canopen_test/iris_interfaces:srv/UpdateMotorControllerReferenceSource.srv",
     "/home/maddy/canopen_test/iris_interfaces:srv/A2Command.srv",
     "/home/maddy/canopen_test/iris_interfaces:srv/ResetA2Faults.srv",
+    "/home/maddy/canopen_test/iris_interfaces:srv/AlarmReset.srv",
     "/home/maddy/canopen_test/iris_interfaces:action/ComputePathCoverage.action",
     "/home/maddy/canopen_test/iris_interfaces:action/NavigatePathCoverage.action",
     "/home/maddy/canopen_test/iris_interfaces:action/PathCoverageController.action"

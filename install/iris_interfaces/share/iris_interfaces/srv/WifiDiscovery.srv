@@ -1,4 +1,1 @@
-string wifidiscovery
----
-int32 timestamp
-string discoverystatus
+/home/maddy/canopen_test/iris_interfaces/srv/WifiDiscovery.srv

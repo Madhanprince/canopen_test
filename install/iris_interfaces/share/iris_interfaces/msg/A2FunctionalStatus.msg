@@ -1,4 +1,1 @@
-BrushStatus brush
-VacuumStatus vacuum
-uint8 water_pump
-uint8 detergent_pump
+/home/maddy/canopen_test/iris_interfaces/msg/A2FunctionalStatus.msg

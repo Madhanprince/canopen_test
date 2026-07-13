@@ -1,1 +1,1 @@
-string restart_reason
+/home/maddy/canopen_test/build/iris_interfaces/rosidl_cmake/srv/RestartMotorController_Request.msg

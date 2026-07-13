@@ -4,3 +4,6 @@ source;share/a5_control/hook/pythonpath.sh
 source;share/a5_control/hook/ament_prefix_path.ps1
 source;share/a5_control/hook/ament_prefix_path.dsv
 source;share/a5_control/hook/ament_prefix_path.sh
+source;../../build/a5_control/share/a5_control/hook/pythonpath_develop.ps1
+source;../../build/a5_control/share/a5_control/hook/pythonpath_develop.dsv
+source;../../build/a5_control/share/a5_control/hook/pythonpath_develop.sh

@@ -1,1 +1,1 @@
-string reference_source
+/home/maddy/canopen_test/build/iris_interfaces/rosidl_cmake/srv/UpdateMotorControllerReferenceSource_Request.msg

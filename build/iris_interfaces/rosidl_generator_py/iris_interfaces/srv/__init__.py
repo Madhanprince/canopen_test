@@ -1,4 +1,5 @@
 from iris_interfaces.srv._a2_command import A2Command  # noqa: F401
+from iris_interfaces.srv._alarm_reset import AlarmReset  # noqa: F401
 from iris_interfaces.srv._connect_wifi import ConnectWifi  # noqa: F401
 from iris_interfaces.srv._disconnect_wifi import DisconnectWifi  # noqa: F401
 from iris_interfaces.srv._get_wifi_status import GetWifiStatus  # noqa: F401

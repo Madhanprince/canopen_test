@@ -1,1 +1,1 @@
-string service
+/home/maddy/canopen_test/build/iris_interfaces/rosidl_cmake/srv/GetWifiStatus_Request.msg

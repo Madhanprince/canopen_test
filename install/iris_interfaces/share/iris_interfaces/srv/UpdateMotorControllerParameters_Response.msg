@@ -1,2 +1,1 @@
-
-string result
+/home/maddy/canopen_test/build/iris_interfaces/rosidl_cmake/srv/UpdateMotorControllerParameters_Response.msg

@@ -1,2 +1,1 @@
-int16 left_wheel
-int16 right_wheel
+/home/maddy/canopen_test/iris_interfaces/msg/WheelCommandSpeed.msg

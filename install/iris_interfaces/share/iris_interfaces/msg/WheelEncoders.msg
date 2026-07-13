@@ -1,2 +1,1 @@
-int32 left_wheel_ticks
-int32 right_wheel_ticks
+/home/maddy/canopen_test/iris_interfaces/msg/WheelEncoders.msg

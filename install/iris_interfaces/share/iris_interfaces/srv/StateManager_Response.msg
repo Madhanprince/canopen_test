@@ -1,6 +1,1 @@
-
-string SUCCESS="success"
-string FAILED="failed"
-
-string result
-string result_description
+/home/maddy/canopen_test/build/iris_interfaces/rosidl_cmake/srv/StateManager_Response.msg

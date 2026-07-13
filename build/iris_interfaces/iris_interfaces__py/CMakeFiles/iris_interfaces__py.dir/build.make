@@ -104,6 +104,7 @@ iris_interfaces__py/CMakeFiles/iris_interfaces__py: rosidl_generator_py/iris_int
 iris_interfaces__py/CMakeFiles/iris_interfaces__py: rosidl_generator_py/iris_interfaces/srv/_update_motor_controller_reference_source.py
 iris_interfaces__py/CMakeFiles/iris_interfaces__py: rosidl_generator_py/iris_interfaces/srv/_a2_command.py
 iris_interfaces__py/CMakeFiles/iris_interfaces__py: rosidl_generator_py/iris_interfaces/srv/_reset_a2_faults.py
+iris_interfaces__py/CMakeFiles/iris_interfaces__py: rosidl_generator_py/iris_interfaces/srv/_alarm_reset.py
 iris_interfaces__py/CMakeFiles/iris_interfaces__py: rosidl_generator_py/iris_interfaces/action/_compute_path_coverage.py
 iris_interfaces__py/CMakeFiles/iris_interfaces__py: rosidl_generator_py/iris_interfaces/action/_navigate_path_coverage.py
 iris_interfaces__py/CMakeFiles/iris_interfaces__py: rosidl_generator_py/iris_interfaces/action/_path_coverage_controller.py
@@ -145,6 +146,7 @@ iris_interfaces__py/CMakeFiles/iris_interfaces__py: rosidl_generator_py/iris_int
 iris_interfaces__py/CMakeFiles/iris_interfaces__py: rosidl_generator_py/iris_interfaces/srv/_update_motor_controller_reference_source_s.c
 iris_interfaces__py/CMakeFiles/iris_interfaces__py: rosidl_generator_py/iris_interfaces/srv/_a2_command_s.c
 iris_interfaces__py/CMakeFiles/iris_interfaces__py: rosidl_generator_py/iris_interfaces/srv/_reset_a2_faults_s.c
+iris_interfaces__py/CMakeFiles/iris_interfaces__py: rosidl_generator_py/iris_interfaces/srv/_alarm_reset_s.c
 iris_interfaces__py/CMakeFiles/iris_interfaces__py: rosidl_generator_py/iris_interfaces/action/_compute_path_coverage_s.c
 iris_interfaces__py/CMakeFiles/iris_interfaces__py: rosidl_generator_py/iris_interfaces/action/_navigate_path_coverage_s.c
 iris_interfaces__py/CMakeFiles/iris_interfaces__py: rosidl_generator_py/iris_interfaces/action/_path_coverage_controller_s.c
@@ -197,6 +199,7 @@ rosidl_generator_py/iris_interfaces/_iris_interfaces_s.ep.rosidl_typesupport_fas
 rosidl_generator_py/iris_interfaces/_iris_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/iris_interfaces/srv/UpdateMotorControllerReferenceSource.idl
 rosidl_generator_py/iris_interfaces/_iris_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/iris_interfaces/srv/A2Command.idl
 rosidl_generator_py/iris_interfaces/_iris_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/iris_interfaces/srv/ResetA2Faults.idl
+rosidl_generator_py/iris_interfaces/_iris_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/iris_interfaces/srv/AlarmReset.idl
 rosidl_generator_py/iris_interfaces/_iris_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/iris_interfaces/action/ComputePathCoverage.idl
 rosidl_generator_py/iris_interfaces/_iris_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/iris_interfaces/action/NavigatePathCoverage.idl
 rosidl_generator_py/iris_interfaces/_iris_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/iris_interfaces/action/PathCoverageController.idl
@@ -421,6 +424,9 @@ rosidl_generator_py/iris_interfaces/srv/_a2_command.py: rosidl_generator_py/iris
 rosidl_generator_py/iris_interfaces/srv/_reset_a2_faults.py: rosidl_generator_py/iris_interfaces/_iris_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/iris_interfaces/srv/_reset_a2_faults.py
 
+rosidl_generator_py/iris_interfaces/srv/_alarm_reset.py: rosidl_generator_py/iris_interfaces/_iris_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/iris_interfaces/srv/_alarm_reset.py
+
 rosidl_generator_py/iris_interfaces/action/_compute_path_coverage.py: rosidl_generator_py/iris_interfaces/_iris_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/iris_interfaces/action/_compute_path_coverage.py
 
@@ -544,6 +550,9 @@ rosidl_generator_py/iris_interfaces/srv/_a2_command_s.c: rosidl_generator_py/iri
 rosidl_generator_py/iris_interfaces/srv/_reset_a2_faults_s.c: rosidl_generator_py/iris_interfaces/_iris_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/iris_interfaces/srv/_reset_a2_faults_s.c
 
+rosidl_generator_py/iris_interfaces/srv/_alarm_reset_s.c: rosidl_generator_py/iris_interfaces/_iris_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/iris_interfaces/srv/_alarm_reset_s.c
+
 rosidl_generator_py/iris_interfaces/action/_compute_path_coverage_s.c: rosidl_generator_py/iris_interfaces/_iris_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/iris_interfaces/action/_compute_path_coverage_s.c
 
@@ -614,6 +623,8 @@ iris_interfaces__py: rosidl_generator_py/iris_interfaces/msg/_wheel_encoders_s.c
 iris_interfaces__py: rosidl_generator_py/iris_interfaces/srv/__init__.py
 iris_interfaces__py: rosidl_generator_py/iris_interfaces/srv/_a2_command.py
 iris_interfaces__py: rosidl_generator_py/iris_interfaces/srv/_a2_command_s.c
+iris_interfaces__py: rosidl_generator_py/iris_interfaces/srv/_alarm_reset.py
+iris_interfaces__py: rosidl_generator_py/iris_interfaces/srv/_alarm_reset_s.c
 iris_interfaces__py: rosidl_generator_py/iris_interfaces/srv/_connect_wifi.py
 iris_interfaces__py: rosidl_generator_py/iris_interfaces/srv/_connect_wifi_s.c
 iris_interfaces__py: rosidl_generator_py/iris_interfaces/srv/_disconnect_wifi.py

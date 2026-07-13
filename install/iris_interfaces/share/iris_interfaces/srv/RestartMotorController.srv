@@ -1,3 +1,1 @@
-string restart_reason
----
-string result
+/home/maddy/canopen_test/iris_interfaces/srv/RestartMotorController.srv

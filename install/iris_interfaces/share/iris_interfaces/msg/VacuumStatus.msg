@@ -1,3 +1,1 @@
-uint8 vacuum_motor_command
-uint8 vacuum_motor_status
-ActuatorStatus squeeze_actuator
+/home/maddy/canopen_test/iris_interfaces/msg/VacuumStatus.msg

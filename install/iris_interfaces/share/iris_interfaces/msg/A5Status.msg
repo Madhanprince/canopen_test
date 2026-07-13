@@ -1,2 +1,1 @@
-# This message is not used in A5 itself. Dummy as of now
-string mode_and_status
+/home/maddy/canopen_test/iris_interfaces/msg/A5Status.msg

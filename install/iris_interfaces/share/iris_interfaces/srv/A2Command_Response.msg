@@ -1,3 +1,1 @@
-
-uint8 brush_status
-uint8 vacuum_status
+/home/maddy/canopen_test/build/iris_interfaces/rosidl_cmake/srv/A2Command_Response.msg

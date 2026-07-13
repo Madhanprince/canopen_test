@@ -54,6 +54,10 @@ srv/A2Command.idl
 srv/A2Command.srv
 srv/A2Command_Request.msg
 srv/A2Command_Response.msg
+srv/AlarmReset.idl
+srv/AlarmReset.srv
+srv/AlarmReset_Request.msg
+srv/AlarmReset_Response.msg
 srv/ConnectWifi.idl
 srv/ConnectWifi.srv
 srv/ConnectWifi_Request.msg

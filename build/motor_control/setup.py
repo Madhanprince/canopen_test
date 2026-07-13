@@ -1,1 +1,0 @@
-/home/maddy/canopen_test/motor_control/setup.py

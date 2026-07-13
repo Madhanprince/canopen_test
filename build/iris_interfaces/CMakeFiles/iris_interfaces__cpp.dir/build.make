@@ -241,6 +241,11 @@ CMakeFiles/iris_interfaces__cpp: rosidl_generator_cpp/iris_interfaces/srv/detail
 CMakeFiles/iris_interfaces__cpp: rosidl_generator_cpp/iris_interfaces/srv/detail/reset_a2_faults__struct.hpp
 CMakeFiles/iris_interfaces__cpp: rosidl_generator_cpp/iris_interfaces/srv/detail/reset_a2_faults__traits.hpp
 CMakeFiles/iris_interfaces__cpp: rosidl_generator_cpp/iris_interfaces/srv/detail/reset_a2_faults__type_support.hpp
+CMakeFiles/iris_interfaces__cpp: rosidl_generator_cpp/iris_interfaces/srv/alarm_reset.hpp
+CMakeFiles/iris_interfaces__cpp: rosidl_generator_cpp/iris_interfaces/srv/detail/alarm_reset__builder.hpp
+CMakeFiles/iris_interfaces__cpp: rosidl_generator_cpp/iris_interfaces/srv/detail/alarm_reset__struct.hpp
+CMakeFiles/iris_interfaces__cpp: rosidl_generator_cpp/iris_interfaces/srv/detail/alarm_reset__traits.hpp
+CMakeFiles/iris_interfaces__cpp: rosidl_generator_cpp/iris_interfaces/srv/detail/alarm_reset__type_support.hpp
 CMakeFiles/iris_interfaces__cpp: rosidl_generator_cpp/iris_interfaces/action/compute_path_coverage.hpp
 CMakeFiles/iris_interfaces__cpp: rosidl_generator_cpp/iris_interfaces/action/detail/compute_path_coverage__builder.hpp
 CMakeFiles/iris_interfaces__cpp: rosidl_generator_cpp/iris_interfaces/action/detail/compute_path_coverage__struct.hpp
@@ -308,6 +313,7 @@ rosidl_generator_cpp/iris_interfaces/msg/wheel_command_speed.hpp: rosidl_adapter
 rosidl_generator_cpp/iris_interfaces/msg/wheel_command_speed.hpp: rosidl_adapter/iris_interfaces/srv/UpdateMotorControllerReferenceSource.idl
 rosidl_generator_cpp/iris_interfaces/msg/wheel_command_speed.hpp: rosidl_adapter/iris_interfaces/srv/A2Command.idl
 rosidl_generator_cpp/iris_interfaces/msg/wheel_command_speed.hpp: rosidl_adapter/iris_interfaces/srv/ResetA2Faults.idl
+rosidl_generator_cpp/iris_interfaces/msg/wheel_command_speed.hpp: rosidl_adapter/iris_interfaces/srv/AlarmReset.idl
 rosidl_generator_cpp/iris_interfaces/msg/wheel_command_speed.hpp: rosidl_adapter/iris_interfaces/action/ComputePathCoverage.idl
 rosidl_generator_cpp/iris_interfaces/msg/wheel_command_speed.hpp: rosidl_adapter/iris_interfaces/action/NavigatePathCoverage.idl
 rosidl_generator_cpp/iris_interfaces/msg/wheel_command_speed.hpp: rosidl_adapter/iris_interfaces/action/PathCoverageController.idl
@@ -943,6 +949,21 @@ rosidl_generator_cpp/iris_interfaces/srv/detail/reset_a2_faults__traits.hpp: ros
 rosidl_generator_cpp/iris_interfaces/srv/detail/reset_a2_faults__type_support.hpp: rosidl_generator_cpp/iris_interfaces/msg/wheel_command_speed.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/iris_interfaces/srv/detail/reset_a2_faults__type_support.hpp
 
+rosidl_generator_cpp/iris_interfaces/srv/alarm_reset.hpp: rosidl_generator_cpp/iris_interfaces/msg/wheel_command_speed.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/iris_interfaces/srv/alarm_reset.hpp
+
+rosidl_generator_cpp/iris_interfaces/srv/detail/alarm_reset__builder.hpp: rosidl_generator_cpp/iris_interfaces/msg/wheel_command_speed.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/iris_interfaces/srv/detail/alarm_reset__builder.hpp
+
+rosidl_generator_cpp/iris_interfaces/srv/detail/alarm_reset__struct.hpp: rosidl_generator_cpp/iris_interfaces/msg/wheel_command_speed.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/iris_interfaces/srv/detail/alarm_reset__struct.hpp
+
+rosidl_generator_cpp/iris_interfaces/srv/detail/alarm_reset__traits.hpp: rosidl_generator_cpp/iris_interfaces/msg/wheel_command_speed.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/iris_interfaces/srv/detail/alarm_reset__traits.hpp
+
+rosidl_generator_cpp/iris_interfaces/srv/detail/alarm_reset__type_support.hpp: rosidl_generator_cpp/iris_interfaces/msg/wheel_command_speed.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/iris_interfaces/srv/detail/alarm_reset__type_support.hpp
+
 rosidl_generator_cpp/iris_interfaces/action/compute_path_coverage.hpp: rosidl_generator_cpp/iris_interfaces/msg/wheel_command_speed.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/iris_interfaces/action/compute_path_coverage.hpp
 
@@ -1120,11 +1141,16 @@ iris_interfaces__cpp: rosidl_generator_cpp/iris_interfaces/msg/water_tank_levels
 iris_interfaces__cpp: rosidl_generator_cpp/iris_interfaces/msg/wheel_command_speed.hpp
 iris_interfaces__cpp: rosidl_generator_cpp/iris_interfaces/msg/wheel_encoders.hpp
 iris_interfaces__cpp: rosidl_generator_cpp/iris_interfaces/srv/a2_command.hpp
+iris_interfaces__cpp: rosidl_generator_cpp/iris_interfaces/srv/alarm_reset.hpp
 iris_interfaces__cpp: rosidl_generator_cpp/iris_interfaces/srv/connect_wifi.hpp
 iris_interfaces__cpp: rosidl_generator_cpp/iris_interfaces/srv/detail/a2_command__builder.hpp
 iris_interfaces__cpp: rosidl_generator_cpp/iris_interfaces/srv/detail/a2_command__struct.hpp
 iris_interfaces__cpp: rosidl_generator_cpp/iris_interfaces/srv/detail/a2_command__traits.hpp
 iris_interfaces__cpp: rosidl_generator_cpp/iris_interfaces/srv/detail/a2_command__type_support.hpp
+iris_interfaces__cpp: rosidl_generator_cpp/iris_interfaces/srv/detail/alarm_reset__builder.hpp
+iris_interfaces__cpp: rosidl_generator_cpp/iris_interfaces/srv/detail/alarm_reset__struct.hpp
+iris_interfaces__cpp: rosidl_generator_cpp/iris_interfaces/srv/detail/alarm_reset__traits.hpp
+iris_interfaces__cpp: rosidl_generator_cpp/iris_interfaces/srv/detail/alarm_reset__type_support.hpp
 iris_interfaces__cpp: rosidl_generator_cpp/iris_interfaces/srv/detail/connect_wifi__builder.hpp
 iris_interfaces__cpp: rosidl_generator_cpp/iris_interfaces/srv/detail/connect_wifi__struct.hpp
 iris_interfaces__cpp: rosidl_generator_cpp/iris_interfaces/srv/detail/connect_wifi__traits.hpp

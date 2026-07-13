@@ -59,6 +59,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/iris_interfaces/srv/__init__.py"
   "../rosidl_generator_py/iris_interfaces/srv/_a2_command.py"
   "../rosidl_generator_py/iris_interfaces/srv/_a2_command_s.c"
+  "../rosidl_generator_py/iris_interfaces/srv/_alarm_reset.py"
+  "../rosidl_generator_py/iris_interfaces/srv/_alarm_reset_s.c"
   "../rosidl_generator_py/iris_interfaces/srv/_connect_wifi.py"
   "../rosidl_generator_py/iris_interfaces/srv/_connect_wifi_s.c"
   "../rosidl_generator_py/iris_interfaces/srv/_disconnect_wifi.py"

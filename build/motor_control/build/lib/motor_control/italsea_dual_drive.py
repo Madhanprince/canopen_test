@@ -1,20 +1,11 @@
 import canopen
 from rclpy.logging import get_logger
 
-CAN_UP_SCRIPT_PATH = (
-    "motor_control/scripts/can_up.sh"
-)
-#: Constant used to define the network interface to be used by the network module.
-INTERFACE = "can0"
-
-#: Constant used to define the bitrate in which the motor control lifecycle node should
-#: initiate communication to the CAN network.
-BITRATE = 500000
+ITALSEA_DUAL_DRIVE_EDS_PATH = "/home/maddy/canopen_test/motor_control/eds/ItalseaDualBLDCMotorController.eds"
 
 class ItalseaDualDrive:
-    def __init__(self, node_id):
-        self.node_id = node_id
-        self.dual_drive=canopen.BaseNode402(node_id, 'motor_control/italsea_dual_drive.eds')
+    def __init__(self, node_id, path_to_eds=ITALSEA_DUAL_DRIVE_EDS_PATH):
+        self.dual_drive=canopen.BaseNode402(node_id, path_to_eds)
         self.__logger = get_logger('italsea_dual_drive')
         self.alarm_list = {
             "A0": "No alarm",
@@ -47,6 +38,7 @@ class ItalseaDualDrive:
         }
 
     def init_pdos(self):
+        # RPDO-1
         self.left_wheel_rpm = self.dual_drive.rpdo[1][
             "VelocityModeTargetVelocity-Axis0"
         ]
@@ -54,17 +46,26 @@ class ItalseaDualDrive:
             "VelocityModeTargetVelocity-Axis1"
         ]
 
+
         self.actual_alarm = self.dual_drive.tpdo[1]["InternalStatus.ActualAlarm"]
         self.status2 = self.dual_drive.tpdo[1]["InternalStatus.Status2"]
         self.input_voltage = self.dual_drive.tpdo[1]["InputVoltage"]
         self.left_motor_current = self.dual_drive.tpdo[1]["CurrentActualValue-Axis0"]
         self.right_motor_current = self.dual_drive.tpdo[1]["CurrentActualValue-Axis1"]
 
-        self.velocity_demand_axis_0=self.dual_drive.tpdo[2]["Velocity mode velocity demand Axis 0"]
-        self.velocity_actual_axis_0=self.dual_drive.tpdo[2]["Velocity mode velocity actual value Axis 0"]
-        self.velocity_demand_axis_1=self.dual_drive.tpdo[2]["Velocity mode velocity demand-Axis1"]
-        self.velocity_actual_axis_1=self.dual_drive.tpdo[2]["Velocity mode velocity actual value-Axis 1"]
-
+        self.left_wheel_rpm_demand = self.dual_drive.tpdo[2][
+            "VelocityModeVelocityDemand-Axis0"
+        ]
+        self.left_wheel_rpm_actual = self.dual_drive.tpdo[2][
+            "VelocityModeVelocityActualValue-Axis0"
+        ]
+        self.right_wheel_rpm_demand = self.dual_drive.tpdo[2][
+            "VelocityModeVelocityDemand-Axis1"
+        ]
+        self.right_wheel_rpm_actual = self.dual_drive.tpdo[2][
+            "VelocityModeVelocityActualValue-Axis1"
+        ]
+        
          # TPDO-3
         self.software_version = self.dual_drive.tpdo[3]["SoftwareVersion"]
         self.board_temperature = self.dual_drive.tpdo[3][
@@ -147,10 +148,17 @@ class ItalseaDualDrive:
 
         self.dual_drive.store(1)
         self.__logger.info("Reference source updated successfully.")
-        self.restart_node("Restarting to set new reference source.")
+        self.reset_dual_drive("Restarting to set new reference source.")
 
-    def reset_dual_drive(self,reset_reason):
-
+    def reset_dual_drive(self,restart_reason):
+        self.__logger.info("Restart reason: {}".format(restart_reason))
         self.dual_drive.nmt.state = "RESET"
         self.dual_drive.wait_for_bootup(10)
         self.__logger.info("Software reboot completed.")
+
+    def reset_alarm_warning(self):
+        cmd = self.dual_drive.sdo["Commands 1...8"]["ActualValue"]
+
+        cmd.bits[0].raw = 0
+        cmd.bits[0].raw = 1   
+        cmd.bits[0].raw = 0   

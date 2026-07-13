@@ -117,6 +117,7 @@ rosidl_generator_c/iris_interfaces/msg/wheel_command_speed.h: rosidl_adapter/iri
 rosidl_generator_c/iris_interfaces/msg/wheel_command_speed.h: rosidl_adapter/iris_interfaces/srv/UpdateMotorControllerReferenceSource.idl
 rosidl_generator_c/iris_interfaces/msg/wheel_command_speed.h: rosidl_adapter/iris_interfaces/srv/A2Command.idl
 rosidl_generator_c/iris_interfaces/msg/wheel_command_speed.h: rosidl_adapter/iris_interfaces/srv/ResetA2Faults.idl
+rosidl_generator_c/iris_interfaces/msg/wheel_command_speed.h: rosidl_adapter/iris_interfaces/srv/AlarmReset.idl
 rosidl_generator_c/iris_interfaces/msg/wheel_command_speed.h: rosidl_adapter/iris_interfaces/action/ComputePathCoverage.idl
 rosidl_generator_c/iris_interfaces/msg/wheel_command_speed.h: rosidl_adapter/iris_interfaces/action/NavigatePathCoverage.idl
 rosidl_generator_c/iris_interfaces/msg/wheel_command_speed.h: rosidl_adapter/iris_interfaces/action/PathCoverageController.idl
@@ -647,6 +648,18 @@ rosidl_generator_c/iris_interfaces/srv/detail/reset_a2_faults__struct.h: rosidl_
 rosidl_generator_c/iris_interfaces/srv/detail/reset_a2_faults__type_support.h: rosidl_generator_c/iris_interfaces/msg/wheel_command_speed.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/iris_interfaces/srv/detail/reset_a2_faults__type_support.h
 
+rosidl_generator_c/iris_interfaces/srv/alarm_reset.h: rosidl_generator_c/iris_interfaces/msg/wheel_command_speed.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/iris_interfaces/srv/alarm_reset.h
+
+rosidl_generator_c/iris_interfaces/srv/detail/alarm_reset__functions.h: rosidl_generator_c/iris_interfaces/msg/wheel_command_speed.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/iris_interfaces/srv/detail/alarm_reset__functions.h
+
+rosidl_generator_c/iris_interfaces/srv/detail/alarm_reset__struct.h: rosidl_generator_c/iris_interfaces/msg/wheel_command_speed.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/iris_interfaces/srv/detail/alarm_reset__struct.h
+
+rosidl_generator_c/iris_interfaces/srv/detail/alarm_reset__type_support.h: rosidl_generator_c/iris_interfaces/msg/wheel_command_speed.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/iris_interfaces/srv/detail/alarm_reset__type_support.h
+
 rosidl_generator_c/iris_interfaces/action/compute_path_coverage.h: rosidl_generator_c/iris_interfaces/msg/wheel_command_speed.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/iris_interfaces/action/compute_path_coverage.h
 
@@ -787,6 +800,9 @@ rosidl_generator_c/iris_interfaces/srv/detail/a2_command__functions.c: rosidl_ge
 
 rosidl_generator_c/iris_interfaces/srv/detail/reset_a2_faults__functions.c: rosidl_generator_c/iris_interfaces/msg/wheel_command_speed.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/iris_interfaces/srv/detail/reset_a2_faults__functions.c
+
+rosidl_generator_c/iris_interfaces/srv/detail/alarm_reset__functions.c: rosidl_generator_c/iris_interfaces/msg/wheel_command_speed.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/iris_interfaces/srv/detail/alarm_reset__functions.c
 
 rosidl_generator_c/iris_interfaces/action/detail/compute_path_coverage__functions.c: rosidl_generator_c/iris_interfaces/msg/wheel_command_speed.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/iris_interfaces/action/detail/compute_path_coverage__functions.c
@@ -1287,10 +1303,24 @@ CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_inter
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/srv/detail/reset_a2_faults__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/maddy/canopen_test/build/iris_interfaces/rosidl_generator_c/iris_interfaces/srv/detail/reset_a2_faults__functions.c -o CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/srv/detail/reset_a2_faults__functions.c.s
 
+CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/srv/detail/alarm_reset__functions.c.o: CMakeFiles/iris_interfaces__rosidl_generator_c.dir/flags.make
+CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/srv/detail/alarm_reset__functions.c.o: rosidl_generator_c/iris_interfaces/srv/detail/alarm_reset__functions.c
+CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/srv/detail/alarm_reset__functions.c.o: CMakeFiles/iris_interfaces__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maddy/canopen_test/build/iris_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/srv/detail/alarm_reset__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/srv/detail/alarm_reset__functions.c.o -MF CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/srv/detail/alarm_reset__functions.c.o.d -o CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/srv/detail/alarm_reset__functions.c.o -c /home/maddy/canopen_test/build/iris_interfaces/rosidl_generator_c/iris_interfaces/srv/detail/alarm_reset__functions.c
+
+CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/srv/detail/alarm_reset__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/srv/detail/alarm_reset__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/maddy/canopen_test/build/iris_interfaces/rosidl_generator_c/iris_interfaces/srv/detail/alarm_reset__functions.c > CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/srv/detail/alarm_reset__functions.c.i
+
+CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/srv/detail/alarm_reset__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/srv/detail/alarm_reset__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/maddy/canopen_test/build/iris_interfaces/rosidl_generator_c/iris_interfaces/srv/detail/alarm_reset__functions.c -o CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/srv/detail/alarm_reset__functions.c.s
+
 CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/action/detail/compute_path_coverage__functions.c.o: CMakeFiles/iris_interfaces__rosidl_generator_c.dir/flags.make
 CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/action/detail/compute_path_coverage__functions.c.o: rosidl_generator_c/iris_interfaces/action/detail/compute_path_coverage__functions.c
 CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/action/detail/compute_path_coverage__functions.c.o: CMakeFiles/iris_interfaces__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maddy/canopen_test/build/iris_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/action/detail/compute_path_coverage__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maddy/canopen_test/build/iris_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/action/detail/compute_path_coverage__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/action/detail/compute_path_coverage__functions.c.o -MF CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/action/detail/compute_path_coverage__functions.c.o.d -o CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/action/detail/compute_path_coverage__functions.c.o -c /home/maddy/canopen_test/build/iris_interfaces/rosidl_generator_c/iris_interfaces/action/detail/compute_path_coverage__functions.c
 
 CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/action/detail/compute_path_coverage__functions.c.i: cmake_force
@@ -1304,7 +1334,7 @@ CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_inter
 CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/action/detail/navigate_path_coverage__functions.c.o: CMakeFiles/iris_interfaces__rosidl_generator_c.dir/flags.make
 CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/action/detail/navigate_path_coverage__functions.c.o: rosidl_generator_c/iris_interfaces/action/detail/navigate_path_coverage__functions.c
 CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/action/detail/navigate_path_coverage__functions.c.o: CMakeFiles/iris_interfaces__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maddy/canopen_test/build/iris_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/action/detail/navigate_path_coverage__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maddy/canopen_test/build/iris_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/action/detail/navigate_path_coverage__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/action/detail/navigate_path_coverage__functions.c.o -MF CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/action/detail/navigate_path_coverage__functions.c.o.d -o CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/action/detail/navigate_path_coverage__functions.c.o -c /home/maddy/canopen_test/build/iris_interfaces/rosidl_generator_c/iris_interfaces/action/detail/navigate_path_coverage__functions.c
 
 CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/action/detail/navigate_path_coverage__functions.c.i: cmake_force
@@ -1318,7 +1348,7 @@ CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_inter
 CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/action/detail/path_coverage_controller__functions.c.o: CMakeFiles/iris_interfaces__rosidl_generator_c.dir/flags.make
 CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/action/detail/path_coverage_controller__functions.c.o: rosidl_generator_c/iris_interfaces/action/detail/path_coverage_controller__functions.c
 CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/action/detail/path_coverage_controller__functions.c.o: CMakeFiles/iris_interfaces__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maddy/canopen_test/build/iris_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/action/detail/path_coverage_controller__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maddy/canopen_test/build/iris_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/action/detail/path_coverage_controller__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/action/detail/path_coverage_controller__functions.c.o -MF CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/action/detail/path_coverage_controller__functions.c.o.d -o CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/action/detail/path_coverage_controller__functions.c.o -c /home/maddy/canopen_test/build/iris_interfaces/rosidl_generator_c/iris_interfaces/action/detail/path_coverage_controller__functions.c
 
 CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/action/detail/path_coverage_controller__functions.c.i: cmake_force
@@ -1366,6 +1396,7 @@ iris_interfaces__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/srv/detail/update_motor_controller_reference_source__functions.c.o" \
 "CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/srv/detail/a2_command__functions.c.o" \
 "CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/srv/detail/reset_a2_faults__functions.c.o" \
+"CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/srv/detail/alarm_reset__functions.c.o" \
 "CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/action/detail/compute_path_coverage__functions.c.o" \
 "CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/action/detail/navigate_path_coverage__functions.c.o" \
 "CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/action/detail/path_coverage_controller__functions.c.o"
@@ -1408,6 +1439,7 @@ libiris_interfaces__rosidl_generator_c.so: CMakeFiles/iris_interfaces__rosidl_ge
 libiris_interfaces__rosidl_generator_c.so: CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/srv/detail/update_motor_controller_reference_source__functions.c.o
 libiris_interfaces__rosidl_generator_c.so: CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/srv/detail/a2_command__functions.c.o
 libiris_interfaces__rosidl_generator_c.so: CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/srv/detail/reset_a2_faults__functions.c.o
+libiris_interfaces__rosidl_generator_c.so: CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/srv/detail/alarm_reset__functions.c.o
 libiris_interfaces__rosidl_generator_c.so: CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/action/detail/compute_path_coverage__functions.c.o
 libiris_interfaces__rosidl_generator_c.so: CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/action/detail/navigate_path_coverage__functions.c.o
 libiris_interfaces__rosidl_generator_c.so: CMakeFiles/iris_interfaces__rosidl_generator_c.dir/rosidl_generator_c/iris_interfaces/action/detail/path_coverage_controller__functions.c.o
@@ -1422,7 +1454,7 @@ libiris_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/libbuiltin_interf
 libiris_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libiris_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/librcutils.so
 libiris_interfaces__rosidl_generator_c.so: CMakeFiles/iris_interfaces__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/maddy/canopen_test/build/iris_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Linking C shared library libiris_interfaces__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/maddy/canopen_test/build/iris_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Linking C shared library libiris_interfaces__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/iris_interfaces__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -1564,11 +1596,16 @@ CMakeFiles/iris_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/ir
 CMakeFiles/iris_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/iris_interfaces/msg/wheel_command_speed.h
 CMakeFiles/iris_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/iris_interfaces/msg/wheel_encoders.h
 CMakeFiles/iris_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/iris_interfaces/srv/a2_command.h
+CMakeFiles/iris_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/iris_interfaces/srv/alarm_reset.h
 CMakeFiles/iris_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/iris_interfaces/srv/connect_wifi.h
 CMakeFiles/iris_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/iris_interfaces/srv/detail/a2_command__functions.c
 CMakeFiles/iris_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/iris_interfaces/srv/detail/a2_command__functions.h
 CMakeFiles/iris_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/iris_interfaces/srv/detail/a2_command__struct.h
 CMakeFiles/iris_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/iris_interfaces/srv/detail/a2_command__type_support.h
+CMakeFiles/iris_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/iris_interfaces/srv/detail/alarm_reset__functions.c
+CMakeFiles/iris_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/iris_interfaces/srv/detail/alarm_reset__functions.h
+CMakeFiles/iris_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/iris_interfaces/srv/detail/alarm_reset__struct.h
+CMakeFiles/iris_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/iris_interfaces/srv/detail/alarm_reset__type_support.h
 CMakeFiles/iris_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/iris_interfaces/srv/detail/connect_wifi__functions.c
 CMakeFiles/iris_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/iris_interfaces/srv/detail/connect_wifi__functions.h
 CMakeFiles/iris_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/iris_interfaces/srv/detail/connect_wifi__struct.h

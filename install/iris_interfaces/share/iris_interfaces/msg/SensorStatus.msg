@@ -1,7 +1,1 @@
-string CONNECTED=CONNECTED
-string DISCONNECTED=DISCONNECTED
-
-string sensor_name
-string sensor_robot_position
-string sensor_status
-float32 sensor_temperature
+/home/maddy/canopen_test/iris_interfaces/msg/SensorStatus.msg

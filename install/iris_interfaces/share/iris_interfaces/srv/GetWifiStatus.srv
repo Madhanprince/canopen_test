@@ -1,3 +1,1 @@
-string service
----
-string status
+/home/maddy/canopen_test/iris_interfaces/srv/GetWifiStatus.srv

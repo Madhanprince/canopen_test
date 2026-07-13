@@ -1,16 +1,1 @@
-// generated from rosidl_adapter/resource/msg.idl.em
-// with input from iris_interfaces/msg/SystemSoftwareStatus.msg
-// generated code does not contain a copyright notice
-
-
-module iris_interfaces {
-  module msg {
-    struct SystemSoftwareStatus {
-      @default (value="NA")
-      string current_software_name;
-
-      @default (value="NA")
-      string current_boot_slot;
-    };
-  };
-};
+/home/maddy/canopen_test/build/iris_interfaces/rosidl_adapter/iris_interfaces/msg/SystemSoftwareStatus.idl

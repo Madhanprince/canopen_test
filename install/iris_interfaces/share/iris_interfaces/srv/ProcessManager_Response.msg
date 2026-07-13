@@ -1,6 +1,1 @@
-
-string response
-string SUCCESS="SUCCESS"
-string FAILED="FAILED"
-string EXISTS="EXISTS"
-string DOESNT_EXIST="DOESNT_EXIST"
+/home/maddy/canopen_test/build/iris_interfaces/rosidl_cmake/srv/ProcessManager_Response.msg

@@ -1,1 +1,1 @@
-string ssid
+/home/maddy/canopen_test/build/iris_interfaces/rosidl_cmake/srv/DisconnectWifi_Request.msg

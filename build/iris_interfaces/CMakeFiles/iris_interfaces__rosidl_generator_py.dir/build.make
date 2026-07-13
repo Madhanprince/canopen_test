@@ -559,10 +559,24 @@ CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_int
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/srv/_reset_a2_faults_s.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/maddy/canopen_test/build/iris_interfaces/rosidl_generator_py/iris_interfaces/srv/_reset_a2_faults_s.c -o CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/srv/_reset_a2_faults_s.c.s
 
+CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/srv/_alarm_reset_s.c.o: CMakeFiles/iris_interfaces__rosidl_generator_py.dir/flags.make
+CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/srv/_alarm_reset_s.c.o: rosidl_generator_py/iris_interfaces/srv/_alarm_reset_s.c
+CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/srv/_alarm_reset_s.c.o: CMakeFiles/iris_interfaces__rosidl_generator_py.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maddy/canopen_test/build/iris_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/srv/_alarm_reset_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/srv/_alarm_reset_s.c.o -MF CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/srv/_alarm_reset_s.c.o.d -o CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/srv/_alarm_reset_s.c.o -c /home/maddy/canopen_test/build/iris_interfaces/rosidl_generator_py/iris_interfaces/srv/_alarm_reset_s.c
+
+CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/srv/_alarm_reset_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/srv/_alarm_reset_s.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/maddy/canopen_test/build/iris_interfaces/rosidl_generator_py/iris_interfaces/srv/_alarm_reset_s.c > CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/srv/_alarm_reset_s.c.i
+
+CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/srv/_alarm_reset_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/srv/_alarm_reset_s.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/maddy/canopen_test/build/iris_interfaces/rosidl_generator_py/iris_interfaces/srv/_alarm_reset_s.c -o CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/srv/_alarm_reset_s.c.s
+
 CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/action/_compute_path_coverage_s.c.o: CMakeFiles/iris_interfaces__rosidl_generator_py.dir/flags.make
 CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/action/_compute_path_coverage_s.c.o: rosidl_generator_py/iris_interfaces/action/_compute_path_coverage_s.c
 CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/action/_compute_path_coverage_s.c.o: CMakeFiles/iris_interfaces__rosidl_generator_py.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maddy/canopen_test/build/iris_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/action/_compute_path_coverage_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maddy/canopen_test/build/iris_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/action/_compute_path_coverage_s.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/action/_compute_path_coverage_s.c.o -MF CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/action/_compute_path_coverage_s.c.o.d -o CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/action/_compute_path_coverage_s.c.o -c /home/maddy/canopen_test/build/iris_interfaces/rosidl_generator_py/iris_interfaces/action/_compute_path_coverage_s.c
 
 CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/action/_compute_path_coverage_s.c.i: cmake_force
@@ -576,7 +590,7 @@ CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_int
 CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/action/_navigate_path_coverage_s.c.o: CMakeFiles/iris_interfaces__rosidl_generator_py.dir/flags.make
 CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/action/_navigate_path_coverage_s.c.o: rosidl_generator_py/iris_interfaces/action/_navigate_path_coverage_s.c
 CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/action/_navigate_path_coverage_s.c.o: CMakeFiles/iris_interfaces__rosidl_generator_py.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maddy/canopen_test/build/iris_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/action/_navigate_path_coverage_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maddy/canopen_test/build/iris_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/action/_navigate_path_coverage_s.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/action/_navigate_path_coverage_s.c.o -MF CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/action/_navigate_path_coverage_s.c.o.d -o CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/action/_navigate_path_coverage_s.c.o -c /home/maddy/canopen_test/build/iris_interfaces/rosidl_generator_py/iris_interfaces/action/_navigate_path_coverage_s.c
 
 CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/action/_navigate_path_coverage_s.c.i: cmake_force
@@ -590,7 +604,7 @@ CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_int
 CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/action/_path_coverage_controller_s.c.o: CMakeFiles/iris_interfaces__rosidl_generator_py.dir/flags.make
 CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/action/_path_coverage_controller_s.c.o: rosidl_generator_py/iris_interfaces/action/_path_coverage_controller_s.c
 CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/action/_path_coverage_controller_s.c.o: CMakeFiles/iris_interfaces__rosidl_generator_py.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maddy/canopen_test/build/iris_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/action/_path_coverage_controller_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maddy/canopen_test/build/iris_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/action/_path_coverage_controller_s.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/action/_path_coverage_controller_s.c.o -MF CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/action/_path_coverage_controller_s.c.o.d -o CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/action/_path_coverage_controller_s.c.o -c /home/maddy/canopen_test/build/iris_interfaces/rosidl_generator_py/iris_interfaces/action/_path_coverage_controller_s.c
 
 CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/action/_path_coverage_controller_s.c.i: cmake_force
@@ -638,6 +652,7 @@ iris_interfaces__rosidl_generator_py_OBJECTS = \
 "CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/srv/_update_motor_controller_reference_source_s.c.o" \
 "CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/srv/_a2_command_s.c.o" \
 "CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/srv/_reset_a2_faults_s.c.o" \
+"CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/srv/_alarm_reset_s.c.o" \
 "CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/action/_compute_path_coverage_s.c.o" \
 "CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/action/_navigate_path_coverage_s.c.o" \
 "CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/action/_path_coverage_controller_s.c.o"
@@ -680,6 +695,7 @@ rosidl_generator_py/iris_interfaces/libiris_interfaces__rosidl_generator_py.so: 
 rosidl_generator_py/iris_interfaces/libiris_interfaces__rosidl_generator_py.so: CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/srv/_update_motor_controller_reference_source_s.c.o
 rosidl_generator_py/iris_interfaces/libiris_interfaces__rosidl_generator_py.so: CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/srv/_a2_command_s.c.o
 rosidl_generator_py/iris_interfaces/libiris_interfaces__rosidl_generator_py.so: CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/srv/_reset_a2_faults_s.c.o
+rosidl_generator_py/iris_interfaces/libiris_interfaces__rosidl_generator_py.so: CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/srv/_alarm_reset_s.c.o
 rosidl_generator_py/iris_interfaces/libiris_interfaces__rosidl_generator_py.so: CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/action/_compute_path_coverage_s.c.o
 rosidl_generator_py/iris_interfaces/libiris_interfaces__rosidl_generator_py.so: CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/action/_navigate_path_coverage_s.c.o
 rosidl_generator_py/iris_interfaces/libiris_interfaces__rosidl_generator_py.so: CMakeFiles/iris_interfaces__rosidl_generator_py.dir/rosidl_generator_py/iris_interfaces/action/_path_coverage_controller_s.c.o
@@ -712,7 +728,7 @@ rosidl_generator_py/iris_interfaces/libiris_interfaces__rosidl_generator_py.so: 
 rosidl_generator_py/iris_interfaces/libiris_interfaces__rosidl_generator_py.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 rosidl_generator_py/iris_interfaces/libiris_interfaces__rosidl_generator_py.so: /opt/ros/humble/lib/librcutils.so
 rosidl_generator_py/iris_interfaces/libiris_interfaces__rosidl_generator_py.so: CMakeFiles/iris_interfaces__rosidl_generator_py.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/maddy/canopen_test/build/iris_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Linking C shared library rosidl_generator_py/iris_interfaces/libiris_interfaces__rosidl_generator_py.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/maddy/canopen_test/build/iris_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Linking C shared library rosidl_generator_py/iris_interfaces/libiris_interfaces__rosidl_generator_py.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/iris_interfaces__rosidl_generator_py.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

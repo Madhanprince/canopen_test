@@ -123,6 +123,7 @@ rosidl_generator_rs/iris_interfaces/rust/src/lib.rs: rosidl_adapter/iris_interfa
 rosidl_generator_rs/iris_interfaces/rust/src/lib.rs: rosidl_adapter/iris_interfaces/srv/UpdateMotorControllerReferenceSource.idl
 rosidl_generator_rs/iris_interfaces/rust/src/lib.rs: rosidl_adapter/iris_interfaces/srv/A2Command.idl
 rosidl_generator_rs/iris_interfaces/rust/src/lib.rs: rosidl_adapter/iris_interfaces/srv/ResetA2Faults.idl
+rosidl_generator_rs/iris_interfaces/rust/src/lib.rs: rosidl_adapter/iris_interfaces/srv/AlarmReset.idl
 rosidl_generator_rs/iris_interfaces/rust/src/lib.rs: rosidl_adapter/iris_interfaces/action/ComputePathCoverage.idl
 rosidl_generator_rs/iris_interfaces/rust/src/lib.rs: rosidl_adapter/iris_interfaces/action/NavigatePathCoverage.idl
 rosidl_generator_rs/iris_interfaces/rust/src/lib.rs: rosidl_adapter/iris_interfaces/action/PathCoverageController.idl
@@ -161,6 +162,7 @@ rosidl_generator_rs/iris_interfaces/rust/src/lib.rs: rosidl_adapter/iris_interfa
 rosidl_generator_rs/iris_interfaces/rust/src/lib.rs: rosidl_adapter/iris_interfaces/srv/UpdateMotorControllerReferenceSource.idl
 rosidl_generator_rs/iris_interfaces/rust/src/lib.rs: rosidl_adapter/iris_interfaces/srv/A2Command.idl
 rosidl_generator_rs/iris_interfaces/rust/src/lib.rs: rosidl_adapter/iris_interfaces/srv/ResetA2Faults.idl
+rosidl_generator_rs/iris_interfaces/rust/src/lib.rs: rosidl_adapter/iris_interfaces/srv/AlarmReset.idl
 rosidl_generator_rs/iris_interfaces/rust/src/lib.rs: rosidl_adapter/iris_interfaces/action/ComputePathCoverage.idl
 rosidl_generator_rs/iris_interfaces/rust/src/lib.rs: rosidl_adapter/iris_interfaces/action/NavigatePathCoverage.idl
 rosidl_generator_rs/iris_interfaces/rust/src/lib.rs: rosidl_adapter/iris_interfaces/action/PathCoverageController.idl

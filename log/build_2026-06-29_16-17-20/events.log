@@ -1,9 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.000499] (-) JobUnselected: {'identifier': 'a5_control'}
-[0.000591] (-) JobUnselected: {'identifier': 'iris_interfaces'}
-[0.000661] (a5_simulator) JobQueued: {'identifier': 'a5_simulator', 'dependencies': OrderedDict([('iris_interfaces', '/home/maddy/canopen_test/install/iris_interfaces')])}
-[0.000731] (a5_simulator) JobStarted: {'identifier': 'a5_simulator'}
-[0.098591] (-) TimerEvent: {}
-[0.199058] (-) TimerEvent: {}
-[0.205554] (a5_simulator) JobEnded: {'identifier': 'a5_simulator', 'rc': 0}
-[0.207492] (-) EventReactorShutdown: {}

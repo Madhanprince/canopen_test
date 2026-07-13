@@ -1,1 +1,1 @@
-/opt/ros/humble
+/opt/ros/humble:/home/maddy/canopen_test/install/motor_control:/home/maddy/canopen_test/install/a5_simulator:/home/maddy/canopen_test/install/a5_control:/home/maddy/canopen_test/install/iris_interfaces

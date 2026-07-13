@@ -61,6 +61,7 @@ set(srvs
   "srv/UpdateMotorControllerReferenceSource.srv"
   "srv/A2Command.srv"
   "srv/ResetA2Faults.srv"
+  "srv/AlarmReset.srv"
 )
 
 set(actions

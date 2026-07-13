@@ -1,16 +1,1 @@
-// generated from rosidl_adapter/resource/msg.idl.em
-// with input from iris_interfaces/msg/OTAStatus.msg
-// generated code does not contain a copyright notice
-
-#include "iris_interfaces/msg/MenderClientStatus.idl"
-#include "iris_interfaces/msg/SystemSoftwareStatus.idl"
-
-module iris_interfaces {
-  module msg {
-    struct OTAStatus {
-      iris_interfaces::msg::SystemSoftwareStatus system_software_info;
-
-      iris_interfaces::msg::MenderClientStatus mender_client_status;
-    };
-  };
-};
+/home/maddy/canopen_test/build/iris_interfaces/rosidl_adapter/iris_interfaces/msg/OTAStatus.idl
