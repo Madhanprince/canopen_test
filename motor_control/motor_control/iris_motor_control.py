@@ -74,7 +74,7 @@ class MotorControl(Node):
             self.network.connect(bustype='socketcan', channel=self.interface, bitrate=self.bitrate)
             self.__motor_node= ItalseaDualDrive(self.node_id)
             self.network.add_node(self.__motor_node.dual_drive)
-            self.__motor_node_emcy = self.__motor_node.dual_drive.emcy
+            self.__motor_node_emcy = self.__motor_node.dual_drive.emcy 
             self.__motor_node_emcy.add_callback(self.__emcy_callback)
             self.__motor_node_nmt = self.__motor_node.dual_drive.nmt
             self.__motor_node.dual_drive.nmt.state = 'PRE-OPERATIONAL'
