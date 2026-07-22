@@ -1,1 +1,0 @@
-/home/maddy/canopen_test/build/iris_interfaces/rosidl_generator_py/iris_interfaces/action/_navigate_path_coverage.py

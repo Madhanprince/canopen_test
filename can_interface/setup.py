@@ -24,6 +24,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
+            "canopen_face =can_interface.canopen_interface:main"
         ],
     },
 )

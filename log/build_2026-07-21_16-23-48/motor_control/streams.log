@@ -1,0 +1,24 @@
+[1.420s] Invoking command in '/home/agx/canopen_test/build/motor_control': PYTHONPATH=/home/agx/canopen_test/build/motor_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/agx/canopen_test/install/motor_control/lib/python3.10/site-packages:/home/agx/canopen_test/install/iris_interfaces/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv241) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/agx/canopen_test/build/motor_control/build --no-deps symlink_data
+[1.812s] running develop
+[2.054s] running egg_info
+[2.055s] creating motor_control.egg-info
+[2.056s] writing motor_control.egg-info/PKG-INFO
+[2.056s] writing dependency_links to motor_control.egg-info/dependency_links.txt
+[2.057s] writing entry points to motor_control.egg-info/entry_points.txt
+[2.058s] writing requirements to motor_control.egg-info/requires.txt
+[2.058s] writing top-level names to motor_control.egg-info/top_level.txt
+[2.058s] writing manifest file 'motor_control.egg-info/SOURCES.txt'
+[2.059s] reading manifest file 'motor_control.egg-info/SOURCES.txt'
+[2.059s] writing manifest file 'motor_control.egg-info/SOURCES.txt'
+[2.062s] running build_ext
+[2.062s] Creating /home/agx/canopen_test/install/motor_control/lib/python3.10/site-packages/motor-control.egg-link (link to .)
+[2.063s] Installing motor_control_node script to /home/agx/canopen_test/install/motor_control/lib/motor_control
+[2.065s] 
+[2.065s] Installed /home/agx/canopen_test/build/motor_control
+[2.066s] running symlink_data
+[2.066s] creating /home/agx/canopen_test/install/motor_control/share/ament_index
+[2.066s] creating /home/agx/canopen_test/install/motor_control/share/ament_index/resource_index
+[2.067s] creating /home/agx/canopen_test/install/motor_control/share/ament_index/resource_index/packages
+[2.067s] symbolically linking /home/agx/canopen_test/build/motor_control/resource/motor_control -> /home/agx/canopen_test/install/motor_control/share/ament_index/resource_index/packages
+[2.068s] symbolically linking /home/agx/canopen_test/build/motor_control/package.xml -> /home/agx/canopen_test/install/motor_control/share/motor_control
+[2.173s] Invoked command in '/home/agx/canopen_test/build/motor_control' returned '0': PYTHONPATH=/home/agx/canopen_test/build/motor_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/agx/canopen_test/install/motor_control/lib/python3.10/site-packages:/home/agx/canopen_test/install/iris_interfaces/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv241) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/agx/canopen_test/build/motor_control/build --no-deps symlink_data

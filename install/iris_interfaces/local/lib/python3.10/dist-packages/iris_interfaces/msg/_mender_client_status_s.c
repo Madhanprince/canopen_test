@@ -1,1 +1,0 @@
-/home/maddy/canopen_test/build/iris_interfaces/rosidl_generator_py/iris_interfaces/msg/_mender_client_status_s.c

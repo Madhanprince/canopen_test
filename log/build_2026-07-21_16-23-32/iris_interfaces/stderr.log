@@ -1,0 +1,38 @@
+Traceback (most recent call last):
+  File "/opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c", line 8, in <module>
+    from rosidl_generator_c import generate_c
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_c/__init__.py", line 15, in <module>
+    from rosidl_cmake import convert_camel_case_to_lower_case_underscore
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 24, in <module>
+    from rosidl_parser.parser import parse_idl_file
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 20, in <module>
+    from lark import Lark
+ModuleNotFoundError: No module named 'lark'
+Traceback (most recent call last):
+  File "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp", line 8, in <module>
+Traceback (most recent call last):
+  File "/opt/ros/humble/share/rosidl_generator_rs/cmake/../../../lib/rosidl_generator_rs/rosidl_generator_rs", line 8, in <module>
+    from rosidl_generator_cpp import generate_cpp
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py", line 17, in <module>
+    from rosidl_generator_rs import generate_rs
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_rs/__init__.py", line 21, in <module>
+    from rosidl_cmake import generate_files
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 24, in <module>
+    import rosidl_cmake as rosidl_pycommon
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 24, in <module>
+    from rosidl_parser.parser import parse_idl_file
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 20, in <module>
+    from rosidl_parser.parser import parse_idl_file
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 20, in <module>
+    from lark import Lark
+ModuleNotFoundError: No module named 'lark'
+    from lark import Lark
+ModuleNotFoundError: No module named 'lark'
+gmake[2]: *** [CMakeFiles/iris_interfaces__rosidl_generator_c.dir/build.make:232: rosidl_generator_c/iris_interfaces/msg/wheel_command_speed.h] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:231: CMakeFiles/iris_interfaces__rosidl_generator_c.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/iris_interfaces__cpp.dir/build.make:428: rosidl_generator_cpp/iris_interfaces/msg/wheel_command_speed.hpp] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:336: CMakeFiles/iris_interfaces__cpp.dir/all] Error 2
+gmake[2]: *** [iris_interfaces__rs/CMakeFiles/iris_interfaces__rs.dir/build.make:277: rosidl_generator_rs/iris_interfaces/rust/src/lib.rs] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:635: iris_interfaces__rs/CMakeFiles/iris_interfaces__rs.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

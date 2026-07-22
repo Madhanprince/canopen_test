@@ -1,0 +1,309 @@
+[0.156s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.156s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff860949a0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff86094520>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff86094520>>)
+[0.406s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.406s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.406s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.406s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.406s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.406s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.406s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/agx/canopen_test'
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(a5_control) by extensions ['ignore', 'ignore_ament_install']
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(a5_control) by extension 'ignore'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(a5_control) by extension 'ignore_ament_install'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(a5_control) by extensions ['colcon_pkg']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(a5_control) by extension 'colcon_pkg'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(a5_control) by extensions ['colcon_meta']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(a5_control) by extension 'colcon_meta'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(a5_control) by extensions ['ros']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(a5_control) by extension 'ros'
+[0.429s] DEBUG:colcon.colcon_core.package_identification:Package 'a5_control' with type 'ros.ament_python' and name 'a5_control'
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(can_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(can_interface) by extension 'ignore'
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(can_interface) by extension 'ignore_ament_install'
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(can_interface) by extensions ['colcon_pkg']
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(can_interface) by extension 'colcon_pkg'
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(can_interface) by extensions ['colcon_meta']
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(can_interface) by extension 'colcon_meta'
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(can_interface) by extensions ['ros']
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(can_interface) by extension 'ros'
+[0.431s] DEBUG:colcon.colcon_core.package_identification:Package 'can_interface' with type 'ros.ament_python' and name 'can_interface'
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(iris_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(iris_interfaces) by extension 'ignore'
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(iris_interfaces) by extension 'ignore_ament_install'
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(iris_interfaces) by extensions ['colcon_pkg']
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(iris_interfaces) by extension 'colcon_pkg'
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(iris_interfaces) by extensions ['colcon_meta']
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(iris_interfaces) by extension 'colcon_meta'
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(iris_interfaces) by extensions ['ros']
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(iris_interfaces) by extension 'ros'
+[0.433s] DEBUG:colcon.colcon_core.package_identification:Package 'iris_interfaces' with type 'ros.ament_cmake' and name 'iris_interfaces'
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(motor_control) by extensions ['ignore', 'ignore_ament_install']
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(motor_control) by extension 'ignore'
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(motor_control) by extension 'ignore_ament_install'
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(motor_control) by extensions ['colcon_pkg']
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(motor_control) by extension 'colcon_pkg'
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(motor_control) by extensions ['colcon_meta']
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(motor_control) by extension 'colcon_meta'
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(motor_control) by extensions ['ros']
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(motor_control) by extension 'ros'
+[0.435s] DEBUG:colcon.colcon_core.package_identification:Package 'motor_control' with type 'ros.ament_python' and name 'motor_control'
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(venv241) by extensions ['ignore', 'ignore_ament_install']
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(venv241) by extension 'ignore'
+[0.436s] Level 1:colcon.colcon_core.package_identification:_identify(venv241) ignored
+[0.436s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.436s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.436s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.436s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.436s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.492s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.492s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.494s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/agx/canopen_test/install/a5_control' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.495s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/agx/canopen_test/install
+[0.497s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 358 installed packages in /opt/ros/humble
+[0.500s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.565s] Level 5:colcon.colcon_core.verb:set package 'can_interface' build argument 'cmake_args' from command line to 'None'
+[0.565s] Level 5:colcon.colcon_core.verb:set package 'can_interface' build argument 'cmake_target' from command line to 'None'
+[0.565s] Level 5:colcon.colcon_core.verb:set package 'can_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.565s] Level 5:colcon.colcon_core.verb:set package 'can_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.565s] Level 5:colcon.colcon_core.verb:set package 'can_interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.565s] Level 5:colcon.colcon_core.verb:set package 'can_interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.565s] Level 5:colcon.colcon_core.verb:set package 'can_interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.565s] Level 5:colcon.colcon_core.verb:set package 'can_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.565s] Level 5:colcon.colcon_core.verb:set package 'can_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.565s] DEBUG:colcon.colcon_core.verb:Building package 'can_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/agx/canopen_test/build/can_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/agx/canopen_test/install/can_interface', 'merge_install': False, 'path': '/home/agx/canopen_test/can_interface', 'symlink_install': True, 'test_result_base': None}
+[0.566s] Level 5:colcon.colcon_core.verb:set package 'iris_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.566s] Level 5:colcon.colcon_core.verb:set package 'iris_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.566s] Level 5:colcon.colcon_core.verb:set package 'iris_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.566s] Level 5:colcon.colcon_core.verb:set package 'iris_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.566s] Level 5:colcon.colcon_core.verb:set package 'iris_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.566s] Level 5:colcon.colcon_core.verb:set package 'iris_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.566s] Level 5:colcon.colcon_core.verb:set package 'iris_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.566s] Level 5:colcon.colcon_core.verb:set package 'iris_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.566s] Level 5:colcon.colcon_core.verb:set package 'iris_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.566s] DEBUG:colcon.colcon_core.verb:Building package 'iris_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/agx/canopen_test/build/iris_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/agx/canopen_test/install/iris_interfaces', 'merge_install': False, 'path': '/home/agx/canopen_test/iris_interfaces', 'symlink_install': True, 'test_result_base': None}
+[0.566s] Level 5:colcon.colcon_core.verb:set package 'a5_control' build argument 'cmake_args' from command line to 'None'
+[0.566s] Level 5:colcon.colcon_core.verb:set package 'a5_control' build argument 'cmake_target' from command line to 'None'
+[0.567s] Level 5:colcon.colcon_core.verb:set package 'a5_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.567s] Level 5:colcon.colcon_core.verb:set package 'a5_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.567s] Level 5:colcon.colcon_core.verb:set package 'a5_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.567s] Level 5:colcon.colcon_core.verb:set package 'a5_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.567s] Level 5:colcon.colcon_core.verb:set package 'a5_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.567s] Level 5:colcon.colcon_core.verb:set package 'a5_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.567s] Level 5:colcon.colcon_core.verb:set package 'a5_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.567s] DEBUG:colcon.colcon_core.verb:Building package 'a5_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/agx/canopen_test/build/a5_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/agx/canopen_test/install/a5_control', 'merge_install': False, 'path': '/home/agx/canopen_test/a5_control', 'symlink_install': True, 'test_result_base': None}
+[0.567s] Level 5:colcon.colcon_core.verb:set package 'motor_control' build argument 'cmake_args' from command line to 'None'
+[0.567s] Level 5:colcon.colcon_core.verb:set package 'motor_control' build argument 'cmake_target' from command line to 'None'
+[0.567s] Level 5:colcon.colcon_core.verb:set package 'motor_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.567s] Level 5:colcon.colcon_core.verb:set package 'motor_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.567s] Level 5:colcon.colcon_core.verb:set package 'motor_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.567s] Level 5:colcon.colcon_core.verb:set package 'motor_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.567s] Level 5:colcon.colcon_core.verb:set package 'motor_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.567s] Level 5:colcon.colcon_core.verb:set package 'motor_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.567s] Level 5:colcon.colcon_core.verb:set package 'motor_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.568s] DEBUG:colcon.colcon_core.verb:Building package 'motor_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/agx/canopen_test/build/motor_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/agx/canopen_test/install/motor_control', 'merge_install': False, 'path': '/home/agx/canopen_test/motor_control', 'symlink_install': True, 'test_result_base': None}
+[0.568s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.570s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.571s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/agx/canopen_test/iris_interfaces' with build type 'ament_cmake'
+[0.571s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/agx/canopen_test/iris_interfaces'
+[0.574s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.574s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.574s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.580s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/agx/canopen_test/can_interface' with build type 'ament_python'
+[0.580s] Level 1:colcon.colcon_core.shell:create_environment_hook('can_interface', 'ament_prefix_path')
+[0.581s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/agx/canopen_test/install/can_interface/share/can_interface/hook/ament_prefix_path.ps1'
+[0.582s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/agx/canopen_test/install/can_interface/share/can_interface/hook/ament_prefix_path.dsv'
+[0.583s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/agx/canopen_test/install/can_interface/share/can_interface/hook/ament_prefix_path.sh'
+[0.584s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.584s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.599s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/agx/canopen_test/build/iris_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/agx/canopen_test/install/a5_control:/opt/ros/humble VIRTUAL_ENV_PROMPT=(venv241) /usr/bin/cmake --build /home/agx/canopen_test/build/iris_interfaces -- -j12 -l12
+[1.019s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/agx/canopen_test/can_interface'
+[1.020s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.020s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.551s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/agx/canopen_test/build/can_interface': PYTHONPATH=/home/agx/canopen_test/build/can_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/agx/canopen_test/install/can_interface/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv241) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/agx/canopen_test/build/can_interface/build --no-deps symlink_data
+[2.264s] Level 1:colcon.colcon_core.shell:create_environment_hook('can_interface', 'pythonpath_develop')
+[2.265s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/agx/canopen_test/build/can_interface/share/can_interface/hook/pythonpath_develop.ps1'
+[2.267s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/agx/canopen_test/build/can_interface' returned '0': PYTHONPATH=/home/agx/canopen_test/build/can_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/agx/canopen_test/install/can_interface/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv241) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/agx/canopen_test/build/can_interface/build --no-deps symlink_data
+[2.268s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/agx/canopen_test/build/can_interface/share/can_interface/hook/pythonpath_develop.dsv'
+[2.269s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/agx/canopen_test/build/can_interface/share/can_interface/hook/pythonpath_develop.sh'
+[2.279s] Level 1:colcon.colcon_core.environment:checking '/home/agx/canopen_test/install/can_interface' for CMake module files
+[2.281s] Level 1:colcon.colcon_core.environment:checking '/home/agx/canopen_test/install/can_interface' for CMake config files
+[2.283s] Level 1:colcon.colcon_core.environment:checking '/home/agx/canopen_test/install/can_interface/lib'
+[2.284s] Level 1:colcon.colcon_core.environment:checking '/home/agx/canopen_test/install/can_interface/bin'
+[2.284s] Level 1:colcon.colcon_core.environment:checking '/home/agx/canopen_test/install/can_interface/lib/pkgconfig/can_interface.pc'
+[2.285s] Level 1:colcon.colcon_core.environment:checking '/home/agx/canopen_test/install/can_interface/lib/python3.10/site-packages'
+[2.285s] Level 1:colcon.colcon_core.shell:create_environment_hook('can_interface', 'pythonpath')
+[2.286s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/agx/canopen_test/install/can_interface/share/can_interface/hook/pythonpath.ps1'
+[2.288s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/agx/canopen_test/install/can_interface/share/can_interface/hook/pythonpath.dsv'
+[2.289s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/agx/canopen_test/install/can_interface/share/can_interface/hook/pythonpath.sh'
+[2.291s] Level 1:colcon.colcon_core.environment:checking '/home/agx/canopen_test/install/can_interface/bin'
+[2.292s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(can_interface)
+[2.293s] INFO:colcon.colcon_core.shell:Creating package script '/home/agx/canopen_test/install/can_interface/share/can_interface/package.ps1'
+[2.297s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/agx/canopen_test/install/can_interface/share/can_interface/package.dsv'
+[2.299s] INFO:colcon.colcon_core.shell:Creating package script '/home/agx/canopen_test/install/can_interface/share/can_interface/package.sh'
+[2.302s] INFO:colcon.colcon_core.shell:Creating package script '/home/agx/canopen_test/install/can_interface/share/can_interface/package.bash'
+[2.304s] INFO:colcon.colcon_core.shell:Creating package script '/home/agx/canopen_test/install/can_interface/share/can_interface/package.zsh'
+[2.307s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/agx/canopen_test/install/can_interface/share/colcon-core/packages/can_interface)
+[29.950s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/agx/canopen_test/build/iris_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/agx/canopen_test/install/a5_control:/opt/ros/humble VIRTUAL_ENV_PROMPT=(venv241) /usr/bin/cmake --build /home/agx/canopen_test/build/iris_interfaces -- -j12 -l12
+[29.971s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/agx/canopen_test/build/iris_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/agx/canopen_test/install/a5_control:/opt/ros/humble VIRTUAL_ENV_PROMPT=(venv241) /usr/bin/cmake --install /home/agx/canopen_test/build/iris_interfaces
+[42.577s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(iris_interfaces)
+[42.578s] Level 1:colcon.colcon_core.environment:checking '/home/agx/canopen_test/install/iris_interfaces' for CMake module files
+[42.580s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/agx/canopen_test/build/iris_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/agx/canopen_test/install/a5_control:/opt/ros/humble VIRTUAL_ENV_PROMPT=(venv241) /usr/bin/cmake --install /home/agx/canopen_test/build/iris_interfaces
+[42.582s] Level 1:colcon.colcon_core.environment:checking '/home/agx/canopen_test/install/iris_interfaces' for CMake config files
+[42.585s] Level 1:colcon.colcon_core.shell:create_environment_hook('iris_interfaces', 'cmake_prefix_path')
+[42.586s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/agx/canopen_test/install/iris_interfaces/share/iris_interfaces/hook/cmake_prefix_path.ps1'
+[42.588s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/agx/canopen_test/install/iris_interfaces/share/iris_interfaces/hook/cmake_prefix_path.dsv'
+[42.589s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/agx/canopen_test/install/iris_interfaces/share/iris_interfaces/hook/cmake_prefix_path.sh'
+[42.591s] Level 1:colcon.colcon_core.environment:checking '/home/agx/canopen_test/install/iris_interfaces/lib'
+[42.591s] Level 1:colcon.colcon_core.shell:create_environment_hook('iris_interfaces', 'ld_library_path_lib')
+[42.592s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/agx/canopen_test/install/iris_interfaces/share/iris_interfaces/hook/ld_library_path_lib.ps1'
+[42.594s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/agx/canopen_test/install/iris_interfaces/share/iris_interfaces/hook/ld_library_path_lib.dsv'
+[42.595s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/agx/canopen_test/install/iris_interfaces/share/iris_interfaces/hook/ld_library_path_lib.sh'
+[42.596s] Level 1:colcon.colcon_core.environment:checking '/home/agx/canopen_test/install/iris_interfaces/bin'
+[42.597s] Level 1:colcon.colcon_core.environment:checking '/home/agx/canopen_test/install/iris_interfaces/lib/pkgconfig/iris_interfaces.pc'
+[42.598s] Level 1:colcon.colcon_core.environment:checking '/home/agx/canopen_test/install/iris_interfaces/lib/python3.10/site-packages'
+[42.598s] Level 1:colcon.colcon_core.shell:create_environment_hook('iris_interfaces', 'pythonpath')
+[42.599s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/agx/canopen_test/install/iris_interfaces/share/iris_interfaces/hook/pythonpath.ps1'
+[42.600s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/agx/canopen_test/install/iris_interfaces/share/iris_interfaces/hook/pythonpath.dsv'
+[42.601s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/agx/canopen_test/install/iris_interfaces/share/iris_interfaces/hook/pythonpath.sh'
+[42.604s] Level 1:colcon.colcon_core.environment:checking '/home/agx/canopen_test/install/iris_interfaces/bin'
+[42.606s] INFO:colcon.colcon_core.shell:Creating package script '/home/agx/canopen_test/install/iris_interfaces/share/iris_interfaces/package.ps1'
+[42.608s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/agx/canopen_test/install/iris_interfaces/share/iris_interfaces/package.dsv'
+[42.610s] INFO:colcon.colcon_core.shell:Creating package script '/home/agx/canopen_test/install/iris_interfaces/share/iris_interfaces/package.sh'
+[42.612s] INFO:colcon.colcon_core.shell:Creating package script '/home/agx/canopen_test/install/iris_interfaces/share/iris_interfaces/package.bash'
+[42.613s] INFO:colcon.colcon_core.shell:Creating package script '/home/agx/canopen_test/install/iris_interfaces/share/iris_interfaces/package.zsh'
+[42.615s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/agx/canopen_test/install/iris_interfaces/share/colcon-core/packages/iris_interfaces)
+[42.617s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(iris_interfaces)
+[42.618s] Level 1:colcon.colcon_core.environment:checking '/home/agx/canopen_test/install/iris_interfaces' for CMake module files
+[42.620s] Level 1:colcon.colcon_core.environment:checking '/home/agx/canopen_test/install/iris_interfaces' for CMake config files
+[42.623s] Level 1:colcon.colcon_core.shell:create_environment_hook('iris_interfaces', 'cmake_prefix_path')
+[42.624s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/agx/canopen_test/install/iris_interfaces/share/iris_interfaces/hook/cmake_prefix_path.ps1'
+[42.625s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/agx/canopen_test/install/iris_interfaces/share/iris_interfaces/hook/cmake_prefix_path.dsv'
+[42.627s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/agx/canopen_test/install/iris_interfaces/share/iris_interfaces/hook/cmake_prefix_path.sh'
+[42.629s] Level 1:colcon.colcon_core.environment:checking '/home/agx/canopen_test/install/iris_interfaces/lib'
+[42.629s] Level 1:colcon.colcon_core.shell:create_environment_hook('iris_interfaces', 'ld_library_path_lib')
+[42.630s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/agx/canopen_test/install/iris_interfaces/share/iris_interfaces/hook/ld_library_path_lib.ps1'
+[42.631s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/agx/canopen_test/install/iris_interfaces/share/iris_interfaces/hook/ld_library_path_lib.dsv'
+[42.633s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/agx/canopen_test/install/iris_interfaces/share/iris_interfaces/hook/ld_library_path_lib.sh'
+[42.634s] Level 1:colcon.colcon_core.environment:checking '/home/agx/canopen_test/install/iris_interfaces/bin'
+[42.635s] Level 1:colcon.colcon_core.environment:checking '/home/agx/canopen_test/install/iris_interfaces/lib/pkgconfig/iris_interfaces.pc'
+[42.636s] Level 1:colcon.colcon_core.environment:checking '/home/agx/canopen_test/install/iris_interfaces/lib/python3.10/site-packages'
+[42.636s] Level 1:colcon.colcon_core.shell:create_environment_hook('iris_interfaces', 'pythonpath')
+[42.636s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/agx/canopen_test/install/iris_interfaces/share/iris_interfaces/hook/pythonpath.ps1'
+[42.638s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/agx/canopen_test/install/iris_interfaces/share/iris_interfaces/hook/pythonpath.dsv'
+[42.639s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/agx/canopen_test/install/iris_interfaces/share/iris_interfaces/hook/pythonpath.sh'
+[42.642s] Level 1:colcon.colcon_core.environment:checking '/home/agx/canopen_test/install/iris_interfaces/bin'
+[42.643s] INFO:colcon.colcon_core.shell:Creating package script '/home/agx/canopen_test/install/iris_interfaces/share/iris_interfaces/package.ps1'
+[42.645s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/agx/canopen_test/install/iris_interfaces/share/iris_interfaces/package.dsv'
+[42.647s] INFO:colcon.colcon_core.shell:Creating package script '/home/agx/canopen_test/install/iris_interfaces/share/iris_interfaces/package.sh'
+[42.648s] INFO:colcon.colcon_core.shell:Creating package script '/home/agx/canopen_test/install/iris_interfaces/share/iris_interfaces/package.bash'
+[42.650s] INFO:colcon.colcon_core.shell:Creating package script '/home/agx/canopen_test/install/iris_interfaces/share/iris_interfaces/package.zsh'
+[42.651s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/agx/canopen_test/install/iris_interfaces/share/colcon-core/packages/iris_interfaces)
+[42.652s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/agx/canopen_test/a5_control' with build type 'ament_python'
+[42.653s] Level 1:colcon.colcon_core.shell:create_environment_hook('a5_control', 'ament_prefix_path')
+[42.654s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/agx/canopen_test/install/a5_control/share/a5_control/hook/ament_prefix_path.ps1'
+[42.656s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/agx/canopen_test/install/a5_control/share/a5_control/hook/ament_prefix_path.dsv'
+[42.657s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/agx/canopen_test/install/a5_control/share/a5_control/hook/ament_prefix_path.sh'
+[42.658s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[42.659s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[42.668s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/agx/canopen_test/motor_control' with build type 'ament_python'
+[42.668s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_control', 'ament_prefix_path')
+[42.668s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/agx/canopen_test/install/motor_control/share/motor_control/hook/ament_prefix_path.ps1'
+[42.670s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/agx/canopen_test/install/motor_control/share/motor_control/hook/ament_prefix_path.dsv'
+[42.671s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/agx/canopen_test/install/motor_control/share/motor_control/hook/ament_prefix_path.sh'
+[42.672s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[42.672s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[43.102s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/agx/canopen_test/a5_control'
+[43.103s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[43.104s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[43.523s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/agx/canopen_test/motor_control'
+[43.523s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[43.524s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[44.088s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/agx/canopen_test/build/motor_control': PYTHONPATH=/home/agx/canopen_test/build/motor_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/agx/canopen_test/install/motor_control/lib/python3.10/site-packages:/home/agx/canopen_test/install/iris_interfaces/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv241) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/agx/canopen_test/build/motor_control/build --no-deps symlink_data
+[44.093s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/agx/canopen_test/build/a5_control': PYTHONPATH=/home/agx/canopen_test/build/a5_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/agx/canopen_test/install/a5_control/lib/python3.10/site-packages:/home/agx/canopen_test/install/iris_interfaces/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv241) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/agx/canopen_test/build/a5_control/build --no-deps symlink_data
+[44.806s] Level 1:colcon.colcon_core.shell:create_environment_hook('a5_control', 'pythonpath_develop')
+[44.807s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/agx/canopen_test/build/a5_control/share/a5_control/hook/pythonpath_develop.ps1'
+[44.808s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/agx/canopen_test/build/a5_control' returned '0': PYTHONPATH=/home/agx/canopen_test/build/a5_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/agx/canopen_test/install/a5_control/lib/python3.10/site-packages:/home/agx/canopen_test/install/iris_interfaces/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv241) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/agx/canopen_test/build/a5_control/build --no-deps symlink_data
+[44.811s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/agx/canopen_test/build/a5_control/share/a5_control/hook/pythonpath_develop.dsv'
+[44.812s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/agx/canopen_test/build/a5_control/share/a5_control/hook/pythonpath_develop.sh'
+[44.814s] Level 1:colcon.colcon_core.environment:checking '/home/agx/canopen_test/install/a5_control' for CMake module files
+[44.816s] Level 1:colcon.colcon_core.environment:checking '/home/agx/canopen_test/install/a5_control' for CMake config files
+[44.818s] Level 1:colcon.colcon_core.environment:checking '/home/agx/canopen_test/install/a5_control/lib'
+[44.818s] Level 1:colcon.colcon_core.environment:checking '/home/agx/canopen_test/install/a5_control/bin'
+[44.819s] Level 1:colcon.colcon_core.environment:checking '/home/agx/canopen_test/install/a5_control/lib/pkgconfig/a5_control.pc'
+[44.820s] Level 1:colcon.colcon_core.environment:checking '/home/agx/canopen_test/install/a5_control/lib/python3.10/site-packages'
+[44.820s] Level 1:colcon.colcon_core.shell:create_environment_hook('a5_control', 'pythonpath')
+[44.821s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/agx/canopen_test/install/a5_control/share/a5_control/hook/pythonpath.ps1'
+[44.822s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/agx/canopen_test/install/a5_control/share/a5_control/hook/pythonpath.dsv'
+[44.823s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/agx/canopen_test/install/a5_control/share/a5_control/hook/pythonpath.sh'
+[44.826s] Level 1:colcon.colcon_core.environment:checking '/home/agx/canopen_test/install/a5_control/bin'
+[44.826s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(a5_control)
+[44.827s] INFO:colcon.colcon_core.shell:Creating package script '/home/agx/canopen_test/install/a5_control/share/a5_control/package.ps1'
+[44.830s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/agx/canopen_test/install/a5_control/share/a5_control/package.dsv'
+[44.831s] INFO:colcon.colcon_core.shell:Creating package script '/home/agx/canopen_test/install/a5_control/share/a5_control/package.sh'
+[44.833s] INFO:colcon.colcon_core.shell:Creating package script '/home/agx/canopen_test/install/a5_control/share/a5_control/package.bash'
+[44.834s] INFO:colcon.colcon_core.shell:Creating package script '/home/agx/canopen_test/install/a5_control/share/a5_control/package.zsh'
+[44.836s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/agx/canopen_test/install/a5_control/share/colcon-core/packages/a5_control)
+[44.839s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_control', 'pythonpath_develop')
+[44.840s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/agx/canopen_test/build/motor_control/share/motor_control/hook/pythonpath_develop.ps1'
+[44.842s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/agx/canopen_test/build/motor_control' returned '0': PYTHONPATH=/home/agx/canopen_test/build/motor_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/agx/canopen_test/install/motor_control/lib/python3.10/site-packages:/home/agx/canopen_test/install/iris_interfaces/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv241) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/agx/canopen_test/build/motor_control/build --no-deps symlink_data
+[44.843s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/agx/canopen_test/build/motor_control/share/motor_control/hook/pythonpath_develop.dsv'
+[44.844s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/agx/canopen_test/build/motor_control/share/motor_control/hook/pythonpath_develop.sh'
+[44.846s] Level 1:colcon.colcon_core.environment:checking '/home/agx/canopen_test/install/motor_control' for CMake module files
+[44.848s] Level 1:colcon.colcon_core.environment:checking '/home/agx/canopen_test/install/motor_control' for CMake config files
+[44.850s] Level 1:colcon.colcon_core.environment:checking '/home/agx/canopen_test/install/motor_control/lib'
+[44.850s] Level 1:colcon.colcon_core.environment:checking '/home/agx/canopen_test/install/motor_control/bin'
+[44.850s] Level 1:colcon.colcon_core.environment:checking '/home/agx/canopen_test/install/motor_control/lib/pkgconfig/motor_control.pc'
+[44.851s] Level 1:colcon.colcon_core.environment:checking '/home/agx/canopen_test/install/motor_control/lib/python3.10/site-packages'
+[44.851s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_control', 'pythonpath')
+[44.852s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/agx/canopen_test/install/motor_control/share/motor_control/hook/pythonpath.ps1'
+[44.854s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/agx/canopen_test/install/motor_control/share/motor_control/hook/pythonpath.dsv'
+[44.855s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/agx/canopen_test/install/motor_control/share/motor_control/hook/pythonpath.sh'
+[44.857s] Level 1:colcon.colcon_core.environment:checking '/home/agx/canopen_test/install/motor_control/bin'
+[44.858s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motor_control)
+[44.859s] INFO:colcon.colcon_core.shell:Creating package script '/home/agx/canopen_test/install/motor_control/share/motor_control/package.ps1'
+[44.861s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/agx/canopen_test/install/motor_control/share/motor_control/package.dsv'
+[44.863s] INFO:colcon.colcon_core.shell:Creating package script '/home/agx/canopen_test/install/motor_control/share/motor_control/package.sh'
+[44.864s] INFO:colcon.colcon_core.shell:Creating package script '/home/agx/canopen_test/install/motor_control/share/motor_control/package.bash'
+[44.866s] INFO:colcon.colcon_core.shell:Creating package script '/home/agx/canopen_test/install/motor_control/share/motor_control/package.zsh'
+[44.867s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/agx/canopen_test/install/motor_control/share/colcon-core/packages/motor_control)
+[44.868s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[44.870s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[44.870s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[44.871s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[44.890s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[44.890s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[44.890s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[44.933s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[44.935s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/agx/canopen_test/install/local_setup.ps1'
+[44.939s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/agx/canopen_test/install/_local_setup_util_ps1.py'
+[44.944s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/agx/canopen_test/install/setup.ps1'
+[44.948s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/agx/canopen_test/install/local_setup.sh'
+[44.950s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/agx/canopen_test/install/_local_setup_util_sh.py'
+[44.952s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/agx/canopen_test/install/setup.sh'
+[44.956s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/agx/canopen_test/install/local_setup.bash'
+[44.958s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/agx/canopen_test/install/setup.bash'
+[44.962s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/agx/canopen_test/install/local_setup.zsh'
+[44.964s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/agx/canopen_test/install/setup.zsh'

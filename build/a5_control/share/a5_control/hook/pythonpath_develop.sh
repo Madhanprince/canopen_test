@@ -1,3 +1,3 @@
 # generated from colcon_core/shell/template/hook_prepend_value.sh.em
 
-_colcon_prepend_unique_value PYTHONPATH "/home/maddy/canopen_test/build/a5_control"
+_colcon_prepend_unique_value PYTHONPATH "/home/agx/canopen_test/build/a5_control"

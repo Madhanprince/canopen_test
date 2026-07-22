@@ -1,0 +1,24 @@
+[0.971s] Invoking command in '/home/agx/canopen_test/build/can_interface': PYTHONPATH=/home/agx/canopen_test/build/can_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/agx/canopen_test/install/can_interface/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv241) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/agx/canopen_test/build/can_interface/build --no-deps symlink_data
+[1.351s] running develop
+[1.589s] running egg_info
+[1.589s] creating can_interface.egg-info
+[1.589s] writing can_interface.egg-info/PKG-INFO
+[1.589s] writing dependency_links to can_interface.egg-info/dependency_links.txt
+[1.589s] writing entry points to can_interface.egg-info/entry_points.txt
+[1.589s] writing requirements to can_interface.egg-info/requires.txt
+[1.589s] writing top-level names to can_interface.egg-info/top_level.txt
+[1.590s] writing manifest file 'can_interface.egg-info/SOURCES.txt'
+[1.592s] reading manifest file 'can_interface.egg-info/SOURCES.txt'
+[1.594s] writing manifest file 'can_interface.egg-info/SOURCES.txt'
+[1.596s] running build_ext
+[1.596s] Creating /home/agx/canopen_test/install/can_interface/lib/python3.10/site-packages/can-interface.egg-link (link to .)
+[1.597s] Installing canopen_face script to /home/agx/canopen_test/install/can_interface/lib/can_interface
+[1.598s] 
+[1.598s] Installed /home/agx/canopen_test/build/can_interface
+[1.598s] running symlink_data
+[1.598s] creating /home/agx/canopen_test/install/can_interface/share/ament_index
+[1.598s] creating /home/agx/canopen_test/install/can_interface/share/ament_index/resource_index
+[1.598s] creating /home/agx/canopen_test/install/can_interface/share/ament_index/resource_index/packages
+[1.599s] symbolically linking /home/agx/canopen_test/build/can_interface/resource/can_interface -> /home/agx/canopen_test/install/can_interface/share/ament_index/resource_index/packages
+[1.599s] symbolically linking /home/agx/canopen_test/build/can_interface/package.xml -> /home/agx/canopen_test/install/can_interface/share/can_interface
+[1.665s] Invoked command in '/home/agx/canopen_test/build/can_interface' returned '0': PYTHONPATH=/home/agx/canopen_test/build/can_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/agx/canopen_test/install/can_interface/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv241) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/agx/canopen_test/build/can_interface/build --no-deps symlink_data

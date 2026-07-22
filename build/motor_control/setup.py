@@ -1,0 +1,1 @@
+/home/agx/canopen_test/motor_control/setup.py

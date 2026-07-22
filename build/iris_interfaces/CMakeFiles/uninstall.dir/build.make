@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/maddy/canopen_test/iris_interfaces
+CMAKE_SOURCE_DIR = /home/agx/canopen_test/iris_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/maddy/canopen_test/build/iris_interfaces
+CMAKE_BINARY_DIR = /home/agx/canopen_test/build/iris_interfaces
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/maddy/canopen_test/build/iris_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/maddy/canopen_test/iris_interfaces /home/maddy/canopen_test/iris_interfaces /home/maddy/canopen_test/build/iris_interfaces /home/maddy/canopen_test/build/iris_interfaces /home/maddy/canopen_test/build/iris_interfaces/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/agx/canopen_test/build/iris_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/agx/canopen_test/iris_interfaces /home/agx/canopen_test/iris_interfaces /home/agx/canopen_test/build/iris_interfaces /home/agx/canopen_test/build/iris_interfaces /home/agx/canopen_test/build/iris_interfaces/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

@@ -1,1 +1,1 @@
-/home/maddy/canopen_test/iris_interfaces/msg/NavigationMode.msg
+/home/agx/canopen_test/iris_interfaces/msg/NavigationMode.msg

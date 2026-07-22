@@ -1,1 +1,0 @@
-/home/maddy/canopen_test/build/iris_interfaces/rosidl_generator_py/iris_interfaces/srv/_reset_a2_faults.py

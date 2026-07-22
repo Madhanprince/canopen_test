@@ -1,1 +1,1 @@
-/home/maddy/canopen_test/iris_interfaces/msg/MotorControllerStatus.msg
+/home/agx/canopen_test/iris_interfaces/msg/MotorControllerStatus.msg

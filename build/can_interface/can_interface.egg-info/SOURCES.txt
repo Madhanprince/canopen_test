@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+can_interface/__init__.py
+can_interface/canopen_interface.py
+can_interface.egg-info/PKG-INFO
+can_interface.egg-info/SOURCES.txt
+can_interface.egg-info/dependency_links.txt
+can_interface.egg-info/entry_points.txt
+can_interface.egg-info/requires.txt
+can_interface.egg-info/top_level.txt
+can_interface.egg-info/zip-safe
+resource/can_interface

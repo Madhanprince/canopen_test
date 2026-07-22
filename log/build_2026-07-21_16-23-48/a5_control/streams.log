@@ -1,0 +1,27 @@
+[1.437s] Invoking command in '/home/agx/canopen_test/build/a5_control': PYTHONPATH=/home/agx/canopen_test/build/a5_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/agx/canopen_test/install/a5_control/lib/python3.10/site-packages:/home/agx/canopen_test/install/iris_interfaces/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv241) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/agx/canopen_test/build/a5_control/build --no-deps symlink_data
+[1.825s] running develop
+[2.067s] running egg_info
+[2.068s] creating a5_control.egg-info
+[2.069s] writing a5_control.egg-info/PKG-INFO
+[2.069s] writing dependency_links to a5_control.egg-info/dependency_links.txt
+[2.069s] writing entry points to a5_control.egg-info/entry_points.txt
+[2.070s] writing requirements to a5_control.egg-info/requires.txt
+[2.070s] writing top-level names to a5_control.egg-info/top_level.txt
+[2.071s] writing manifest file 'a5_control.egg-info/SOURCES.txt'
+[2.071s] reading manifest file 'a5_control.egg-info/SOURCES.txt'
+[2.072s] writing manifest file 'a5_control.egg-info/SOURCES.txt'
+[2.075s] running build_ext
+[2.075s] Creating /home/agx/canopen_test/install/a5_control/lib/python3.10/site-packages/a5-control.egg-link (link to .)
+[2.076s] Installing a5_control_exe script to /home/agx/canopen_test/install/a5_control/lib/a5_control
+[2.077s] 
+[2.077s] Installed /home/agx/canopen_test/build/a5_control
+[2.078s] running symlink_data
+[2.079s] creating /home/agx/canopen_test/install/a5_control/share/ament_index
+[2.079s] creating /home/agx/canopen_test/install/a5_control/share/ament_index/resource_index
+[2.079s] creating /home/agx/canopen_test/install/a5_control/share/ament_index/resource_index/packages
+[2.080s] symbolically linking /home/agx/canopen_test/build/a5_control/resource/a5_control -> /home/agx/canopen_test/install/a5_control/share/ament_index/resource_index/packages
+[2.080s] symbolically linking /home/agx/canopen_test/build/a5_control/package.xml -> /home/agx/canopen_test/install/a5_control/share/a5_control
+[2.081s] creating /home/agx/canopen_test/install/a5_control/share/a5_control/scripts
+[2.081s] symbolically linking /home/agx/canopen_test/build/a5_control/scripts/can_init.sh -> /home/agx/canopen_test/install/a5_control/share/a5_control/scripts
+[2.081s] creating /home/agx/canopen_test/install/a5_control/share/a5_control/config
+[2.152s] Invoked command in '/home/agx/canopen_test/build/a5_control' returned '0': PYTHONPATH=/home/agx/canopen_test/build/a5_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/agx/canopen_test/install/a5_control/lib/python3.10/site-packages:/home/agx/canopen_test/install/iris_interfaces/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv241) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/agx/canopen_test/build/a5_control/build --no-deps symlink_data

@@ -1,1 +1,1 @@
-/home/maddy/canopen_test/iris_interfaces/msg/MenderClientStatus.msg
+/home/agx/canopen_test/iris_interfaces/msg/MenderClientStatus.msg

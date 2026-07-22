@@ -1,8 +1,8 @@
-# Install script for directory: /home/maddy/canopen_test/build/iris_interfaces/iris_interfaces__rs
+# Install script for directory: /home/agx/canopen_test/build/iris_interfaces/iris_interfaces__rs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/maddy/canopen_test/install/iris_interfaces")
+  set(CMAKE_INSTALL_PREFIX "/home/agx/canopen_test/install/iris_interfaces")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

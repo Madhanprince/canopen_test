@@ -1,0 +1,258 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-e8bd1a246cbf96977833.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "iris_interfaces__py",
+					"jsonFile" : "directory-iris_interfaces__py-1dac674f7fdd00f885ae.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/agx/canopen_test/build/iris_interfaces/iris_interfaces__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "iris_interfaces__rs",
+					"jsonFile" : "directory-iris_interfaces__rs-983c2b46a445f6c64314.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/agx/canopen_test/build/iris_interfaces/iris_interfaces__rs",
+					"targetIndexes" : 
+					[
+						16
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "iris_interfaces",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_iris_interfaces_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_iris_interfaces_egg-d1dec637048cfe5fdba3.json",
+					"name" : "ament_cmake_python_build_iris_interfaces_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_iris_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_iris_interfaces-65b336f40c8355a8c136.json",
+					"name" : "ament_cmake_python_symlink_iris_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iris_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iris_interfaces-0aa701d683f9fc013698.json",
+					"name" : "iris_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iris_interfaces__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iris_interfaces__cpp-674d82d76d68d7a4b3c2.json",
+					"name" : "iris_interfaces__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "iris_interfaces__py::@8ec58de6744a7578677d",
+					"jsonFile" : "target-iris_interfaces__py-152be1d695fbc561940a.json",
+					"name" : "iris_interfaces__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iris_interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iris_interfaces__rosidl_generator_c-af30cd6a63ccf9f31841.json",
+					"name" : "iris_interfaces__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iris_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iris_interfaces__rosidl_generator_py-3b3e5f0bf8ee6af86820.json",
+					"name" : "iris_interfaces__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iris_interfaces__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iris_interfaces__rosidl_typesupport_c-1ac4093d668dad3ff81f.json",
+					"name" : "iris_interfaces__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iris_interfaces__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iris_interfaces__rosidl_typesupport_c__pyext-ff5580561047c8547361.json",
+					"name" : "iris_interfaces__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iris_interfaces__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iris_interfaces__rosidl_typesupport_cpp-2aa9e131f82e73309de2.json",
+					"name" : "iris_interfaces__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iris_interfaces__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iris_interfaces__rosidl_typesupport_fastrtps_c-87997b9de8f542cfa0e1.json",
+					"name" : "iris_interfaces__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iris_interfaces__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iris_interfaces__rosidl_typesupport_fastrtps_c__pyext-9cf2ceb86fc11c9602ae.json",
+					"name" : "iris_interfaces__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iris_interfaces__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iris_interfaces__rosidl_typesupport_fastrtps_cpp-5e7f423e5b5acb7de71b.json",
+					"name" : "iris_interfaces__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iris_interfaces__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iris_interfaces__rosidl_typesupport_introspection_c-983d07ff76ca5ce15a5a.json",
+					"name" : "iris_interfaces__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iris_interfaces__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iris_interfaces__rosidl_typesupport_introspection_c__pyext-730350c47cd93d3bc7cb.json",
+					"name" : "iris_interfaces__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iris_interfaces__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iris_interfaces__rosidl_typesupport_introspection_cpp-4c6d523f7bc792fd756e.json",
+					"name" : "iris_interfaces__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "iris_interfaces__rs::@94fcabb4ff1136b5e4b3",
+					"jsonFile" : "target-iris_interfaces__rs-5af8e2811275499078c4.json",
+					"name" : "iris_interfaces__rs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iris_interfaces_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iris_interfaces_uninstall-a10c7739ef2b20d0e357.json",
+					"name" : "iris_interfaces_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-2ead9c77f8facf0ab70f.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/agx/canopen_test/build/iris_interfaces",
+		"source" : "/home/agx/canopen_test/iris_interfaces"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

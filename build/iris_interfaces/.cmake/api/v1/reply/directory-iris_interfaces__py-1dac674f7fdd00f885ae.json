@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "iris_interfaces__py",
+		"source" : "/home/agx/canopen_test/build/iris_interfaces/iris_interfaces__py"
+	}
+}

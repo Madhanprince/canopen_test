@@ -1,0 +1,177 @@
+[0.000000] (-) TimerEvent: {}
+[0.000624] (can_interface) JobQueued: {'identifier': 'can_interface', 'dependencies': OrderedDict()}
+[0.001105] (iris_interfaces) JobQueued: {'identifier': 'iris_interfaces', 'dependencies': OrderedDict()}
+[0.001295] (a5_control) JobQueued: {'identifier': 'a5_control', 'dependencies': OrderedDict([('iris_interfaces', '/home/agx/canopen_test/install/iris_interfaces')])}
+[0.001501] (motor_control) JobQueued: {'identifier': 'motor_control', 'dependencies': OrderedDict([('iris_interfaces', '/home/agx/canopen_test/install/iris_interfaces')])}
+[0.001598] (iris_interfaces) JobStarted: {'identifier': 'iris_interfaces'}
+[0.009902] (can_interface) JobStarted: {'identifier': 'can_interface'}
+[0.018902] (iris_interfaces) JobProgress: {'identifier': 'iris_interfaces', 'progress': 'cmake'}
+[0.019703] (iris_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/agx/canopen_test/iris_interfaces', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/agx/canopen_test/install/iris_interfaces'], 'cwd': '/home/agx/canopen_test/build/iris_interfaces', 'env': OrderedDict([('TMUX', '/tmp/tmux-1000/default,26612,2'), ('LANGUAGE', 'en_IN:en'), ('SSH_CLIENT', '192.168.7.186 41904 22'), ('USER', 'agx'), ('XDG_SESSION_TYPE', 'tty'), ('LD_LIBRARY_PATH', '/home/agx/canopen_test/install/iris_interfaces/lib:/opt/ros/humble/opt/zenoh_cpp_vendor/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib'), ('SHLVL', '2'), ('HOME', '/home/agx'), ('LESS', '-R'), ('MOTD_SHOWN', 'pam'), ('OLDPWD', '/home/agx/canopen_test'), ('SSH_TTY', '/dev/pts/0'), ('TERM_PROGRAM_VERSION', '3.2a'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('ZSH', '/home/agx/.oh-my-zsh'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('PS1', '(venv241) %(?:%{\x1b[01;32m%}%1{➜%} :%{\x1b[01;31m%}%1{➜%} ) %{\x1b[36m%}%c%{\x1b[00m%} $(git_prompt_info)'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/home/agx/canopen_test/install'), ('LOGNAME', 'agx'), ('WINDOWID', '44040206'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'screen'), ('XDG_SESSION_ID', '11'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/agx/canopen_test/venv241/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/agx/.local/share/kitty-ssh-kitten/kitty/bin:/usr/local/cuda-12.6/bin:/usr/local/cuda-12.6/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_zenoh_cpp'), ('VIRTUAL_ENV_PROMPT', '(venv241)'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'tmux'), ('AMENT_PREFIX_PATH', '/home/agx/canopen_test/install/a5_control:/home/agx/canopen_test/install/iris_interfaces:/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('VIRTUAL_ENV', '/home/agx/canopen_test/venv241'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/agx/canopen_test/build/iris_interfaces'), ('SSH_CONNECTION', '192.168.7.174 51700 192.168.7.200 22'), ('PYTHONPATH', '/home/agx/canopen_test/install/a5_control/lib/python3.10/site-packages:/home/agx/canopen_test/install/iris_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('TMUX_PANE', '%9'), ('CMAKE_PREFIX_PATH', '/home/agx/canopen_test/install/iris_interfaces:/home/agx/canopen_test/install/a5_control:/opt/ros/humble')]), 'shell': False}
+[0.099346] (-) TimerEvent: {}
+[0.119856] (iris_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.199486] (-) TimerEvent: {}
+[0.221197] (iris_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.239442] (iris_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.299620] (-) TimerEvent: {}
+[0.368157] (iris_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.392319] (iris_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.393248] (iris_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.394570] (iris_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.399697] (-) TimerEvent: {}
+[0.405437] (iris_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.499870] (-) TimerEvent: {}
+[0.557679] (iris_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.583152] (iris_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.584184] (iris_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.585779] (iris_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.594025] (iris_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.599944] (-) TimerEvent: {}
+[0.700508] (-) TimerEvent: {}
+[0.801259] (-) TimerEvent: {}
+[0.830335] (iris_interfaces) StdoutLine: {'line': b'-- Found Python3: /home/agx/canopen_test/venv241/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.901396] (-) TimerEvent: {}
+[0.937866] (iris_interfaces) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.976457] (can_interface) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/agx/canopen_test/build/can_interface/build', '--no-deps', 'symlink_data'], 'cwd': '/home/agx/canopen_test/build/can_interface', 'env': {'TMUX': '/tmp/tmux-1000/default,26612,2', 'LANGUAGE': 'en_IN:en', 'SSH_CLIENT': '192.168.7.186 41904 22', 'USER': 'agx', 'XDG_SESSION_TYPE': 'tty', 'LD_LIBRARY_PATH': '/home/agx/canopen_test/install/iris_interfaces/lib:/opt/ros/humble/opt/zenoh_cpp_vendor/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib', 'SHLVL': '2', 'HOME': '/home/agx', 'LESS': '-R', 'MOTD_SHOWN': 'pam', 'OLDPWD': '/home/agx/canopen_test', 'SSH_TTY': '/dev/pts/0', 'TERM_PROGRAM_VERSION': '3.2a', 'LSCOLORS': 'Gxfxcxdxbxegedabagacad', 'ZSH': '/home/agx/.oh-my-zsh', 'PAGER': 'less', 'ROS_PYTHON_VERSION': '3', 'PS1': '(venv241) %(?:%{\x1b[01;32m%}%1{➜%} :%{\x1b[01;31m%}%1{➜%} ) %{\x1b[36m%}%c%{\x1b[00m%} $(git_prompt_info)', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'humble', 'COLCON_PREFIX_PATH': '/home/agx/canopen_test/install', 'LOGNAME': 'agx', 'WINDOWID': '44040206', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'screen', 'XDG_SESSION_ID': '11', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/agx/canopen_test/venv241/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/agx/.local/share/kitty-ssh-kitten/kitty/bin:/usr/local/cuda-12.6/bin:/usr/local/cuda-12.6/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_zenoh_cpp', 'VIRTUAL_ENV_PROMPT': '(venv241)', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'TERM_PROGRAM': 'tmux', 'AMENT_PREFIX_PATH': '/home/agx/canopen_test/install/a5_control:/home/agx/canopen_test/install/iris_interfaces:/opt/ros/humble', 'SHELL': '/usr/bin/zsh', 'VIRTUAL_ENV': '/home/agx/canopen_test/venv241', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/agx/canopen_test/build/can_interface', 'SSH_CONNECTION': '192.168.7.174 51700 192.168.7.200 22', 'PYTHONPATH': '/home/agx/canopen_test/build/can_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/agx/canopen_test/install/can_interface/lib/python3.10/site-packages:/home/agx/canopen_test/install/a5_control/lib/python3.10/site-packages:/home/agx/canopen_test/install/iris_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'TMUX_PANE': '%9', 'CMAKE_PREFIX_PATH': '/home/agx/canopen_test/install/iris_interfaces'}, 'shell': False}
+[1.001548] (-) TimerEvent: {}
+[1.015944] (iris_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.021437] (iris_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.032223] (iris_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.088342] (iris_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.101630] (-) TimerEvent: {}
+[1.137215] (iris_interfaces) StdoutLine: {'line': b'-- Found std_msgs: 4.9.1 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[1.171318] (iris_interfaces) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.201760] (-) TimerEvent: {}
+[1.210672] (iris_interfaces) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[1.301954] (-) TimerEvent: {}
+[1.360350] (can_interface) StdoutLine: {'line': b'running develop\n'}
+[1.402082] (-) TimerEvent: {}
+[1.502555] (-) TimerEvent: {}
+[1.598518] (can_interface) StdoutLine: {'line': b'running egg_info\n'}
+[1.598913] (can_interface) StdoutLine: {'line': b'creating can_interface.egg-info\n'}
+[1.599068] (can_interface) StdoutLine: {'line': b'writing can_interface.egg-info/PKG-INFO\n'}
+[1.599165] (can_interface) StdoutLine: {'line': b'writing dependency_links to can_interface.egg-info/dependency_links.txt\n'}
+[1.599295] (can_interface) StdoutLine: {'line': b'writing entry points to can_interface.egg-info/entry_points.txt\n'}
+[1.599418] (can_interface) StdoutLine: {'line': b'writing requirements to can_interface.egg-info/requires.txt\n'}
+[1.599545] (can_interface) StdoutLine: {'line': b'writing top-level names to can_interface.egg-info/top_level.txt\n'}
+[1.599944] (can_interface) StdoutLine: {'line': b"writing manifest file 'can_interface.egg-info/SOURCES.txt'\n"}
+[1.602496] (can_interface) StdoutLine: {'line': b"reading manifest file 'can_interface.egg-info/SOURCES.txt'\n"}
+[1.602592] (-) TimerEvent: {}
+[1.603548] (can_interface) StdoutLine: {'line': b"writing manifest file 'can_interface.egg-info/SOURCES.txt'\n"}
+[1.605727] (can_interface) StdoutLine: {'line': b'running build_ext\n'}
+[1.605984] (can_interface) StdoutLine: {'line': b'Creating /home/agx/canopen_test/install/can_interface/lib/python3.10/site-packages/can-interface.egg-link (link to .)\n'}
+[1.607315] (can_interface) StdoutLine: {'line': b'Installing canopen_face script to /home/agx/canopen_test/install/can_interface/lib/can_interface\n'}
+[1.607856] (can_interface) StdoutLine: {'line': b'\n'}
+[1.608085] (can_interface) StdoutLine: {'line': b'Installed /home/agx/canopen_test/build/can_interface\n'}
+[1.608229] (can_interface) StdoutLine: {'line': b'running symlink_data\n'}
+[1.608329] (can_interface) StdoutLine: {'line': b'creating /home/agx/canopen_test/install/can_interface/share/ament_index\n'}
+[1.608419] (can_interface) StdoutLine: {'line': b'creating /home/agx/canopen_test/install/can_interface/share/ament_index/resource_index\n'}
+[1.608503] (can_interface) StdoutLine: {'line': b'creating /home/agx/canopen_test/install/can_interface/share/ament_index/resource_index/packages\n'}
+[1.608584] (can_interface) StdoutLine: {'line': b'symbolically linking /home/agx/canopen_test/build/can_interface/resource/can_interface -> /home/agx/canopen_test/install/can_interface/share/ament_index/resource_index/packages\n'}
+[1.608667] (can_interface) StdoutLine: {'line': b'symbolically linking /home/agx/canopen_test/build/can_interface/package.xml -> /home/agx/canopen_test/install/can_interface/share/can_interface\n'}
+[1.673493] (can_interface) CommandEnded: {'returncode': 0}
+[1.691747] (can_interface) JobEnded: {'identifier': 'can_interface', 'rc': 0}
+[1.702684] (-) TimerEvent: {}
+[1.803073] (-) TimerEvent: {}
+[1.903738] (-) TimerEvent: {}
+[2.004383] (-) TimerEvent: {}
+[2.105146] (-) TimerEvent: {}
+[2.205896] (-) TimerEvent: {}
+[2.209727] (iris_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[2.305996] (-) TimerEvent: {}
+[2.406593] (-) TimerEvent: {}
+[2.507281] (-) TimerEvent: {}
+[2.607954] (-) TimerEvent: {}
+[2.708546] (-) TimerEvent: {}
+[2.723571] (iris_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.808652] (-) TimerEvent: {}
+[2.909175] (-) TimerEvent: {}
+[3.009709] (-) TimerEvent: {}
+[3.110384] (-) TimerEvent: {}
+[3.211063] (-) TimerEvent: {}
+[3.311732] (-) TimerEvent: {}
+[3.411391] (iris_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.411990] (-) TimerEvent: {}
+[3.444817] (iris_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /home/agx/canopen_test/venv241/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[3.448280] (iris_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[3.491135] (iris_interfaces) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[3.491546] (iris_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /home/agx/canopen_test/venv241/bin/python3\n'}
+[3.491814] (iris_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[3.492062] (iris_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[3.512089] (-) TimerEvent: {}
+[3.522520] (iris_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[3.612223] (-) TimerEvent: {}
+[3.712767] (-) TimerEvent: {}
+[3.813487] (-) TimerEvent: {}
+[3.860599] (iris_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[3.897400] (iris_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.900521] (iris_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.906029] (iris_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.913553] (-) TimerEvent: {}
+[4.014094] (-) TimerEvent: {}
+[4.057928] (iris_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[4.083635] (iris_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/agx/canopen_test/build/iris_interfaces\n'}
+[4.110337] (iris_interfaces) CommandEnded: {'returncode': 0}
+[4.112241] (iris_interfaces) JobProgress: {'identifier': 'iris_interfaces', 'progress': 'build'}
+[4.114834] (iris_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/agx/canopen_test/build/iris_interfaces', '--', '-j12', '-l12'], 'cwd': '/home/agx/canopen_test/build/iris_interfaces', 'env': OrderedDict([('TMUX', '/tmp/tmux-1000/default,26612,2'), ('LANGUAGE', 'en_IN:en'), ('SSH_CLIENT', '192.168.7.186 41904 22'), ('USER', 'agx'), ('XDG_SESSION_TYPE', 'tty'), ('LD_LIBRARY_PATH', '/home/agx/canopen_test/install/iris_interfaces/lib:/opt/ros/humble/opt/zenoh_cpp_vendor/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib'), ('SHLVL', '2'), ('HOME', '/home/agx'), ('LESS', '-R'), ('MOTD_SHOWN', 'pam'), ('OLDPWD', '/home/agx/canopen_test'), ('SSH_TTY', '/dev/pts/0'), ('TERM_PROGRAM_VERSION', '3.2a'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('ZSH', '/home/agx/.oh-my-zsh'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('PS1', '(venv241) %(?:%{\x1b[01;32m%}%1{➜%} :%{\x1b[01;31m%}%1{➜%} ) %{\x1b[36m%}%c%{\x1b[00m%} $(git_prompt_info)'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/home/agx/canopen_test/install'), ('LOGNAME', 'agx'), ('WINDOWID', '44040206'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'screen'), ('XDG_SESSION_ID', '11'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/agx/canopen_test/venv241/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/agx/.local/share/kitty-ssh-kitten/kitty/bin:/usr/local/cuda-12.6/bin:/usr/local/cuda-12.6/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_zenoh_cpp'), ('VIRTUAL_ENV_PROMPT', '(venv241)'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'tmux'), ('AMENT_PREFIX_PATH', '/home/agx/canopen_test/install/a5_control:/home/agx/canopen_test/install/iris_interfaces:/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('VIRTUAL_ENV', '/home/agx/canopen_test/venv241'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/agx/canopen_test/build/iris_interfaces'), ('SSH_CONNECTION', '192.168.7.174 51700 192.168.7.200 22'), ('PYTHONPATH', '/home/agx/canopen_test/install/a5_control/lib/python3.10/site-packages:/home/agx/canopen_test/install/iris_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('TMUX_PANE', '%9'), ('CMAKE_PREFIX_PATH', '/home/agx/canopen_test/install/iris_interfaces:/home/agx/canopen_test/install/a5_control:/opt/ros/humble')]), 'shell': False}
+[4.118415] (-) TimerEvent: {}
+[4.219815] (-) TimerEvent: {}
+[4.228705] (iris_interfaces) StdoutLine: {'line': b'[  0%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[4.247801] (iris_interfaces) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[4.248276] (iris_interfaces) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating Rust code for ROS interfaces\x1b[0m\n'}
+[4.260920] (iris_interfaces) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_symlink_iris_interfaces\n'}
+[4.309901] (iris_interfaces) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[4.310406] (iris_interfaces) StderrLine: {'line': b'  File "/opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c", line 8, in <module>\n'}
+[4.310523] (iris_interfaces) StderrLine: {'line': b'    from rosidl_generator_c import generate_c\n'}
+[4.310615] (iris_interfaces) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_c/__init__.py", line 15, in <module>\n'}
+[4.310705] (iris_interfaces) StderrLine: {'line': b'    from rosidl_cmake import convert_camel_case_to_lower_case_underscore\n'}
+[4.310789] (iris_interfaces) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 24, in <module>\n'}
+[4.310871] (iris_interfaces) StderrLine: {'line': b'    from rosidl_parser.parser import parse_idl_file\n'}
+[4.310949] (iris_interfaces) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 20, in <module>\n'}
+[4.311027] (iris_interfaces) StderrLine: {'line': b'    from lark import Lark\n'}
+[4.311104] (iris_interfaces) StderrLine: {'line': b"ModuleNotFoundError: No module named 'lark'\n"}
+[4.319917] (-) TimerEvent: {}
+[4.320430] (iris_interfaces) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[4.320692] (iris_interfaces) StderrLine: {'line': b'  File "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp", line 8, in <module>\n'}
+[4.320802] (iris_interfaces) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[4.320927] (iris_interfaces) StderrLine: {'line': b'  File "/opt/ros/humble/share/rosidl_generator_rs/cmake/../../../lib/rosidl_generator_rs/rosidl_generator_rs", line 8, in <module>\n'}
+[4.321017] (iris_interfaces) StderrLine: {'line': b'    from rosidl_generator_cpp import generate_cpp\n'}
+[4.321129] (iris_interfaces) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py", line 17, in <module>\n'}
+[4.321215] (iris_interfaces) StderrLine: {'line': b'    from rosidl_generator_rs import generate_rs\n'}
+[4.321295] (iris_interfaces) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_rs/__init__.py", line 21, in <module>\n'}
+[4.321403] (iris_interfaces) StderrLine: {'line': b'    from rosidl_cmake import generate_files\n'}
+[4.321483] (iris_interfaces) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 24, in <module>\n'}
+[4.321565] (iris_interfaces) StderrLine: {'line': b'    import rosidl_cmake as rosidl_pycommon\n'}
+[4.321640] (iris_interfaces) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 24, in <module>\n'}
+[4.321717] (iris_interfaces) StderrLine: {'line': b'    from rosidl_parser.parser import parse_idl_file\n'}
+[4.321794] (iris_interfaces) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 20, in <module>\n'}
+[4.321873] (iris_interfaces) StderrLine: {'line': b'    from rosidl_parser.parser import parse_idl_file\n'}
+[4.321947] (iris_interfaces) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 20, in <module>\n'}
+[4.322024] (iris_interfaces) StderrLine: {'line': b'    from lark import Lark\n'}
+[4.322101] (iris_interfaces) StderrLine: {'line': b"ModuleNotFoundError: No module named 'lark'\n"}
+[4.322175] (iris_interfaces) StderrLine: {'line': b'    from lark import Lark\n'}
+[4.322248] (iris_interfaces) StderrLine: {'line': b"ModuleNotFoundError: No module named 'lark'\n"}
+[4.325405] (iris_interfaces) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/iris_interfaces__rosidl_generator_c.dir/build.make:232: rosidl_generator_c/iris_interfaces/msg/wheel_command_speed.h] Error 1\n'}
+[4.326044] (iris_interfaces) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:231: CMakeFiles/iris_interfaces__rosidl_generator_c.dir/all] Error 2\n'}
+[4.326159] (iris_interfaces) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[4.338313] (iris_interfaces) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/iris_interfaces__cpp.dir/build.make:428: rosidl_generator_cpp/iris_interfaces/msg/wheel_command_speed.hpp] Error 1\n'}
+[4.338743] (iris_interfaces) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:336: CMakeFiles/iris_interfaces__cpp.dir/all] Error 2\n'}
+[4.338856] (iris_interfaces) StderrLine: {'line': b'gmake[2]: *** [iris_interfaces__rs/CMakeFiles/iris_interfaces__rs.dir/build.make:277: rosidl_generator_rs/iris_interfaces/rust/src/lib.rs] Error 1\n'}
+[4.339067] (iris_interfaces) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:635: iris_interfaces__rs/CMakeFiles/iris_interfaces__rs.dir/all] Error 2\n'}
+[4.420054] (-) TimerEvent: {}
+[4.520761] (-) TimerEvent: {}
+[4.561992] (iris_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[4.562534] (iris_interfaces) StdoutLine: {'line': b'creating iris_interfaces.egg-info\n'}
+[4.562658] (iris_interfaces) StdoutLine: {'line': b'writing iris_interfaces.egg-info/PKG-INFO\n'}
+[4.562944] (iris_interfaces) StdoutLine: {'line': b'writing dependency_links to iris_interfaces.egg-info/dependency_links.txt\n'}
+[4.563143] (iris_interfaces) StdoutLine: {'line': b'writing top-level names to iris_interfaces.egg-info/top_level.txt\n'}
+[4.563319] (iris_interfaces) StdoutLine: {'line': b"writing manifest file 'iris_interfaces.egg-info/SOURCES.txt'\n"}
+[4.565637] (iris_interfaces) StdoutLine: {'line': b"reading manifest file 'iris_interfaces.egg-info/SOURCES.txt'\n"}
+[4.566382] (iris_interfaces) StdoutLine: {'line': b"writing manifest file 'iris_interfaces.egg-info/SOURCES.txt'\n"}
+[4.621113] (-) TimerEvent: {}
+[4.626063] (iris_interfaces) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_build_iris_interfaces_egg\n'}
+[4.628802] (iris_interfaces) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[4.635099] (iris_interfaces) CommandEnded: {'returncode': 2}
+[4.654267] (iris_interfaces) JobEnded: {'identifier': 'iris_interfaces', 'rc': 2}
+[4.665747] (a5_control) JobSkipped: {'identifier': 'a5_control'}
+[4.666025] (motor_control) JobSkipped: {'identifier': 'motor_control'}
+[4.666117] (-) EventReactorShutdown: {}

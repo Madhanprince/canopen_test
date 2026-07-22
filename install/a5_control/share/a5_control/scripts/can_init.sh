@@ -1,1 +1,1 @@
-/home/maddy/canopen_test/build/a5_control/scripts/can_init.sh
+/home/agx/canopen_test/build/a5_control/scripts/can_init.sh

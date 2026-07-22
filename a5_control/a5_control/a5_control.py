@@ -1,3 +1,4 @@
+#!/home/agx/canopen_test/venv241/bin/python3.10
 import canopen
 import time
 import rclpy
@@ -19,10 +20,10 @@ from geometry_msgs.msg import Twist
 
 from ament_index_python.packages import get_package_share_path
 
-INTERFACE = "vcan0"
+INTERFACE = "can0"
 BITRATE = 500000
-IRIS_A5_EDS_PATH = "/home/maddy/canopen_test/a5_control/eds/IRIS_A5.eds"
-CAN_UP_SCRIPT_PATH = "/home/maddy/canopen_test/a5_control/scripts/can_init.sh"
+IRIS_A5_EDS_PATH = "/home/agx/canopen_test/a5_control/eds/IRIS_A5.eds"
+CAN_UP_SCRIPT_PATH = "/home/agx/canopen_test/a5_control/scripts"
 
 class A5Control(Node):
     def __init__(self,node_id,interface,bitrate):
@@ -36,7 +37,7 @@ class A5Control(Node):
         self.remote = canopen.RemoteNode(self.node_id,IRIS_A5_EDS_PATH)
         self.network.add_node(self.remote)
         self.current_state :State | None = State("unconfigured",0)
-        self.initialize_can_network()
+        # self.initialize_can_network()
         print(f"Connected to Node{self.node_id}")
     
     def on_configure(self, State) -> TransitionCallbackReturn :
@@ -47,7 +48,7 @@ class A5Control(Node):
             self.remote.load_configuration()
 
             self.encoders = self.remote.tpdo[1]
-            self.ultrasonic_sensors = self.remote.tpdo[2]
+            self.ultrasonic_sensors = self.remote.tpdo[2] 
             self.water_level_and_status = self.remote.tpdo[3]
             self.led_command = self.remote.rpdo[1]["LedCommand"]
         
@@ -63,11 +64,14 @@ class A5Control(Node):
             self.__status_publisher = self.create_publisher(
                 A5Status, "a5_control_status", 10
             )
-            self.__led_command_subscriber = self.create_subscription(
-                LedControl, "a5_control/led_control", self.__led_control_callback, 10
-            )
-        
-            self.current_state = State("inactive",2)
+            # self.__led_command_subscriber = self.create_subscription(
+            #     LedControl, "a5_control/led_control", self.__led_control_callback, 10
+            # )
+
+            self.__ultrasonic_msg = UltrasonicRanges()
+            self.ultrasonic_setup()
+
+            # self.current_state = State("inactive",2)
             return TransitionCallbackReturn.SUCCESS
         
         except Exception as e:
@@ -120,16 +124,28 @@ class A5Control(Node):
 
         self.encoders_msg = WheelEncoders()
         self.encoders_msg.left_wheel_ticks =tpdo_encoder["LeftEncoder"].raw 
-        self.encoders_msg.right_wheel_ticks =tpdo_encoder["RightEncoder"].raw
+        self.encoders_msg.right_wheel_ticks =tpdo_encoder["RightEncoder"].raw 
 
         self.__encoder_publisher.publish(self.encoders_msg)
     
-    def ultrasonic_setup(self,tpdo_ultrasonic):
-        self.ultrasonic_sensors_1 = tpdo_ultrasonic["Ultrasonic1"].raw 
-    
-    def a5_ultrasonic_sensors_callback(self):
+    def ultrasonic_setup(self):
+        for i in range(1, 5):
+            ultrasonic = getattr(self.__ultrasonic_msg, f"ultrasonic_{i}")
 
-        self.ultrasonic_sensors_msg = 
+            ultrasonic.header.frame_id = f"Ultrasonic_{i}"
+            ultrasonic.radiation_type = Range.ULTRASOUND
+            ultrasonic.field_of_view = 1.57
+            ultrasonic.min_range = 0.2
+            ultrasonic.max_range = 1.5
+    
+    def a5_ultrasonic_sensors_callback(self,tpdo_ultrasonic):
+
+        for i in range(1, 5):
+            ultrasonic = getattr(self.__ultrasonic_msg, f"ultrasonic_{i}")
+
+            ultrasonic.header.stamp = self.get_clock().now().to_msg()
+            ultrasonic.range = tpdo_ultrasonic[f"Ultrasonic{i}"].raw / 100.0
+
 
     def a5_water_level_and_status_callback(self, tpdo_water_level_and_status):
 
@@ -144,8 +160,8 @@ class A5Control(Node):
         )
         self.__status_publisher.publish(status_msg)
 
-    def initialize_can_network(self):
-        subprocess.run([CAN_UP_SCRIPT_PATH])
+    # def initialize_can_network(self):
+    #     subprocess.run([CAN_UP_SCRIPT_PATH])
     
 def main():
     rclpy.init()

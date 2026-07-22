@@ -1,1 +1,1 @@
-/home/maddy/canopen_test/iris_interfaces/msg/A2FaultStatus.msg
+/home/agx/canopen_test/iris_interfaces/msg/A2FaultStatus.msg
